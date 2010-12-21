@@ -19,7 +19,7 @@
    ARB-PREFIX = where PREFIX is an ARB registered+approved vendor ID
    NNN = where NNN is a registered prefix for a vendor (ie: Rackspace)
 4. [X] On slides 19-21 what does "... use(s) alias" mean, with respect to JSON?
-5. [ ] On slide 31 you wrote "Language bindings may be written to
+5. [X] On slide 31 you wrote "Language bindings may be written to
    detect and give access to extensions given a WADL, though that
    would be challenging.". Why? This definitely sounds like the right
    approach. I don't fully understand why this is challenging.
