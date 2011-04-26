@@ -10114,10 +10114,10 @@
             </sf:geometry>
             <sf:layers sfa:ID="NSMutableArray-21">
               <sf:layer sfa:ID="SFDLayerInfo-0">
-                <sf:type sfa:ID="NSArray-15406">
+                <sf:type sfa:ID="NSArray-15870">
                   <sf:string sfa:string="BGMasterSlideLayer"/>
                 </sf:type>
-                <sf:drawables sfa:ID="NSMutableArray-15675">
+                <sf:drawables sfa:ID="NSMutableArray-16146">
                   <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-0"/>
                   <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-0"/>
                   <sf:media sfa:ID="SFDImageInfo-0">
@@ -10194,23 +10194,23 @@
                 <sf:guides sfa:ID="NSMutableSet-0"/>
               </sf:layer>
               <sf:layer sfa:ID="SFDLayerInfo-10">
-                <sf:type sfa:ID="NSArray-15407">
+                <sf:type sfa:ID="NSArray-15871">
                   <sf:string sfa:string="BGMasterSlidePrototypeLayer"/>
                 </sf:type>
-                <sf:drawables sfa:ID="NSMutableArray-15676"/>
+                <sf:drawables sfa:ID="NSMutableArray-16147"/>
                 <sf:guides sfa:ID="NSMutableSet-10"/>
               </sf:layer>
             </sf:layers>
           </key:page>
-          <key:thumbnails sfa:ID="NSArray-15408">
+          <key:thumbnails sfa:ID="NSArray-15872">
             <key:binary sfa:ID="SFRImageBinary-12">
               <sf:size sfa:w="60" sfa:h="45"/>
               <sf:data sfa:ID="SFEData-12" sf:path="thumbs/mt0-0.jpg" sf:displayname="thumbs/mt0-0.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="12141"/>
             </key:binary>
           </key:thumbnails>
-          <key:events sfa:ID="NSMutableArray-15677"/>
+          <key:events sfa:ID="NSMutableArray-16148"/>
           <key:sticky-notes sfa:ID="NSMutableArray-15"/>
-          <key:build-chunks sfa:ID="NSMutableArray-15678"/>
+          <key:build-chunks sfa:ID="NSMutableArray-16149"/>
         </key:master-slide>
         <key:master-slide sfa:ID="BGMasterSlide-1" key:name="Title &amp; Subtitle" key:layer="true">
           <key:stylesheet sfa:ID="SFSStylesheet-2">
@@ -14338,10 +14338,10 @@
             </sf:geometry>
             <sf:layers sfa:ID="NSMutableArray-30">
               <sf:layer sfa:ID="SFDLayerInfo-1">
-                <sf:type sfa:ID="NSArray-15409">
+                <sf:type sfa:ID="NSArray-15873">
                   <sf:string sfa:string="BGMasterSlideLayer"/>
                 </sf:type>
-                <sf:drawables sfa:ID="NSMutableArray-15679">
+                <sf:drawables sfa:ID="NSMutableArray-16150">
                   <sf:shape sfa:ID="SFDShapeInfo-0">
                     <sf:geometry sfa:ID="SFDAffineGeometry-12" sf:sizesLocked="true">
                       <sf:naturalSize sfa:w="720" sfa:h="540"/>
@@ -14465,23 +14465,23 @@
                 <sf:guides sfa:ID="NSMutableSet-1"/>
               </sf:layer>
               <sf:layer sfa:ID="SFDLayerInfo-11">
-                <sf:type sfa:ID="NSArray-15410">
+                <sf:type sfa:ID="NSArray-15874">
                   <sf:string sfa:string="BGMasterSlidePrototypeLayer"/>
                 </sf:type>
-                <sf:drawables sfa:ID="NSMutableArray-15680"/>
+                <sf:drawables sfa:ID="NSMutableArray-16151"/>
                 <sf:guides sfa:ID="NSMutableSet-11"/>
               </sf:layer>
             </sf:layers>
           </key:page>
-          <key:thumbnails sfa:ID="NSArray-15411">
+          <key:thumbnails sfa:ID="NSArray-15875">
             <key:binary sfa:ID="SFRImageBinary-13">
               <sf:size sfa:w="60" sfa:h="45"/>
               <sf:data sfa:ID="SFEData-13" sf:path="thumbs/mt0-1.jpg" sf:displayname="thumbs/mt0-1.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="12977"/>
             </key:binary>
           </key:thumbnails>
-          <key:events sfa:ID="NSMutableArray-15681"/>
+          <key:events sfa:ID="NSMutableArray-16152"/>
           <key:sticky-notes sfa:ID="NSMutableArray-24"/>
-          <key:build-chunks sfa:ID="NSMutableArray-15682"/>
+          <key:build-chunks sfa:ID="NSMutableArray-16153"/>
         </key:master-slide>
       </key:master-slides>
     </key:theme>
@@ -14872,23 +14872,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-43695">
           <sf:layer sfa:ID="SFDLayerInfo-76">
-            <sf:type sfa:ID="NSArray-15412">
+            <sf:type sfa:ID="NSArray-15876">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15683"/>
+            <sf:drawables sfa:ID="NSMutableArray-16154"/>
             <sf:guides sfa:ID="NSMutableSet-76"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-36">
-            <sf:type sfa:ID="NSArray-15413">
+            <sf:type sfa:ID="NSArray-15877">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-1"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-77">
-            <sf:type sfa:ID="NSArray-15414">
+            <sf:type sfa:ID="NSArray-15878">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15684">
+            <sf:drawables sfa:ID="NSMutableArray-16155">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-38"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-38"/>
             </sf:drawables>
@@ -14896,15 +14896,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15415">
+      <key:thumbnails sfa:ID="NSArray-15879">
         <key:binary sfa:ID="SFRImageBinary-70">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-70" sf:path="thumbs/st0-510.jpg" sf:displayname="thumbs/st0.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="5056"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15685"/>
+      <key:events sfa:ID="NSMutableArray-16156"/>
       <key:sticky-notes sfa:ID="NSMutableArray-43699"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15686"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16157"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-1"/>
       <key:notes sfa:ID="SFWPFrame-147" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-147" sf:kind="note">
@@ -15312,23 +15312,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-60">
           <sf:layer sfa:ID="SFDLayerInfo-4">
-            <sf:type sfa:ID="NSArray-15416">
+            <sf:type sfa:ID="NSArray-15880">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15687"/>
+            <sf:drawables sfa:ID="NSMutableArray-16158"/>
             <sf:guides sfa:ID="NSMutableSet-4"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-1">
-            <sf:type sfa:ID="NSArray-15417">
+            <sf:type sfa:ID="NSArray-15881">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-5">
-            <sf:type sfa:ID="NSArray-15418">
+            <sf:type sfa:ID="NSArray-15882">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15688">
+            <sf:drawables sfa:ID="NSMutableArray-16159">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-3"/>
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-3"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-3"/>
@@ -15337,15 +15337,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15419">
+      <key:thumbnails sfa:ID="NSArray-15883">
         <key:binary sfa:ID="SFRImageBinary-58">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-58" sf:path="thumbs/st1-10.jpg" sf:displayname="thumbs/st1.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="4370"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15689"/>
+      <key:events sfa:ID="NSMutableArray-16160"/>
       <key:sticky-notes sfa:ID="NSMutableArray-58"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15690"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16161"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-9" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-9" sf:kind="note">
@@ -15961,23 +15961,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-13651">
           <sf:layer sfa:ID="SFDLayerInfo-160">
-            <sf:type sfa:ID="NSArray-15420">
+            <sf:type sfa:ID="NSArray-15884">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15691"/>
+            <sf:drawables sfa:ID="NSMutableArray-16162"/>
             <sf:guides sfa:ID="NSMutableSet-160"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-78">
-            <sf:type sfa:ID="NSArray-15421">
+            <sf:type sfa:ID="NSArray-15885">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-161">
-            <sf:type sfa:ID="NSArray-15422">
+            <sf:type sfa:ID="NSArray-15886">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15692">
+            <sf:drawables sfa:ID="NSMutableArray-16163">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-80"/>
               <sf:shape sfa:ID="BGShapeInfo-31">
                 <sf:geometry sfa:ID="SFDAffineGeometry-482" sf:sizesLocked="true">
@@ -16124,15 +16124,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15423">
+      <key:thumbnails sfa:ID="NSArray-15887">
         <key:binary sfa:ID="SFRImageBinary-103">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-103" sf:path="thumbs/st2-12.jpg" sf:displayname="thumbs/st2.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="4453"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15693"/>
+      <key:events sfa:ID="NSMutableArray-16164"/>
       <key:sticky-notes sfa:ID="NSMutableArray-13655"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15694"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16165"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-284" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-284" sf:kind="note">
@@ -16470,23 +16470,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-158">
           <sf:layer sfa:ID="SFDLayerInfo-6">
-            <sf:type sfa:ID="NSArray-15424">
+            <sf:type sfa:ID="NSArray-15888">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15695"/>
+            <sf:drawables sfa:ID="NSMutableArray-16166"/>
             <sf:guides sfa:ID="NSMutableSet-6"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-2">
-            <sf:type sfa:ID="NSArray-15425">
+            <sf:type sfa:ID="NSArray-15889">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-7">
-            <sf:type sfa:ID="NSArray-15426">
+            <sf:type sfa:ID="NSArray-15890">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15696">
+            <sf:drawables sfa:ID="NSMutableArray-16167">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-4"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-4"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-4"/>
@@ -16518,15 +16518,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15427">
+      <key:thumbnails sfa:ID="NSArray-15891">
         <key:binary sfa:ID="SFRImageBinary-14">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-14" sf:path="thumbs/st4.jpg" sf:displayname="thumbs/st4.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8657"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15697"/>
+      <key:events sfa:ID="NSMutableArray-16168"/>
       <key:sticky-notes sfa:ID="NSMutableArray-162"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15698"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16169"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-6" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-6" sf:kind="note" sf:excl="G">
@@ -16953,23 +16953,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-206">
           <sf:layer sfa:ID="SFDLayerInfo-20">
-            <sf:type sfa:ID="NSArray-15428">
+            <sf:type sfa:ID="NSArray-15892">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15699"/>
+            <sf:drawables sfa:ID="NSMutableArray-16170"/>
             <sf:guides sfa:ID="NSMutableSet-20"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-8">
-            <sf:type sfa:ID="NSArray-15429">
+            <sf:type sfa:ID="NSArray-15893">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-21">
-            <sf:type sfa:ID="NSArray-15430">
+            <sf:type sfa:ID="NSArray-15894">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15700">
+            <sf:drawables sfa:ID="NSMutableArray-16171">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-10"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-10"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-10"/>
@@ -17013,7 +17013,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-0">
-                      <sf:bezier sfa:ID="SFRBezierPath-321" sfa:path="M 0 56.069522857666016 L 20.99998664855957 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-345" sfa:path="M 0 56.069522857666016 L 20.99998664855957 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-136" sf:layoutstyle="SFWPLayoutStyle-263">
@@ -17036,7 +17036,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-4">
-                      <sf:bezier sfa:ID="SFRBezierPath-322" sfa:path="M 1.6898179054260254 62.122989654541016 L 0 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-346" sfa:path="M 1.6898179054260254 62.122989654541016 L 0 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-137" sf:layoutstyle="SFWPLayoutStyle-263">
@@ -17059,7 +17059,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-3">
-                      <sf:bezier sfa:ID="SFRBezierPath-323" sfa:path="M 8.379694938659668 56.791439056396484 L 0 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-347" sfa:path="M 8.379694938659668 56.791439056396484 L 0 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-139" sf:layoutstyle="SFWPLayoutStyle-263">
@@ -17175,15 +17175,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15431">
+      <key:thumbnails sfa:ID="NSArray-15895">
         <key:binary sfa:ID="SFRImageBinary-23">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-23" sf:path="thumbs/st4-1.jpg" sf:displayname="thumbs/st4.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8701"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15701"/>
+      <key:events sfa:ID="NSMutableArray-16172"/>
       <key:sticky-notes sfa:ID="NSMutableArray-210"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15702"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16173"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-32" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-32" sf:kind="note" sf:excl="G">
@@ -17497,23 +17497,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-707">
           <sf:layer sfa:ID="SFDLayerInfo-14">
-            <sf:type sfa:ID="NSArray-15432">
+            <sf:type sfa:ID="NSArray-15896">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15703"/>
+            <sf:drawables sfa:ID="NSMutableArray-16174"/>
             <sf:guides sfa:ID="NSMutableSet-14"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-5">
-            <sf:type sfa:ID="NSArray-15433">
+            <sf:type sfa:ID="NSArray-15897">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-15">
-            <sf:type sfa:ID="NSArray-15434">
+            <sf:type sfa:ID="NSArray-15898">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15704">
+            <sf:drawables sfa:ID="NSMutableArray-16175">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-7"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-7"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-7"/>
@@ -17522,15 +17522,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15435">
+      <key:thumbnails sfa:ID="NSArray-15899">
         <key:binary sfa:ID="SFRImageBinary-22">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-22" sf:path="thumbs/st4-6.jpg" sf:displayname="thumbs/st4.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7988"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15705"/>
+      <key:events sfa:ID="NSMutableArray-16176"/>
       <key:sticky-notes sfa:ID="NSMutableArray-711"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15706"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16177"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-30" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-30" sf:kind="note" sf:excl="G">
@@ -18144,23 +18144,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-835">
           <sf:layer sfa:ID="SFDLayerInfo-8">
-            <sf:type sfa:ID="NSArray-15436">
+            <sf:type sfa:ID="NSArray-15900">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15707"/>
+            <sf:drawables sfa:ID="NSMutableArray-16178"/>
             <sf:guides sfa:ID="NSMutableSet-8"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-3">
-            <sf:type sfa:ID="NSArray-15437">
+            <sf:type sfa:ID="NSArray-15901">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-9">
-            <sf:type sfa:ID="NSArray-15438">
+            <sf:type sfa:ID="NSArray-15902">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15708">
+            <sf:drawables sfa:ID="NSMutableArray-16179">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-5"/>
               <sf:shape sfa:ID="BGShapeInfo-0">
                 <sf:geometry sfa:ID="SFDAffineGeometry-37" sf:sizesLocked="true">
@@ -18295,15 +18295,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15439">
+      <key:thumbnails sfa:ID="NSArray-15903">
         <key:binary sfa:ID="SFRImageBinary-15">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-15" sf:path="thumbs/st2-13.jpg" sf:displayname="thumbs/st2.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="4462"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15709"/>
+      <key:events sfa:ID="NSMutableArray-16180"/>
       <key:sticky-notes sfa:ID="NSMutableArray-839"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15710"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16181"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-15" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-15" sf:kind="note">
@@ -18597,23 +18597,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-907">
           <sf:layer sfa:ID="SFDLayerInfo-12">
-            <sf:type sfa:ID="NSArray-15440">
+            <sf:type sfa:ID="NSArray-15904">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15711"/>
+            <sf:drawables sfa:ID="NSMutableArray-16182"/>
             <sf:guides sfa:ID="NSMutableSet-12"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-4">
-            <sf:type sfa:ID="NSArray-15441">
+            <sf:type sfa:ID="NSArray-15905">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-13">
-            <sf:type sfa:ID="NSArray-15442">
+            <sf:type sfa:ID="NSArray-15906">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15712">
+            <sf:drawables sfa:ID="NSMutableArray-16183">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-6"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-6"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-6"/>
@@ -18622,15 +18622,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15443">
+      <key:thumbnails sfa:ID="NSArray-15907">
         <key:binary sfa:ID="SFRImageBinary-16">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-16" sf:path="thumbs/st6.jpg" sf:displayname="thumbs/st6.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8297"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15713"/>
+      <key:events sfa:ID="NSMutableArray-16184"/>
       <key:sticky-notes sfa:ID="NSMutableArray-911"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15714"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16185"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-18" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-18" sf:kind="note" sf:excl="G">
@@ -18905,23 +18905,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-1787">
           <sf:layer sfa:ID="SFDLayerInfo-16">
-            <sf:type sfa:ID="NSArray-15444">
+            <sf:type sfa:ID="NSArray-15908">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15715"/>
+            <sf:drawables sfa:ID="NSMutableArray-16186"/>
             <sf:guides sfa:ID="NSMutableSet-16"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-6">
-            <sf:type sfa:ID="NSArray-15445">
+            <sf:type sfa:ID="NSArray-15909">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-17">
-            <sf:type sfa:ID="NSArray-15446">
+            <sf:type sfa:ID="NSArray-15910">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15716">
+            <sf:drawables sfa:ID="NSMutableArray-16187">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-8"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-8"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-8"/>
@@ -18953,15 +18953,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15447">
+      <key:thumbnails sfa:ID="NSArray-15911">
         <key:binary sfa:ID="SFRImageBinary-17">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-17" sf:path="thumbs/st7.jpg" sf:displayname="thumbs/st7.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8377"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15717"/>
+      <key:events sfa:ID="NSMutableArray-16188"/>
       <key:sticky-notes sfa:ID="NSMutableArray-1791"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15718"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16189"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-21" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-21" sf:kind="note" sf:excl="G">
@@ -19137,6 +19137,21 @@
           </sf:placeholder-style>
         </sf:styles>
         <sf:anon-styles>
+          <sf:vector-style sfa:ID="SFTVectorStyle-61" sf:parent-ident="tabular-default-grl-0-vector-style-id">
+            <sf:property-map/>
+          </sf:vector-style>
+          <sf:vector-style sfa:ID="SFTVectorStyle-68" sf:parent-ident="tabular-default-footer-border-vector-style-id">
+            <sf:property-map/>
+          </sf:vector-style>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-90" sf:parent-ident="tabular-default-grl-0-cell-layout-style-id">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-184" sf:parent-ident="tabular-default-footer-cell-paragraph-style-id">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:vector-style sfa:ID="SFTVectorStyle-65" sf:parent-ident="tabular-default-grl-1-vector-style-id">
+            <sf:property-map/>
+          </sf:vector-style>
           <sf:cell-style sfa:ID="SFTCellStyle-49" sf:parent-ident="tabular-default-grl-0-cell-style-id">
             <sf:property-map>
               <sf:SFTCellStylePropertyParagraphStyle>
@@ -19145,48 +19160,21 @@
                 </sf:paragraphstyle>
               </sf:SFTCellStylePropertyParagraphStyle>
               <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-90" sf:parent-ident="tabular-default-grl-0-cell-layout-style-id">
-                  <sf:property-map/>
-                </sf:layoutstyle>
+                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-90"/>
               </sf:SFTCellStylePropertyLayoutStyle>
             </sf:property-map>
           </sf:cell-style>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-134" sf:parent-ident="tabular-default-body-cell-paragraph-style-id">
+          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-172"/>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-136" sf:parent-ident="tabular-default-header-col-cell-paragraph-style-id">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:characterstyle sfa:ID="SFWPCharacterStyle-15" sf:parent-ident="character-style-null">
             <sf:property-map>
-              <sf:bold>
-                <sf:number sfa:number="1" sfa:type="i"/>
-              </sf:bold>
+              <sf:fontSize>
+                <sf:number sfa:number="13" sfa:type="f"/>
+              </sf:fontSize>
             </sf:property-map>
-          </sf:paragraphstyle>
-          <sf:vector-style sfa:ID="SFTVectorStyle-64" sf:parent-ident="tabular-default-footer-separator-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-133" sf:parent-ident="tabular-default-grl-1-cell-paragraph-style-id">
-            <sf:property-map/>
-          </sf:paragraphstyle>
-          <sf:vector-style sfa:ID="SFTVectorStyle-65" sf:parent-ident="tabular-default-grl-1-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-211" sf:parent-ident="level2HeadlineParagraphStyleID">
-            <sf:property-map/>
-          </sf:paragraphstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-50" sf:parent-ident="tabular-default-footer-row-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-184" sf:parent-ident="tabular-default-footer-cell-paragraph-style-id">
-                  <sf:property-map/>
-                </sf:paragraphstyle>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-50" sf:parent-ident="tabular-default-footer-cell-layout-style-id">
-                  <sf:property-map/>
-                </sf:layoutstyle>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-141" sf:parent-ident="tabular-default-grl-4-cell-paragraph-style-id">
-            <sf:property-map/>
-          </sf:paragraphstyle>
+          </sf:characterstyle>
           <sf:characterstyle sfa:ID="SFWPCharacterStyle-14" sf:parent-ident="character-style-null">
             <sf:property-map>
               <sf:bold/>
@@ -19195,58 +19183,20 @@
               </sf:fontSize>
             </sf:property-map>
           </sf:characterstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-45" sf:parent-ident="tabular-default-header-row-cell-style-id">
+          <sf:cell-style sfa:ID="SFTCellStyle-48" sf:parent-ident="tabular-default-grl-1-cell-style-id">
             <sf:property-map>
               <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-140" sf:parent-ident="tabular-default-header-row-cell-paragraph-style-id">
+                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-133" sf:parent-ident="tabular-default-grl-1-cell-paragraph-style-id">
                   <sf:property-map/>
                 </sf:paragraphstyle>
               </sf:SFTCellStylePropertyParagraphStyle>
               <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-51" sf:parent-ident="tabular-default-header-row-cell-layout-style-id">
+                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-89" sf:parent-ident="tabular-default-grl-1-cell-layout-style-id">
                   <sf:property-map/>
                 </sf:layoutstyle>
               </sf:SFTCellStylePropertyLayoutStyle>
             </sf:property-map>
           </sf:cell-style>
-          <sf:vector-style sfa:ID="SFTVectorStyle-59" sf:parent-ident="tabular-default-header-border-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-151" sf:parent-ident="tabular-default-grl-2-cell-paragraph-style-id">
-            <sf:property-map/>
-          </sf:paragraphstyle>
-          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-184"/>
-          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-140"/>
-          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-52" sf:parent-ident="tabular-default-body-cell-layout-style-id">
-            <sf:property-map/>
-          </sf:layoutstyle>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-137" sf:parent-ident="tabular-default-body-cell-paragraph-style-id">
-            <sf:property-map/>
-          </sf:paragraphstyle>
-          <sf:vector-style sfa:ID="SFTVectorStyle-67" sf:parent-ident="tabular-default-grl-2-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-90"/>
-          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-102" sf:parent-ident="bodyPlaceholderLayoutStyleID">
-            <sf:property-map/>
-          </sf:layoutstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-42" sf:parent-ident="tabular-default-grl-3-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-135" sf:parent-ident="tabular-default-grl-3-cell-paragraph-style-id">
-                  <sf:property-map/>
-                </sf:paragraphstyle>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-53" sf:parent-ident="tabular-default-grl-3-cell-layout-style-id">
-                  <sf:property-map/>
-                </sf:layoutstyle>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
-          <sf:vector-style sfa:ID="SFTVectorStyle-66" sf:parent-ident="tabular-default-grl-4-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
           <sf:characterstyle sfa:ID="SFWPCharacterStyle-7" sf:parent-ident="character-style-null">
             <sf:property-map>
               <sf:bold/>
@@ -19255,31 +19205,82 @@
               </sf:fontSize>
             </sf:property-map>
           </sf:characterstyle>
-          <sf:vector-style sfa:ID="SFTVectorStyle-62" sf:parent-ident="tabular-default-footer-body-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-135"/>
-          <sf:characterstyle sfa:ID="SFWPCharacterStyle-15" sf:parent-ident="character-style-null">
-            <sf:property-map>
-              <sf:fontSize>
-                <sf:number sfa:number="13" sfa:type="f"/>
-              </sf:fontSize>
-            </sf:property-map>
-          </sf:characterstyle>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-136" sf:parent-ident="tabular-default-header-col-cell-paragraph-style-id">
-            <sf:property-map/>
-          </sf:paragraphstyle>
           <sf:vector-style sfa:ID="SFTVectorStyle-57" sf:parent-ident="tabular-default-header-body-vector-style-id">
             <sf:property-map/>
           </sf:vector-style>
+          <sf:cell-style sfa:ID="SFTCellStyle-41" sf:parent-ident="tabular-default-body-cell-style-id">
+            <sf:property-map>
+              <sf:SFTCellStylePropertyParagraphStyle>
+                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-134" sf:parent-ident="tabular-default-body-cell-paragraph-style-id">
+                  <sf:property-map>
+                    <sf:bold>
+                      <sf:number sfa:number="1" sfa:type="i"/>
+                    </sf:bold>
+                  </sf:property-map>
+                </sf:paragraphstyle>
+              </sf:SFTCellStylePropertyParagraphStyle>
+              <sf:SFTCellStylePropertyLayoutStyle>
+                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-52" sf:parent-ident="tabular-default-body-cell-layout-style-id">
+                  <sf:property-map/>
+                </sf:layoutstyle>
+              </sf:SFTCellStylePropertyLayoutStyle>
+            </sf:property-map>
+          </sf:cell-style>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-51" sf:parent-ident="tabular-default-header-row-cell-layout-style-id">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:vector-style sfa:ID="SFTVectorStyle-59" sf:parent-ident="tabular-default-header-border-vector-style-id">
+            <sf:property-map/>
+          </sf:vector-style>
+          <sf:vector-style sfa:ID="SFTVectorStyle-67" sf:parent-ident="tabular-default-grl-2-vector-style-id">
+            <sf:property-map/>
+          </sf:vector-style>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-137" sf:parent-ident="tabular-default-body-cell-paragraph-style-id">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-135" sf:parent-ident="tabular-default-grl-3-cell-paragraph-style-id">
+            <sf:property-map/>
+          </sf:paragraphstyle>
           <sf:vector-style sfa:ID="SFTVectorStyle-69" sf:parent-ident="tabular-default-border-vector-style-id">
             <sf:property-map/>
           </sf:vector-style>
-          <sf:vector-style sfa:ID="SFTVectorStyle-63" sf:parent-ident="tabular-default-grl-3-vector-style-id">
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-87" sf:parent-ident="tabular-default-grl-2-cell-layout-style-id">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:vector-style sfa:ID="SFTVectorStyle-58" sf:parent-ident="tabular-default-body-vector-style-id">
             <sf:property-map/>
           </sf:vector-style>
-          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-50"/>
-          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-51"/>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-141" sf:parent-ident="tabular-default-grl-4-cell-paragraph-style-id">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-102" sf:parent-ident="bodyPlaceholderLayoutStyleID">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-52"/>
+          <sf:cell-style sfa:ID="SFTCellStyle-47" sf:parent-ident="tabular-default-grl-2-cell-style-id">
+            <sf:property-map>
+              <sf:SFTCellStylePropertyParagraphStyle>
+                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-151" sf:parent-ident="tabular-default-grl-2-cell-paragraph-style-id">
+                  <sf:property-map/>
+                </sf:paragraphstyle>
+              </sf:SFTCellStylePropertyParagraphStyle>
+              <sf:SFTCellStylePropertyLayoutStyle>
+                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-87"/>
+              </sf:SFTCellStylePropertyLayoutStyle>
+            </sf:property-map>
+          </sf:cell-style>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-211" sf:parent-ident="level2HeadlineParagraphStyleID">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-50" sf:parent-ident="tabular-default-footer-cell-layout-style-id">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-286" sf:parent-ident="stickyNoteLayoutStyleID">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:graphic-style sfa:ID="SFDGraphicStyle-109" sf:parent-ident="stickyNoteStyleID">
+            <sf:property-map/>
+          </sf:graphic-style>
           <sf:characterstyle sfa:ID="SFWPCharacterStyle-20" sf:parent-ident="character-style-null">
             <sf:property-map>
               <sf:bold>
@@ -19287,115 +19288,69 @@
               </sf:bold>
             </sf:property-map>
           </sf:characterstyle>
-          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-86" sf:parent-ident="tabular-default-grl-4-cell-layout-style-id">
-            <sf:property-map/>
-          </sf:layoutstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-46" sf:parent-ident="tabular-default-grl-4-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-141"/>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-86"/>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
-          <sf:vector-style sfa:ID="SFTVectorStyle-60" sf:parent-ident="tabular-default-header-separator-vector-style-id">
+          <sf:vector-style sfa:ID="SFTVectorStyle-63" sf:parent-ident="tabular-default-grl-3-vector-style-id">
             <sf:property-map/>
           </sf:vector-style>
-          <sf:cell-style sfa:ID="SFTCellStyle-47" sf:parent-ident="tabular-default-grl-2-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-151"/>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-87" sf:parent-ident="tabular-default-grl-2-cell-layout-style-id">
-                  <sf:property-map/>
-                </sf:layoutstyle>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
-          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-89" sf:parent-ident="tabular-default-grl-1-cell-layout-style-id">
-            <sf:property-map/>
-          </sf:layoutstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-41" sf:parent-ident="tabular-default-body-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-134"/>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-52"/>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
+          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-133"/>
           <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-209" sf:parent-ident="slideNotesParagraphStyleID">
             <sf:property-map/>
           </sf:paragraphstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-48" sf:parent-ident="tabular-default-grl-1-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-133"/>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-89"/>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
-          <sf:vector-style sfa:ID="SFTVectorStyle-61" sf:parent-ident="tabular-default-grl-0-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-208" sf:parent-ident="titleHeadlineParagraphStyleID">
-            <sf:property-map/>
-          </sf:paragraphstyle>
-          <sf:vector-style sfa:ID="SFTVectorStyle-68" sf:parent-ident="tabular-default-footer-border-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
-          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-54" sf:parent-ident="tabular-default-header-col-cell-layout-style-id">
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-86" sf:parent-ident="tabular-default-grl-4-cell-layout-style-id">
             <sf:property-map/>
           </sf:layoutstyle>
-          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-103" sf:parent-ident="titlePlaceholderLayoutStyleID">
-            <sf:property-map/>
-          </sf:layoutstyle>
-          <sf:cell-style sfa:ID="SFTCellStyle-44" sf:parent-ident="tabular-default-body-cell-style-id">
-            <sf:property-map>
-              <sf:SFTCellStylePropertyParagraphStyle>
-                <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-137"/>
-              </sf:SFTCellStylePropertyParagraphStyle>
-              <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-52"/>
-              </sf:SFTCellStylePropertyLayoutStyle>
-            </sf:property-map>
-          </sf:cell-style>
-          <sf:vector-style sfa:ID="SFTVectorStyle-58" sf:parent-ident="tabular-default-body-vector-style-id">
-            <sf:property-map/>
-          </sf:vector-style>
           <sf:cell-style sfa:ID="SFTCellStyle-43" sf:parent-ident="tabular-default-header-column-cell-style-id">
             <sf:property-map>
               <sf:SFTCellStylePropertyParagraphStyle>
                 <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-136"/>
               </sf:SFTCellStylePropertyParagraphStyle>
               <sf:SFTCellStylePropertyLayoutStyle>
-                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-54"/>
+                <sf:layoutstyle sfa:ID="SFWPLayoutStyle-54" sf:parent-ident="tabular-default-header-col-cell-layout-style-id">
+                  <sf:property-map/>
+                </sf:layoutstyle>
               </sf:SFTCellStylePropertyLayoutStyle>
             </sf:property-map>
           </sf:cell-style>
-          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-53"/>
+          <sf:cell-style sfa:ID="SFTCellStyle-45" sf:parent-ident="tabular-default-header-row-cell-style-id">
+            <sf:property-map>
+              <sf:SFTCellStylePropertyParagraphStyle>
+                <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-140" sf:parent-ident="tabular-default-header-row-cell-paragraph-style-id">
+                  <sf:property-map/>
+                </sf:paragraphstyle>
+              </sf:SFTCellStylePropertyParagraphStyle>
+              <sf:SFTCellStylePropertyLayoutStyle>
+                <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-51"/>
+              </sf:SFTCellStylePropertyLayoutStyle>
+            </sf:property-map>
+          </sf:cell-style>
           <sf:tabular-style sfa:ID="SFTTableStyle-5" sf:parent-ident="tabular-default-style-id">
             <sf:property-map>
               <sf:SFTDefaultHeaderSeparatorVectorStyleProperty>
-                <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-60"/>
+                <sf:vector-style sfa:ID="SFTVectorStyle-60" sf:parent-ident="tabular-default-header-separator-vector-style-id">
+                  <sf:property-map/>
+                </sf:vector-style>
               </sf:SFTDefaultHeaderSeparatorVectorStyleProperty>
               <sf:SFTDefaultGroupingLevel0VectorStyleProperty>
                 <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-61"/>
               </sf:SFTDefaultGroupingLevel0VectorStyleProperty>
               <sf:SFTDefaultFooterBodyVectorStyleProperty>
-                <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-62"/>
+                <sf:vector-style sfa:ID="SFTVectorStyle-62" sf:parent-ident="tabular-default-footer-body-vector-style-id">
+                  <sf:property-map/>
+                </sf:vector-style>
               </sf:SFTDefaultFooterBodyVectorStyleProperty>
               <sf:SFTDefaultHeaderBodyVectorStyleProperty>
                 <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-57"/>
               </sf:SFTDefaultHeaderBodyVectorStyleProperty>
               <sf:SFTDefaultBodyCellStyleProperty>
-                <sf:cell-style-ref sfa:IDREF="SFTCellStyle-44"/>
+                <sf:cell-style sfa:ID="SFTCellStyle-44" sf:parent-ident="tabular-default-body-cell-style-id">
+                  <sf:property-map>
+                    <sf:SFTCellStylePropertyParagraphStyle>
+                      <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-137"/>
+                    </sf:SFTCellStylePropertyParagraphStyle>
+                    <sf:SFTCellStylePropertyLayoutStyle>
+                      <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-52"/>
+                    </sf:SFTCellStylePropertyLayoutStyle>
+                  </sf:property-map>
+                </sf:cell-style>
               </sf:SFTDefaultBodyCellStyleProperty>
               <sf:SFTDefaultBodyVectorStyleProperty>
                 <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-58"/>
@@ -19410,16 +19365,40 @@
                 <sf:cell-style-ref sfa:IDREF="SFTCellStyle-45"/>
               </sf:SFTDefaultHeaderRowCellStyleProperty>
               <sf:SFTDefaultGroupingRow4CellStyleProperty>
-                <sf:cell-style-ref sfa:IDREF="SFTCellStyle-46"/>
+                <sf:cell-style sfa:ID="SFTCellStyle-46" sf:parent-ident="tabular-default-grl-4-cell-style-id">
+                  <sf:property-map>
+                    <sf:SFTCellStylePropertyParagraphStyle>
+                      <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-141"/>
+                    </sf:SFTCellStylePropertyParagraphStyle>
+                    <sf:SFTCellStylePropertyLayoutStyle>
+                      <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-86"/>
+                    </sf:SFTCellStylePropertyLayoutStyle>
+                  </sf:property-map>
+                </sf:cell-style>
               </sf:SFTDefaultGroupingRow4CellStyleProperty>
               <sf:SFTDefaultGroupingLevel4VectorStyleProperty>
-                <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-66"/>
+                <sf:vector-style sfa:ID="SFTVectorStyle-66" sf:parent-ident="tabular-default-grl-4-vector-style-id">
+                  <sf:property-map/>
+                </sf:vector-style>
               </sf:SFTDefaultGroupingLevel4VectorStyleProperty>
               <sf:SFTDefaultFooterSeparatorVectorStyleProperty>
-                <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-64"/>
+                <sf:vector-style sfa:ID="SFTVectorStyle-64" sf:parent-ident="tabular-default-footer-separator-vector-style-id">
+                  <sf:property-map/>
+                </sf:vector-style>
               </sf:SFTDefaultFooterSeparatorVectorStyleProperty>
               <sf:SFTDefaultGroupingRow3CellStyleProperty>
-                <sf:cell-style-ref sfa:IDREF="SFTCellStyle-42"/>
+                <sf:cell-style sfa:ID="SFTCellStyle-42" sf:parent-ident="tabular-default-grl-3-cell-style-id">
+                  <sf:property-map>
+                    <sf:SFTCellStylePropertyParagraphStyle>
+                      <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-135"/>
+                    </sf:SFTCellStylePropertyParagraphStyle>
+                    <sf:SFTCellStylePropertyLayoutStyle>
+                      <sf:layoutstyle sfa:ID="SFWPLayoutStyle-53" sf:parent-ident="tabular-default-grl-3-cell-layout-style-id">
+                        <sf:property-map/>
+                      </sf:layoutstyle>
+                    </sf:SFTCellStylePropertyLayoutStyle>
+                  </sf:property-map>
+                </sf:cell-style>
               </sf:SFTDefaultGroupingRow3CellStyleProperty>
               <sf:SFTDefaultGroupingLevel1VectorStyleProperty>
                 <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-65"/>
@@ -19443,7 +19422,16 @@
                 <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-68"/>
               </sf:SFTDefaultFooterBorderVectorStyleProperty>
               <sf:SFTDefaultFooterRowCellStyleProperty>
-                <sf:cell-style-ref sfa:IDREF="SFTCellStyle-50"/>
+                <sf:cell-style sfa:ID="SFTCellStyle-50" sf:parent-ident="tabular-default-footer-row-cell-style-id">
+                  <sf:property-map>
+                    <sf:SFTCellStylePropertyParagraphStyle>
+                      <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-184"/>
+                    </sf:SFTCellStylePropertyParagraphStyle>
+                    <sf:SFTCellStylePropertyLayoutStyle>
+                      <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-50"/>
+                    </sf:SFTCellStylePropertyLayoutStyle>
+                  </sf:property-map>
+                </sf:cell-style>
               </sf:SFTDefaultFooterRowCellStyleProperty>
               <sf:SFTDefaultHeaderBorderVectorStyleProperty>
                 <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-59"/>
@@ -19453,8 +19441,29 @@
               </sf:SFTDefaultBorderVectorStyleProperty>
             </sf:property-map>
           </sf:tabular-style>
-          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-87"/>
-          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-172"/>
+          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-54"/>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-208" sf:parent-ident="titleHeadlineParagraphStyleID">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-151"/>
+          <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-66"/>
+          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-134"/>
+          <sf:cell-style-ref sfa:IDREF="SFTCellStyle-42"/>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-103" sf:parent-ident="titlePlaceholderLayoutStyleID">
+            <sf:property-map/>
+          </sf:layoutstyle>
+          <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-64"/>
+          <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-60"/>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-436" sf:parent-ident="stickyNoteParagraphStyleID">
+            <sf:property-map/>
+          </sf:paragraphstyle>
+          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-53"/>
+          <sf:cell-style-ref sfa:IDREF="SFTCellStyle-50"/>
+          <sf:layoutstyle-ref sfa:IDREF="SFWPLayoutStyle-89"/>
+          <sf:vector-style-ref sfa:IDREF="SFTVectorStyle-62"/>
+          <sf:cell-style-ref sfa:IDREF="SFTCellStyle-44"/>
+          <sf:paragraphstyle-ref sfa:IDREF="SFWPParagraphStyle-140"/>
+          <sf:cell-style-ref sfa:IDREF="SFTCellStyle-46"/>
         </sf:anon-styles>
         <sf:parent-ref sfa:IDREF="SFSStylesheet-1"/>
       </key:stylesheet>
@@ -19523,23 +19532,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-2412">
           <sf:layer sfa:ID="SFDLayerInfo-22">
-            <sf:type sfa:ID="NSArray-15448">
+            <sf:type sfa:ID="NSArray-15912">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15719"/>
+            <sf:drawables sfa:ID="NSMutableArray-16190"/>
             <sf:guides sfa:ID="NSMutableSet-22"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-9">
-            <sf:type sfa:ID="NSArray-15449">
+            <sf:type sfa:ID="NSArray-15913">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-23">
-            <sf:type sfa:ID="NSArray-15450">
+            <sf:type sfa:ID="NSArray-15914">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15720">
+            <sf:drawables sfa:ID="NSMutableArray-16191">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-11"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-11"/>
               <sf:tabular-info sfa:ID="SFTTableInfo-2">
@@ -19654,24 +19663,47 @@
                   <sf:filterset sfa:ID="SFTTableFilterSet-0" sf:type="0" sf:enabled="false" sf:spec-count="1">
                     <sf:filterspec sfa:ID="SFTTableFilterSpec-0" sf:filter-col="65535" sf:predicate="0" sf:keyscale="0" sf:key1=""/>
                   </sf:filterset>
-                  <sf:cell-comment-mapping sfa:ID="NSMutableDictionary-615"/>
-                  <sf:error_warning_mapping sfa:ID="NSMutableDictionary-616"/>
+                  <sf:cell-comment-mapping sfa:ID="NSMutableDictionary-633"/>
+                  <sf:error_warning_mapping sfa:ID="NSMutableDictionary-634"/>
                 </sf:tabular-model>
               </sf:tabular-info>
+              <sf:sticky-note sfa:ID="SFDStickyNoteInfo-5">
+                <sf:geometry sfa:ID="SFDAffineGeometry-358" sf:sizesLocked="true">
+                  <sf:naturalSize sfa:w="210" sfa:h="184.18617248535156"/>
+                  <sf:size sfa:w="210" sfa:h="184.18617248535156"/>
+                  <sf:position sfa:x="412" sfa:y="337"/>
+                </sf:geometry>
+                <sf:style>
+                  <sf:graphic-style-ref sfa:IDREF="SFDGraphicStyle-109"/>
+                </sf:style>
+                <sf:path>
+                  <sf:bezier-path sfa:ID="SFDBezierPathSource-56">
+                    <sf:bezier sfa:ID="NSBezierPath-81" sfa:path="M 2 0 L 205 0 C 205 0 204.5 143.75 210 180 C 119.25 187.25 6.75 183.25 0 181.5 C 3.25 165.5 2 0 2 0 Z M 2 0"/>
+                  </sf:bezier-path>
+                </sf:path>
+                <sf:text sfa:ID="SFWPFrame-173" sf:layoutstyle="SFWPLayoutStyle-286">
+                  <sf:text-storage sfa:ID="SFWPStorage-173" sf:kind="textbox" sf:excl="G">
+                    <sf:stylesheet-ref sfa:IDREF="SFSStylesheet-12"/>
+                    <sf:text-body>
+                      <sf:p sf:style="SFWPParagraphStyle-436">Split this into several slides or maybe a build.</sf:p>
+                    </sf:text-body>
+                  </sf:text-storage>
+                </sf:text>
+              </sf:sticky-note>
             </sf:drawables>
             <sf:guides sfa:ID="NSMutableSet-23"/>
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15451">
+      <key:thumbnails sfa:ID="NSArray-15915">
         <key:binary sfa:ID="SFRImageBinary-19">
           <sf:size sfa:w="60" sfa:h="45"/>
-          <sf:data sfa:ID="SFEData-19" sf:path="thumbs/st9.jpg" sf:displayname="thumbs/st9.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8539"/>
+          <sf:data sfa:ID="SFEData-19" sf:path="thumbs/st9.jpg" sf:displayname="thumbs/st9.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8635"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15721"/>
+      <key:events sfa:ID="NSMutableArray-16192"/>
       <key:sticky-notes sfa:ID="NSMutableArray-2416"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15722"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16193"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-34" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-34" sf:kind="note" sf:excl="G">
@@ -19926,23 +19958,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-3220">
           <sf:layer sfa:ID="SFDLayerInfo-24">
-            <sf:type sfa:ID="NSArray-15452">
+            <sf:type sfa:ID="NSArray-15916">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15723"/>
+            <sf:drawables sfa:ID="NSMutableArray-16194"/>
             <sf:guides sfa:ID="NSMutableSet-24"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-10">
-            <sf:type sfa:ID="NSArray-15453">
+            <sf:type sfa:ID="NSArray-15917">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-25">
-            <sf:type sfa:ID="NSArray-15454">
+            <sf:type sfa:ID="NSArray-15918">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15724">
+            <sf:drawables sfa:ID="NSMutableArray-16195">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-12"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-12"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-12"/>
@@ -19951,15 +19983,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15455">
+      <key:thumbnails sfa:ID="NSArray-15919">
         <key:binary sfa:ID="SFRImageBinary-20">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-20" sf:path="thumbs/st9-1.jpg" sf:displayname="thumbs/st9.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7792"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15725"/>
+      <key:events sfa:ID="NSMutableArray-16196"/>
       <key:sticky-notes sfa:ID="NSMutableArray-3224"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15726"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16197"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-37" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-37" sf:kind="note" sf:excl="G">
@@ -20308,6 +20340,9 @@
               </sf:fill>
             </sf:property-map>
           </sf:graphic-style>
+          <sf:graphic-style sfa:ID="SFDGraphicStyle-111" sf:parent-ident="stickyNoteStyleID">
+            <sf:property-map/>
+          </sf:graphic-style>
           <sf:layoutstyle sfa:ID="SFWPLayoutStyle-277" sf:parent-ident="textboxLayoutStyleID">
             <sf:property-map/>
           </sf:layoutstyle>
@@ -20435,23 +20470,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-14472">
           <sf:layer sfa:ID="SFDLayerInfo-72">
-            <sf:type sfa:ID="NSArray-15456">
+            <sf:type sfa:ID="NSArray-15920">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15727"/>
+            <sf:drawables sfa:ID="NSMutableArray-16198"/>
             <sf:guides sfa:ID="NSMutableSet-72"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-34">
-            <sf:type sfa:ID="NSArray-15457">
+            <sf:type sfa:ID="NSArray-15921">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-73">
-            <sf:type sfa:ID="NSArray-15458">
+            <sf:type sfa:ID="NSArray-15922">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15728">
+            <sf:drawables sfa:ID="NSMutableArray-16199">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-36"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-36"/>
               <sf:group sfa:ID="SFDGroupInfo-4">
@@ -20494,7 +20529,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-5">
-                      <sf:bezier sfa:ID="SFRBezierPath-324" sfa:path="M 0 56.069522857666016 L 20.99998664855957 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-348" sfa:path="M 0 56.069522857666016 L 20.99998664855957 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-156" sf:layoutstyle="SFWPLayoutStyle-280">
@@ -20517,7 +20552,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-6">
-                      <sf:bezier sfa:ID="SFRBezierPath-325" sfa:path="M 1.6898179054260254 62.122989654541016 L 0 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-349" sfa:path="M 1.6898179054260254 62.122989654541016 L 0 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-157" sf:layoutstyle="SFWPLayoutStyle-280">
@@ -20540,7 +20575,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-7">
-                      <sf:bezier sfa:ID="SFRBezierPath-326" sfa:path="M 8.379694938659668 56.791439056396484 L 0 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-350" sfa:path="M 8.379694938659668 56.791439056396484 L 0 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-158" sf:layoutstyle="SFWPLayoutStyle-280">
@@ -20747,7 +20782,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-11">
-                      <sf:bezier sfa:ID="SFRBezierPath-327" sfa:path="M 0 56.946533203125 L 21.256654739379883 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-351" sfa:path="M 0 56.946533203125 L 21.256654739379883 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-168" sf:layoutstyle="SFWPLayoutStyle-280">
@@ -20770,7 +20805,7 @@
                   </sf:style>
                   <sf:path>
                     <sf:editable-bezier-path sfa:ID="SFDEditableBezierPathSource-12">
-                      <sf:bezier sfa:ID="SFRBezierPath-328" sfa:path="M 0 56.310165405273438 L 95.684516906738281 0"/>
+                      <sf:bezier sfa:ID="SFRBezierPath-352" sfa:path="M 0 56.310165405273438 L 95.684516906738281 0"/>
                     </sf:editable-bezier-path>
                   </sf:path>
                   <sf:text sfa:ID="SFWPFrame-171" sf:layoutstyle="SFWPLayoutStyle-280">
@@ -20806,20 +20841,43 @@
                   </sf:text-storage>
                 </sf:text>
               </sf:sticky-note>
+              <sf:sticky-note sfa:ID="SFDStickyNoteInfo-7">
+                <sf:geometry sfa:ID="SFDAffineGeometry-361" sf:sizesLocked="true">
+                  <sf:naturalSize sfa:w="210" sfa:h="184.18617248535156"/>
+                  <sf:size sfa:w="210" sfa:h="184.18617248535156"/>
+                  <sf:position sfa:x="470" sfa:y="158"/>
+                </sf:geometry>
+                <sf:style>
+                  <sf:graphic-style-ref sfa:IDREF="SFDGraphicStyle-111"/>
+                </sf:style>
+                <sf:path>
+                  <sf:bezier-path sfa:ID="SFDBezierPathSource-58">
+                    <sf:bezier sfa:ID="NSBezierPath-83" sfa:path="M 2 0 L 205 0 C 205 0 204.5 143.75 210 180 C 119.25 187.25 6.75 183.25 0 181.5 C 3.25 165.5 2 0 2 0 Z M 2 0"/>
+                  </sf:bezier-path>
+                </sf:path>
+                <sf:text sfa:ID="SFWPFrame-175" sf:layoutstyle="SFWPLayoutStyle-284">
+                  <sf:text-storage sfa:ID="SFWPStorage-175" sf:kind="textbox" sf:excl="G">
+                    <sf:stylesheet-ref sfa:IDREF="SFSStylesheet-37"/>
+                    <sf:text-body>
+                      <sf:p sf:style="SFWPParagraphStyle-435">Build?</sf:p>
+                    </sf:text-body>
+                  </sf:text-storage>
+                </sf:text>
+              </sf:sticky-note>
             </sf:drawables>
             <sf:guides sfa:ID="NSMutableSet-73"/>
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15459">
+      <key:thumbnails sfa:ID="NSArray-15923">
         <key:binary sfa:ID="SFRImageBinary-46">
           <sf:size sfa:w="60" sfa:h="45"/>
-          <sf:data sfa:ID="SFEData-46" sf:path="thumbs/st11-1.jpg" sf:displayname="thumbs/st11.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8421"/>
+          <sf:data sfa:ID="SFEData-46" sf:path="thumbs/st11-1.jpg" sf:displayname="thumbs/st11.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8576"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15729"/>
+      <key:events sfa:ID="NSMutableArray-16200"/>
       <key:sticky-notes sfa:ID="NSMutableArray-14476"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15730"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16201"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-162" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-162" sf:kind="note" sf:excl="G">
@@ -21433,23 +21491,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-3376">
           <sf:layer sfa:ID="SFDLayerInfo-26">
-            <sf:type sfa:ID="NSArray-15460">
+            <sf:type sfa:ID="NSArray-15924">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15731"/>
+            <sf:drawables sfa:ID="NSMutableArray-16202"/>
             <sf:guides sfa:ID="NSMutableSet-26"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-11">
-            <sf:type sfa:ID="NSArray-15461">
+            <sf:type sfa:ID="NSArray-15925">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-27">
-            <sf:type sfa:ID="NSArray-15462">
+            <sf:type sfa:ID="NSArray-15926">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15732">
+            <sf:drawables sfa:ID="NSMutableArray-16203">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-13"/>
               <sf:shape sfa:ID="BGShapeInfo-4">
                 <sf:geometry sfa:ID="SFDAffineGeometry-73" sf:sizesLocked="true">
@@ -21584,15 +21642,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15463">
+      <key:thumbnails sfa:ID="NSArray-15927">
         <key:binary sfa:ID="SFRImageBinary-21">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-21" sf:path="thumbs/st2-15.jpg" sf:displayname="thumbs/st2.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7876"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15733"/>
+      <key:events sfa:ID="NSMutableArray-16204"/>
       <key:sticky-notes sfa:ID="NSMutableArray-3380"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15734"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16205"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-42" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-42" sf:kind="note">
@@ -21783,6 +21841,9 @@
           <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-239" sf:parent-ident="slideNotesParagraphStyleID">
             <sf:property-map/>
           </sf:paragraphstyle>
+          <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-437" sf:parent-ident="stickyNoteParagraphStyleID">
+            <sf:property-map/>
+          </sf:paragraphstyle>
           <sf:graphic-style sfa:ID="SFDGraphicStyle-43" sf:parent-ident="textboxStyleID">
             <sf:property-map/>
           </sf:graphic-style>
@@ -21847,6 +21908,9 @@
               </sf:underline>
             </sf:property-map>
           </sf:characterstyle>
+          <sf:layoutstyle sfa:ID="SFWPLayoutStyle-288" sf:parent-ident="stickyNoteLayoutStyleID">
+            <sf:property-map/>
+          </sf:layoutstyle>
           <sf:graphic-style sfa:ID="SFDGraphicStyle-44" sf:parent-ident="textboxStyleID">
             <sf:property-map/>
           </sf:graphic-style>
@@ -21886,6 +21950,9 @@
           <sf:layoutstyle sfa:ID="SFWPLayoutStyle-126" sf:parent-ident="titlePlaceholderLayoutStyleID">
             <sf:property-map/>
           </sf:layoutstyle>
+          <sf:graphic-style sfa:ID="SFDGraphicStyle-110" sf:parent-ident="stickyNoteStyleID">
+            <sf:property-map/>
+          </sf:graphic-style>
           <sf:paragraphstyle sfa:ID="SFWPParagraphStyle-236" sf:parent-ident="level1HeadlineParagraphStyleID">
             <sf:property-map/>
           </sf:paragraphstyle>
@@ -21957,27 +22024,27 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-3721">
           <sf:layer sfa:ID="SFDLayerInfo-30">
-            <sf:type sfa:ID="NSArray-15464">
+            <sf:type sfa:ID="NSArray-15928">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15735"/>
+            <sf:drawables sfa:ID="NSMutableArray-16206"/>
             <sf:guides sfa:ID="NSMutableSet-30"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-13">
-            <sf:type sfa:ID="NSArray-15465">
+            <sf:type sfa:ID="NSArray-15929">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-31">
-            <sf:type sfa:ID="NSArray-15466">
+            <sf:type sfa:ID="NSArray-15930">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15736">
+            <sf:drawables sfa:ID="NSMutableArray-16207">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-15"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-15"/>
               <sf:shape sfa:ID="BGShapeInfo-6" can-autosize-v="true">
-                <sf:geometry sfa:ID="SFDAffineGeometry-94" sf:sizesLocked="true">
+                <sf:geometry sfa:ID="SFDAffineGeometry-359" sf:sizesLocked="true">
                   <sf:naturalSize sfa:w="643" sfa:h="372"/>
                   <sf:size sfa:w="643" sfa:h="372"/>
                   <sf:position sfa:x="48" sfa:y="131"/>
@@ -22049,20 +22116,43 @@
                   </sf:text-storage>
                 </sf:text>
               </sf:shape>
+              <sf:sticky-note sfa:ID="SFDStickyNoteInfo-6">
+                <sf:geometry sfa:ID="SFDAffineGeometry-360" sf:sizesLocked="true">
+                  <sf:naturalSize sfa:w="210" sfa:h="184.18617248535156"/>
+                  <sf:size sfa:w="210" sfa:h="184.18617248535156"/>
+                  <sf:position sfa:x="442" sfa:y="43"/>
+                </sf:geometry>
+                <sf:style>
+                  <sf:graphic-style-ref sfa:IDREF="SFDGraphicStyle-110"/>
+                </sf:style>
+                <sf:path>
+                  <sf:bezier-path sfa:ID="SFDBezierPathSource-57">
+                    <sf:bezier sfa:ID="NSBezierPath-82" sfa:path="M 2 0 L 205 0 C 205 0 204.5 143.75 210 180 C 119.25 187.25 6.75 183.25 0 181.5 C 3.25 165.5 2 0 2 0 Z M 2 0"/>
+                  </sf:bezier-path>
+                </sf:path>
+                <sf:text sfa:ID="SFWPFrame-174" sf:layoutstyle="SFWPLayoutStyle-288">
+                  <sf:text-storage sfa:ID="SFWPStorage-174" sf:kind="textbox" sf:excl="G">
+                    <sf:stylesheet-ref sfa:IDREF="SFSStylesheet-16"/>
+                    <sf:text-body>
+                      <sf:p sf:style="SFWPParagraphStyle-437">Use RAX instead of RS</sf:p>
+                    </sf:text-body>
+                  </sf:text-storage>
+                </sf:text>
+              </sf:sticky-note>
             </sf:drawables>
             <sf:guides sfa:ID="NSMutableSet-31"/>
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15467">
+      <key:thumbnails sfa:ID="NSArray-15931">
         <key:binary sfa:ID="SFRImageBinary-25">
           <sf:size sfa:w="60" sfa:h="45"/>
-          <sf:data sfa:ID="SFEData-25" sf:path="thumbs/st12.jpg" sf:displayname="thumbs/st12.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8334"/>
+          <sf:data sfa:ID="SFEData-25" sf:path="thumbs/st12.jpg" sf:displayname="thumbs/st12.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8504"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15737"/>
+      <key:events sfa:ID="NSMutableArray-16208"/>
       <key:sticky-notes sfa:ID="NSMutableArray-3725"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15738"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16209"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-49" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-49" sf:kind="note" sf:excl="G">
@@ -22509,23 +22599,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-4098">
           <sf:layer sfa:ID="SFDLayerInfo-32">
-            <sf:type sfa:ID="NSArray-15468">
+            <sf:type sfa:ID="NSArray-15932">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15739"/>
+            <sf:drawables sfa:ID="NSMutableArray-16210"/>
             <sf:guides sfa:ID="NSMutableSet-32"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-14">
-            <sf:type sfa:ID="NSArray-15469">
+            <sf:type sfa:ID="NSArray-15933">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-33">
-            <sf:type sfa:ID="NSArray-15470">
+            <sf:type sfa:ID="NSArray-15934">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15740">
+            <sf:drawables sfa:ID="NSMutableArray-16211">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-16"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-16"/>
               <sf:shape sfa:ID="BGShapeInfo-8" can-autosize-v="true">
@@ -22654,15 +22744,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15471">
+      <key:thumbnails sfa:ID="NSArray-15935">
         <key:binary sfa:ID="SFRImageBinary-26">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-26" sf:path="thumbs/st12-1.jpg" sf:displayname="thumbs/st12.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8054"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15741"/>
+      <key:events sfa:ID="NSMutableArray-16212"/>
       <key:sticky-notes sfa:ID="NSMutableArray-4102"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15742"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16213"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-55" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-55" sf:kind="note" sf:excl="G">
@@ -23102,23 +23192,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-4302">
           <sf:layer sfa:ID="SFDLayerInfo-34">
-            <sf:type sfa:ID="NSArray-15472">
+            <sf:type sfa:ID="NSArray-15936">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15743"/>
+            <sf:drawables sfa:ID="NSMutableArray-16214"/>
             <sf:guides sfa:ID="NSMutableSet-34"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-15">
-            <sf:type sfa:ID="NSArray-15473">
+            <sf:type sfa:ID="NSArray-15937">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-35">
-            <sf:type sfa:ID="NSArray-15474">
+            <sf:type sfa:ID="NSArray-15938">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15744">
+            <sf:drawables sfa:ID="NSMutableArray-16215">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-17"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-17"/>
               <sf:shape sfa:ID="BGShapeInfo-12" can-autosize-v="true">
@@ -23225,15 +23315,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15475">
+      <key:thumbnails sfa:ID="NSArray-15939">
         <key:binary sfa:ID="SFRImageBinary-27">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-27" sf:path="thumbs/st12-2.jpg" sf:displayname="thumbs/st12.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8106"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15745"/>
+      <key:events sfa:ID="NSMutableArray-16216"/>
       <key:sticky-notes sfa:ID="NSMutableArray-4306"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15746"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16217"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-63" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-63" sf:kind="note" sf:excl="G">
@@ -23673,23 +23763,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-4380">
           <sf:layer sfa:ID="SFDLayerInfo-36">
-            <sf:type sfa:ID="NSArray-15476">
+            <sf:type sfa:ID="NSArray-15940">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15747"/>
+            <sf:drawables sfa:ID="NSMutableArray-16218"/>
             <sf:guides sfa:ID="NSMutableSet-36"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-16">
-            <sf:type sfa:ID="NSArray-15477">
+            <sf:type sfa:ID="NSArray-15941">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-37">
-            <sf:type sfa:ID="NSArray-15478">
+            <sf:type sfa:ID="NSArray-15942">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15748">
+            <sf:drawables sfa:ID="NSMutableArray-16219">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-18"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-18"/>
               <sf:shape sfa:ID="BGShapeInfo-15" can-autosize-v="true">
@@ -23794,15 +23884,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15479">
+      <key:thumbnails sfa:ID="NSArray-15943">
         <key:binary sfa:ID="SFRImageBinary-28">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-28" sf:path="thumbs/st12-3.jpg" sf:displayname="thumbs/st12.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8018"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15749"/>
+      <key:events sfa:ID="NSMutableArray-16220"/>
       <key:sticky-notes sfa:ID="NSMutableArray-4384"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15750"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16221"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-69" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-69" sf:kind="note" sf:excl="G">
@@ -24242,23 +24332,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-4534">
           <sf:layer sfa:ID="SFDLayerInfo-38">
-            <sf:type sfa:ID="NSArray-15480">
+            <sf:type sfa:ID="NSArray-15944">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15751"/>
+            <sf:drawables sfa:ID="NSMutableArray-16222"/>
             <sf:guides sfa:ID="NSMutableSet-38"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-17">
-            <sf:type sfa:ID="NSArray-15481">
+            <sf:type sfa:ID="NSArray-15945">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-39">
-            <sf:type sfa:ID="NSArray-15482">
+            <sf:type sfa:ID="NSArray-15946">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15752">
+            <sf:drawables sfa:ID="NSMutableArray-16223">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-19"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-19"/>
               <sf:shape sfa:ID="BGShapeInfo-18" can-autosize-v="true">
@@ -24369,15 +24459,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15483">
+      <key:thumbnails sfa:ID="NSArray-15947">
         <key:binary sfa:ID="SFRImageBinary-29">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-29" sf:path="thumbs/st12-4.jpg" sf:displayname="thumbs/st12.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7987"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15753"/>
+      <key:events sfa:ID="NSMutableArray-16224"/>
       <key:sticky-notes sfa:ID="NSMutableArray-4538"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15754"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16225"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-75" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-75" sf:kind="note" sf:excl="G">
@@ -24935,23 +25025,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-4771">
           <sf:layer sfa:ID="SFDLayerInfo-40">
-            <sf:type sfa:ID="NSArray-15484">
+            <sf:type sfa:ID="NSArray-15948">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15755"/>
+            <sf:drawables sfa:ID="NSMutableArray-16226"/>
             <sf:guides sfa:ID="NSMutableSet-40"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-18">
-            <sf:type sfa:ID="NSArray-15485">
+            <sf:type sfa:ID="NSArray-15949">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-41">
-            <sf:type sfa:ID="NSArray-15486">
+            <sf:type sfa:ID="NSArray-15950">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15756">
+            <sf:drawables sfa:ID="NSMutableArray-16227">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-20"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-20"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-20"/>
@@ -25040,8 +25130,8 @@
                   <sf:filterset sfa:ID="SFTTableFilterSet-1" sf:type="0" sf:enabled="false" sf:spec-count="1">
                     <sf:filterspec sfa:ID="SFTTableFilterSpec-1" sf:filter-col="65535" sf:predicate="0" sf:keyscale="0" sf:key1=""/>
                   </sf:filterset>
-                  <sf:cell-comment-mapping sfa:ID="NSMutableDictionary-617"/>
-                  <sf:error_warning_mapping sfa:ID="NSMutableDictionary-618"/>
+                  <sf:cell-comment-mapping sfa:ID="NSMutableDictionary-635"/>
+                  <sf:error_warning_mapping sfa:ID="NSMutableDictionary-636"/>
                 </sf:tabular-model>
               </sf:tabular-info>
               <sf:shape sfa:ID="BGShapeInfo-2" can-autosize-v="true">
@@ -25074,15 +25164,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15487">
+      <key:thumbnails sfa:ID="NSArray-15951">
         <key:binary sfa:ID="SFRImageBinary-30">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-30" sf:path="thumbs/st17.jpg" sf:displayname="thumbs/st17.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8168"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15757"/>
+      <key:events sfa:ID="NSMutableArray-16228"/>
       <key:sticky-notes sfa:ID="NSMutableArray-4775"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15758"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16229"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-78" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-78" sf:kind="note" sf:excl="G">
@@ -25637,23 +25727,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-4945">
           <sf:layer sfa:ID="SFDLayerInfo-2">
-            <sf:type sfa:ID="NSArray-15488">
+            <sf:type sfa:ID="NSArray-15952">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15759"/>
+            <sf:drawables sfa:ID="NSMutableArray-16230"/>
             <sf:guides sfa:ID="NSMutableSet-2"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-0">
-            <sf:type sfa:ID="NSArray-15489">
+            <sf:type sfa:ID="NSArray-15953">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-3">
-            <sf:type sfa:ID="NSArray-15490">
+            <sf:type sfa:ID="NSArray-15954">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15760">
+            <sf:drawables sfa:ID="NSMutableArray-16231">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-2"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-2"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-2"/>
@@ -25765,8 +25855,8 @@
                   <sf:filterset sfa:ID="SFTTableFilterSet-2" sf:type="0" sf:enabled="false" sf:spec-count="1">
                     <sf:filterspec sfa:ID="SFTTableFilterSpec-2" sf:filter-col="65535" sf:predicate="0" sf:keyscale="0" sf:key1=""/>
                   </sf:filterset>
-                  <sf:cell-comment-mapping sfa:ID="NSMutableDictionary-619"/>
-                  <sf:error_warning_mapping sfa:ID="NSMutableDictionary-620"/>
+                  <sf:cell-comment-mapping sfa:ID="NSMutableDictionary-637"/>
+                  <sf:error_warning_mapping sfa:ID="NSMutableDictionary-638"/>
                 </sf:tabular-model>
               </sf:tabular-info>
             </sf:drawables>
@@ -25774,15 +25864,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15491">
+      <key:thumbnails sfa:ID="NSArray-15955">
         <key:binary sfa:ID="SFRImageBinary-11">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-11" sf:path="thumbs/st17-1.jpg" sf:displayname="thumbs/st17.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8107"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15761"/>
+      <key:events sfa:ID="NSMutableArray-16232"/>
       <key:sticky-notes sfa:ID="NSMutableArray-4949"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15762"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16233"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-3" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-3" sf:kind="note" sf:excl="G">
@@ -26078,23 +26168,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-5802">
           <sf:layer sfa:ID="SFDLayerInfo-18">
-            <sf:type sfa:ID="NSArray-15492">
+            <sf:type sfa:ID="NSArray-15956">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15763"/>
+            <sf:drawables sfa:ID="NSMutableArray-16234"/>
             <sf:guides sfa:ID="NSMutableSet-18"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-7">
-            <sf:type sfa:ID="NSArray-15493">
+            <sf:type sfa:ID="NSArray-15957">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-19">
-            <sf:type sfa:ID="NSArray-15494">
+            <sf:type sfa:ID="NSArray-15958">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15764">
+            <sf:drawables sfa:ID="NSMutableArray-16235">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-9"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-9"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-9"/>
@@ -26103,15 +26193,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15495">
+      <key:thumbnails sfa:ID="NSArray-15959">
         <key:binary sfa:ID="SFRImageBinary-18">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-18" sf:path="thumbs/st18-1.jpg" sf:displayname="thumbs/st18.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7820"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15765"/>
+      <key:events sfa:ID="NSMutableArray-16236"/>
       <key:sticky-notes sfa:ID="NSMutableArray-5807"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15766"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16237"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-24" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-24" sf:kind="note" sf:excl="G">
@@ -26374,23 +26464,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-3488">
           <sf:layer sfa:ID="SFDLayerInfo-28">
-            <sf:type sfa:ID="NSArray-15496">
+            <sf:type sfa:ID="NSArray-15960">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15767"/>
+            <sf:drawables sfa:ID="NSMutableArray-16238"/>
             <sf:guides sfa:ID="NSMutableSet-28"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-12">
-            <sf:type sfa:ID="NSArray-15497">
+            <sf:type sfa:ID="NSArray-15961">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-29">
-            <sf:type sfa:ID="NSArray-15498">
+            <sf:type sfa:ID="NSArray-15962">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15768">
+            <sf:drawables sfa:ID="NSMutableArray-16239">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-14"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-14"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-14"/>
@@ -26399,15 +26489,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15499">
+      <key:thumbnails sfa:ID="NSArray-15963">
         <key:binary sfa:ID="SFRImageBinary-24">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-24" sf:path="thumbs/st11.jpg" sf:displayname="thumbs/st11.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7842"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15769"/>
+      <key:events sfa:ID="NSMutableArray-16240"/>
       <key:sticky-notes sfa:ID="NSMutableArray-3492"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15770"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16241"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-45" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-45" sf:kind="note" sf:excl="G">
@@ -26719,23 +26809,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-5181">
           <sf:layer sfa:ID="SFDLayerInfo-42">
-            <sf:type sfa:ID="NSArray-15500">
+            <sf:type sfa:ID="NSArray-15964">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15771"/>
+            <sf:drawables sfa:ID="NSMutableArray-16242"/>
             <sf:guides sfa:ID="NSMutableSet-42"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-19">
-            <sf:type sfa:ID="NSArray-15501">
+            <sf:type sfa:ID="NSArray-15965">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-43">
-            <sf:type sfa:ID="NSArray-15502">
+            <sf:type sfa:ID="NSArray-15966">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15772">
+            <sf:drawables sfa:ID="NSMutableArray-16243">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-21"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-21"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-21"/>
@@ -26808,15 +26898,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15503">
+      <key:thumbnails sfa:ID="NSArray-15967">
         <key:binary sfa:ID="SFRImageBinary-31">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-31" sf:path="thumbs/st18.jpg" sf:displayname="thumbs/st18.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8115"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15773"/>
+      <key:events sfa:ID="NSMutableArray-16244"/>
       <key:sticky-notes sfa:ID="NSMutableArray-5185"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15774"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16245"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-81" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-81" sf:kind="note" sf:excl="G">
@@ -27108,23 +27198,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-5526">
           <sf:layer sfa:ID="SFDLayerInfo-44">
-            <sf:type sfa:ID="NSArray-15504">
+            <sf:type sfa:ID="NSArray-15968">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15775"/>
+            <sf:drawables sfa:ID="NSMutableArray-16246"/>
             <sf:guides sfa:ID="NSMutableSet-44"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-20">
-            <sf:type sfa:ID="NSArray-15505">
+            <sf:type sfa:ID="NSArray-15969">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-45">
-            <sf:type sfa:ID="NSArray-15506">
+            <sf:type sfa:ID="NSArray-15970">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15776">
+            <sf:drawables sfa:ID="NSMutableArray-16247">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-22"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-22"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-22"/>
@@ -27184,15 +27274,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15507">
+      <key:thumbnails sfa:ID="NSArray-15971">
         <key:binary sfa:ID="SFRImageBinary-32">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-32" sf:path="thumbs/st19.jpg" sf:displayname="thumbs/st19.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7909"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15777"/>
+      <key:events sfa:ID="NSMutableArray-16248"/>
       <key:sticky-notes sfa:ID="NSMutableArray-5530"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15778"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16249"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-86" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-86" sf:kind="note" sf:excl="G">
@@ -27486,23 +27576,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-5799">
           <sf:layer sfa:ID="SFDLayerInfo-46">
-            <sf:type sfa:ID="NSArray-15508">
+            <sf:type sfa:ID="NSArray-15972">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15779"/>
+            <sf:drawables sfa:ID="NSMutableArray-16250"/>
             <sf:guides sfa:ID="NSMutableSet-46"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-21">
-            <sf:type sfa:ID="NSArray-15509">
+            <sf:type sfa:ID="NSArray-15973">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-47">
-            <sf:type sfa:ID="NSArray-15510">
+            <sf:type sfa:ID="NSArray-15974">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15780">
+            <sf:drawables sfa:ID="NSMutableArray-16251">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-23"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-23"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-23"/>
@@ -27576,15 +27666,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15511">
+      <key:thumbnails sfa:ID="NSArray-15975">
         <key:binary sfa:ID="SFRImageBinary-33">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-33" sf:path="thumbs/st20.jpg" sf:displayname="thumbs/st20.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8174"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15781"/>
+      <key:events sfa:ID="NSMutableArray-16252"/>
       <key:sticky-notes sfa:ID="NSMutableArray-5803"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15782"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16253"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-91" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-91" sf:kind="note" sf:excl="G">
@@ -27847,23 +27937,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-6270">
           <sf:layer sfa:ID="SFDLayerInfo-48">
-            <sf:type sfa:ID="NSArray-15512">
+            <sf:type sfa:ID="NSArray-15976">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15783"/>
+            <sf:drawables sfa:ID="NSMutableArray-16254"/>
             <sf:guides sfa:ID="NSMutableSet-48"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-22">
-            <sf:type sfa:ID="NSArray-15513">
+            <sf:type sfa:ID="NSArray-15977">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-49">
-            <sf:type sfa:ID="NSArray-15514">
+            <sf:type sfa:ID="NSArray-15978">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15784">
+            <sf:drawables sfa:ID="NSMutableArray-16255">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-24"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-24"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-24"/>
@@ -27872,15 +27962,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15515">
+      <key:thumbnails sfa:ID="NSArray-15979">
         <key:binary sfa:ID="SFRImageBinary-34">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-34" sf:path="thumbs/st21.jpg" sf:displayname="thumbs/st21.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7916"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15785"/>
+      <key:events sfa:ID="NSMutableArray-16256"/>
       <key:sticky-notes sfa:ID="NSMutableArray-6274"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15786"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16257"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-96" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-96" sf:kind="note" sf:excl="G">
@@ -28494,23 +28584,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-6860">
           <sf:layer sfa:ID="SFDLayerInfo-50">
-            <sf:type sfa:ID="NSArray-15516">
+            <sf:type sfa:ID="NSArray-15980">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15787"/>
+            <sf:drawables sfa:ID="NSMutableArray-16258"/>
             <sf:guides sfa:ID="NSMutableSet-50"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-23">
-            <sf:type sfa:ID="NSArray-15517">
+            <sf:type sfa:ID="NSArray-15981">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-51">
-            <sf:type sfa:ID="NSArray-15518">
+            <sf:type sfa:ID="NSArray-15982">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15788">
+            <sf:drawables sfa:ID="NSMutableArray-16259">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-25"/>
               <sf:shape sfa:ID="BGShapeInfo-27">
                 <sf:geometry sfa:ID="SFDAffineGeometry-175" sf:sizesLocked="true">
@@ -28645,15 +28735,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15519">
+      <key:thumbnails sfa:ID="NSArray-15983">
         <key:binary sfa:ID="SFRImageBinary-35">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-35" sf:path="thumbs/st2-16.jpg" sf:displayname="thumbs/st2.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7877"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15789"/>
+      <key:events sfa:ID="NSMutableArray-16260"/>
       <key:sticky-notes sfa:ID="NSMutableArray-6864"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15790"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16261"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-101" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-101" sf:kind="note">
@@ -28931,23 +29021,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-8179">
           <sf:layer sfa:ID="SFDLayerInfo-68">
-            <sf:type sfa:ID="NSArray-15520">
+            <sf:type sfa:ID="NSArray-15984">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15791"/>
+            <sf:drawables sfa:ID="NSMutableArray-16262"/>
             <sf:guides sfa:ID="NSMutableSet-68"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-32">
-            <sf:type sfa:ID="NSArray-15521">
+            <sf:type sfa:ID="NSArray-15985">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-69">
-            <sf:type sfa:ID="NSArray-15522">
+            <sf:type sfa:ID="NSArray-15986">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15792">
+            <sf:drawables sfa:ID="NSMutableArray-16263">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-34"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-34"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-34"/>
@@ -28983,15 +29073,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15523">
+      <key:thumbnails sfa:ID="NSArray-15987">
         <key:binary sfa:ID="SFRImageBinary-44">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-44" sf:path="thumbs/st9-2.jpg" sf:displayname="thumbs/st9.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8363"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15793"/>
+      <key:events sfa:ID="NSMutableArray-16264"/>
       <key:sticky-notes sfa:ID="NSMutableArray-8183"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15794"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16265"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-150" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-150" sf:kind="note" sf:excl="G">
@@ -29254,23 +29344,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-8516">
           <sf:layer sfa:ID="SFDLayerInfo-54">
-            <sf:type sfa:ID="NSArray-15524">
+            <sf:type sfa:ID="NSArray-15988">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15795"/>
+            <sf:drawables sfa:ID="NSMutableArray-16266"/>
             <sf:guides sfa:ID="NSMutableSet-54"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-25">
-            <sf:type sfa:ID="NSArray-15525">
+            <sf:type sfa:ID="NSArray-15989">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-55">
-            <sf:type sfa:ID="NSArray-15526">
+            <sf:type sfa:ID="NSArray-15990">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15796">
+            <sf:drawables sfa:ID="NSMutableArray-16267">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-27"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-27"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-27"/>
@@ -29279,15 +29369,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15527">
+      <key:thumbnails sfa:ID="NSArray-15991">
         <key:binary sfa:ID="SFRImageBinary-37">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-37" sf:path="thumbs/st24.jpg" sf:displayname="thumbs/st24.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8068"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15797"/>
+      <key:events sfa:ID="NSMutableArray-16268"/>
       <key:sticky-notes sfa:ID="NSMutableArray-8520"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15798"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16269"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-107" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-107" sf:kind="note" sf:excl="G">
@@ -29543,23 +29633,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-7571">
           <sf:layer sfa:ID="SFDLayerInfo-52">
-            <sf:type sfa:ID="NSArray-15528">
+            <sf:type sfa:ID="NSArray-15992">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15799"/>
+            <sf:drawables sfa:ID="NSMutableArray-16270"/>
             <sf:guides sfa:ID="NSMutableSet-52"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-24">
-            <sf:type sfa:ID="NSArray-15529">
+            <sf:type sfa:ID="NSArray-15993">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-53">
-            <sf:type sfa:ID="NSArray-15530">
+            <sf:type sfa:ID="NSArray-15994">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15800">
+            <sf:drawables sfa:ID="NSMutableArray-16271">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-26"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-26"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-26"/>
@@ -29568,15 +29658,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15531">
+      <key:thumbnails sfa:ID="NSArray-15995">
         <key:binary sfa:ID="SFRImageBinary-36">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-36" sf:path="thumbs/st23.jpg" sf:displayname="thumbs/st23.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7940"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15801"/>
+      <key:events sfa:ID="NSMutableArray-16272"/>
       <key:sticky-notes sfa:ID="NSMutableArray-7575"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15802"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16273"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-104" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-104" sf:kind="note" sf:excl="G">
@@ -29835,23 +29925,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-8739">
           <sf:layer sfa:ID="SFDLayerInfo-56">
-            <sf:type sfa:ID="NSArray-15532">
+            <sf:type sfa:ID="NSArray-15996">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15803"/>
+            <sf:drawables sfa:ID="NSMutableArray-16274"/>
             <sf:guides sfa:ID="NSMutableSet-56"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-26">
-            <sf:type sfa:ID="NSArray-15533">
+            <sf:type sfa:ID="NSArray-15997">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-57">
-            <sf:type sfa:ID="NSArray-15534">
+            <sf:type sfa:ID="NSArray-15998">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15804">
+            <sf:drawables sfa:ID="NSMutableArray-16275">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-28"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-28"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-28"/>
@@ -29860,15 +29950,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15535">
+      <key:thumbnails sfa:ID="NSArray-15999">
         <key:binary sfa:ID="SFRImageBinary-38">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-38" sf:path="thumbs/st25.jpg" sf:displayname="thumbs/st25.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7794"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15805"/>
+      <key:events sfa:ID="NSMutableArray-16276"/>
       <key:sticky-notes sfa:ID="NSMutableArray-8743"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15806"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16277"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-110" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-110" sf:kind="note" sf:excl="G">
@@ -30133,23 +30223,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-9083">
           <sf:layer sfa:ID="SFDLayerInfo-58">
-            <sf:type sfa:ID="NSArray-15536">
+            <sf:type sfa:ID="NSArray-16000">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15807"/>
+            <sf:drawables sfa:ID="NSMutableArray-16278"/>
             <sf:guides sfa:ID="NSMutableSet-58"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-27">
-            <sf:type sfa:ID="NSArray-15537">
+            <sf:type sfa:ID="NSArray-16001">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-59">
-            <sf:type sfa:ID="NSArray-15538">
+            <sf:type sfa:ID="NSArray-16002">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15808">
+            <sf:drawables sfa:ID="NSMutableArray-16279">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-29"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-29"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-29"/>
@@ -30158,15 +30248,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15539">
+      <key:thumbnails sfa:ID="NSArray-16003">
         <key:binary sfa:ID="SFRImageBinary-39">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-39" sf:path="thumbs/st26.jpg" sf:displayname="thumbs/st26.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8253"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15809"/>
+      <key:events sfa:ID="NSMutableArray-16280"/>
       <key:sticky-notes sfa:ID="NSMutableArray-9087"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15810"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16281"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-113" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-113" sf:kind="note" sf:excl="G">
@@ -30780,23 +30870,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-9909">
           <sf:layer sfa:ID="SFDLayerInfo-60">
-            <sf:type sfa:ID="NSArray-15540">
+            <sf:type sfa:ID="NSArray-16004">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15811"/>
+            <sf:drawables sfa:ID="NSMutableArray-16282"/>
             <sf:guides sfa:ID="NSMutableSet-60"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-28">
-            <sf:type sfa:ID="NSArray-15541">
+            <sf:type sfa:ID="NSArray-16005">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-61">
-            <sf:type sfa:ID="NSArray-15542">
+            <sf:type sfa:ID="NSArray-16006">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15812">
+            <sf:drawables sfa:ID="NSMutableArray-16283">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-30"/>
               <sf:shape sfa:ID="BGShapeInfo-29">
                 <sf:geometry sfa:ID="SFDAffineGeometry-208" sf:sizesLocked="true">
@@ -30931,15 +31021,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15543">
+      <key:thumbnails sfa:ID="NSArray-16007">
         <key:binary sfa:ID="SFRImageBinary-40">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-40" sf:path="thumbs/st2-17.jpg" sf:displayname="thumbs/st2.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7853"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15813"/>
+      <key:events sfa:ID="NSMutableArray-16284"/>
       <key:sticky-notes sfa:ID="NSMutableArray-9913"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15814"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16285"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-118" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-118" sf:kind="note">
@@ -31201,23 +31291,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-10640">
           <sf:layer sfa:ID="SFDLayerInfo-62">
-            <sf:type sfa:ID="NSArray-15544">
+            <sf:type sfa:ID="NSArray-16008">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15815"/>
+            <sf:drawables sfa:ID="NSMutableArray-16286"/>
             <sf:guides sfa:ID="NSMutableSet-62"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-29">
-            <sf:type sfa:ID="NSArray-15545">
+            <sf:type sfa:ID="NSArray-16009">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-63">
-            <sf:type sfa:ID="NSArray-15546">
+            <sf:type sfa:ID="NSArray-16010">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15816">
+            <sf:drawables sfa:ID="NSMutableArray-16287">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-31"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-31"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-31"/>
@@ -31226,15 +31316,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15547">
+      <key:thumbnails sfa:ID="NSArray-16011">
         <key:binary sfa:ID="SFRImageBinary-41">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-41" sf:path="thumbs/st28.jpg" sf:displayname="thumbs/st28.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="8067"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15817"/>
+      <key:events sfa:ID="NSMutableArray-16288"/>
       <key:sticky-notes sfa:ID="NSMutableArray-10644"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15818"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16289"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-121" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-121" sf:kind="note" sf:excl="G">
@@ -31502,23 +31592,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-11019">
           <sf:layer sfa:ID="SFDLayerInfo-64">
-            <sf:type sfa:ID="NSArray-15548">
+            <sf:type sfa:ID="NSArray-16012">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15819"/>
+            <sf:drawables sfa:ID="NSMutableArray-16290"/>
             <sf:guides sfa:ID="NSMutableSet-64"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-30">
-            <sf:type sfa:ID="NSArray-15549">
+            <sf:type sfa:ID="NSArray-16013">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-65">
-            <sf:type sfa:ID="NSArray-15550">
+            <sf:type sfa:ID="NSArray-16014">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15820">
+            <sf:drawables sfa:ID="NSMutableArray-16291">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-32"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-32"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-32"/>
@@ -31527,15 +31617,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15551">
+      <key:thumbnails sfa:ID="NSArray-16015">
         <key:binary sfa:ID="SFRImageBinary-42">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-42" sf:path="thumbs/st29.jpg" sf:displayname="thumbs/st29.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7986"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15821"/>
+      <key:events sfa:ID="NSMutableArray-16292"/>
       <key:sticky-notes sfa:ID="NSMutableArray-11023"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15822"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16293"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-124" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-124" sf:kind="note" sf:excl="G">
@@ -31799,23 +31889,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-11283">
           <sf:layer sfa:ID="SFDLayerInfo-66">
-            <sf:type sfa:ID="NSArray-15552">
+            <sf:type sfa:ID="NSArray-16016">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15823"/>
+            <sf:drawables sfa:ID="NSMutableArray-16294"/>
             <sf:guides sfa:ID="NSMutableSet-66"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-31">
-            <sf:type sfa:ID="NSArray-15553">
+            <sf:type sfa:ID="NSArray-16017">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-67">
-            <sf:type sfa:ID="NSArray-15554">
+            <sf:type sfa:ID="NSArray-16018">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15824">
+            <sf:drawables sfa:ID="NSMutableArray-16295">
               <sf:title-placeholder-ref sfa:IDREF="BGTitlePlaceholderInfo-33"/>
               <sf:body-placeholder-ref sfa:IDREF="BGBodyPlaceholderInfo-33"/>
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-33"/>
@@ -31824,15 +31914,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15555">
+      <key:thumbnails sfa:ID="NSArray-16019">
         <key:binary sfa:ID="SFRImageBinary-43">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-43" sf:path="thumbs/st30.jpg" sf:displayname="thumbs/st30.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7990"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15825"/>
+      <key:events sfa:ID="NSMutableArray-16296"/>
       <key:sticky-notes sfa:ID="NSMutableArray-11287"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15826"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16297"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-127" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-127" sf:kind="note" sf:excl="G">
@@ -32446,23 +32536,23 @@
         </sf:geometry>
         <sf:layers sfa:ID="NSMutableArray-12509">
           <sf:layer sfa:ID="SFDLayerInfo-70">
-            <sf:type sfa:ID="NSArray-15556">
+            <sf:type sfa:ID="NSArray-16020">
               <sf:string sfa:string="BGSlideBackgroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15827"/>
+            <sf:drawables sfa:ID="NSMutableArray-16298"/>
             <sf:guides sfa:ID="NSMutableSet-70"/>
           </sf:layer>
           <sf:proxy-master-layer sfa:ID="BGProxyMasterLayerInfo-33">
-            <sf:type sfa:ID="NSArray-15557">
+            <sf:type sfa:ID="NSArray-16021">
               <sf:string sfa:string="BGMasterSlideLayer"/>
             </sf:type>
             <sf:layer-ref sfa:IDREF="SFDLayerInfo-0"/>
           </sf:proxy-master-layer>
           <sf:layer sfa:ID="SFDLayerInfo-71">
-            <sf:type sfa:ID="NSArray-15558">
+            <sf:type sfa:ID="NSArray-16022">
               <sf:string sfa:string="BGSlideForegroundLayer"/>
             </sf:type>
-            <sf:drawables sfa:ID="NSMutableArray-15828">
+            <sf:drawables sfa:ID="NSMutableArray-16299">
               <sf:slide-number-placeholder-ref sfa:IDREF="BGSlideNumberPlaceholderInfo-35"/>
               <sf:shape sfa:ID="BGShapeInfo-33">
                 <sf:geometry sfa:ID="SFDAffineGeometry-240" sf:sizesLocked="true">
@@ -32597,15 +32687,15 @@
           </sf:layer>
         </sf:layers>
       </key:page>
-      <key:thumbnails sfa:ID="NSArray-15559">
+      <key:thumbnails sfa:ID="NSArray-16023">
         <key:binary sfa:ID="SFRImageBinary-45">
           <sf:size sfa:w="60" sfa:h="45"/>
           <sf:data sfa:ID="SFEData-45" sf:path="thumbs/st2-18.jpg" sf:displayname="thumbs/st2.jpg" sf:delay-archiving="true" sf:sharable="false" sf:hfs-type="1246774599" sf:size="7809"/>
         </key:binary>
       </key:thumbnails>
-      <key:events sfa:ID="NSMutableArray-15829"/>
+      <key:events sfa:ID="NSMutableArray-16300"/>
       <key:sticky-notes sfa:ID="NSMutableArray-12513"/>
-      <key:build-chunks sfa:ID="NSMutableArray-15830"/>
+      <key:build-chunks sfa:ID="NSMutableArray-16301"/>
       <key:master-ref sfa:IDREF="BGMasterSlide-0"/>
       <key:notes sfa:ID="SFWPFrame-135" sf:layoutstyle="layout-style-default">
         <sf:text-storage sfa:ID="SFWPStorage-135" sf:kind="note">
@@ -32621,7 +32711,7 @@
   </key:slide-list>
   <key:ui-state>
     <key:BGShowUIStateSelectedSlides>
-      <key:array sfa:ID="NSArray-14327">
+      <key:array sfa:ID="NSArray-16024">
         <key:slide-ref sfa:IDREF="BGSlide-34"/>
       </key:array>
     </key:BGShowUIStateSelectedSlides>
@@ -32635,10 +32725,10 @@
       <key:string sfa:string="{0, 0}"/>
     </key:BGShowUIStateCanvasOrigin>
     <key:BGShowUIStateSelectedDrawables>
-      <key:mutable-array sfa:ID="NSMutableArray-15831"/>
+      <key:mutable-array sfa:ID="NSMutableArray-16302"/>
     </key:BGShowUIStateSelectedDrawables>
     <key:BGShowUIStateMotionPathSelection>
-      <key:pk-dict sfa:ID="SFUPointerKeyDictionary-33"/>
+      <key:pk-dict sfa:ID="SFUPointerKeyDictionary-36"/>
     </key:BGShowUIStateMotionPathSelection>
     <key:BGShowUIStateActiveSlide>
       <key:slide-ref sfa:IDREF="BGSlide-34"/>
@@ -32646,6 +32736,9 @@
     <key:BGShowUIStateCanvasZoom>
       <key:string sfa:string="Fit"/>
     </key:BGShowUIStateCanvasZoom>
+    <key:BGShowUIStateActiveDrawable>
+      <key:sticky-note-ref sfa:IDREF="SFDStickyNoteInfo-7"/>
+    </key:BGShowUIStateActiveDrawable>
   </key:ui-state>
   <key:metadata>
     <key:title>
