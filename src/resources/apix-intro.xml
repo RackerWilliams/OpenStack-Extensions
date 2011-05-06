@@ -146,7 +146,15 @@
             <para>
                 placeholder for content
             </para>
-        </section>
+            <figure xml:id="manyBackends">
+                <title>One service can reach many backends.</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="60" fileref="figures/1service-manyBackends.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            </section>
         <section>
             <title>Open Source</title>
             <para>
@@ -179,6 +187,14 @@
             <para>
                 placeholder for content
             </para>
+            <figure xml:id="core-extensions">
+                <title>One backend can be reached by both the Core API and Extensions.</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="60" fileref="figures/1service-core-extensions-manyBackends.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
         </section>
     </chapter>
     <chapter>
@@ -199,7 +215,23 @@
             <title>How is an extension's vendor identified?</title>
             <para>
                 placeholder for content
-            </para>
+                </para>
+            <figure xml:id="shared">
+                <title>Two extensions add a "shared" attribute; one overrides the other.</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="60" fileref="figures/2extensions-shared.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure xml:id="filter">
+                <title>Two extensions read a "filter" parameter; both are activated.</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="60" fileref="figures/2extensions-filter.png"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
         </section>
         <section>
             <title>Can data be extended?</title>
