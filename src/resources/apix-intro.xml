@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+        <!-- Some useful entities borrowed from HTML -->
+        <!ENTITY ndash  "&#x2013;">
+        <!ENTITY mdash  "&#x2014;">
+        <!ENTITY hellip "&#x2026;">
+
+        <!-- Useful for describing APIs -->
+        <!ENTITY GET    '<command xmlns="http://docbook.org/ns/docbook">GET</command>'>
+        <!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
+        <!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
+        <!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
+
+        <!ENTITY CHECK  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
+                 <imageobject>
+                  <imagedata fileref="img/Check_mark_23x20_02.svg"
+                             format="SVG" scale="60"/>
+                </imageobject>
+              </inlinemediaobject>'>
+
+        <!ENTITY ARROW  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
+                 <imageobject>
+                  <imagedata fileref="img/Arrow_east.svg"
+                             format="SVG" scale="60"/>
+                </imageobject>
+              </inlinemediaobject>'>
+]>
+<book xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook"
+      version="5.0" status="draft">
+    <title>Cloud API Extensions Introduction</title>
+    <info>
+        <author>
+            <personname>
+                <firstname/>
+                <surname/>
+            </personname>
+            <affiliation>
+                <orgname>Rackspace Cloud</orgname>
+            </affiliation>
+        </author>
+        <copyright>
+            <year>2010</year>
+            <year>2011</year>
+            <holder>Rackspace US, Inc.</holder>
+        </copyright>
+        <releaseinfo>API v1.0 BETA</releaseinfo>
+        <productname>Cloud API Extensions</productname>
+        <pubdate>2011-05-06</pubdate>
+        <legalnotice role="rs-api">
+            <annotation>
+                <remark>Copyright details are filled in by the template.</remark>
+            </annotation>
+        </legalnotice>
+        <abstract>
+            <para>This document is intended for software developers interested in developing
+                applications using OpenStack API Extensions
+             </para>
+        </abstract>
+    <cover>
+        <para>this is a placeholder for the front cover</para>
+    </cover>
+    <cover>
+        <para>this is a placeholder for the back cover</para>
+    </cover>
+    </info>
+    <chapter>
+        <title>Overview</title>
+        <para> Rackspace Cloud API Extensions make it possible to add functionality to Cloud APIs
+            without modifying the core of the API itself. </para>
+        <para>
+            We welcome feedback, comments, and bug reports at <link
+            xlink:href="mailto:support@rackspacecloud.com">support@rackspacecloud.com</link>.
+        </para>
+        <section>
+            <title>Intended Audience</title>
+            <para> This Guide is intended to assist software developers who want to develop
+                applications using the Cloud API Extension. To use the information provided here, you
+                should first have a general understanding of Rackspace Cloud APIs. You should also be
+                familiar with: </para>
+            <itemizedlist spacing="compact">
+                <listitem>
+                    <para>ReSTful web services</para>
+                </listitem>
+                <listitem>
+                    <para>HTTP/1.1 conventions</para>
+                </listitem>
+                <listitem>
+                    <para>JSON and/or XML data serialization formats</para>
+                </listitem>
+                <listitem>
+                    <para>Atom syndication format</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Document Change History</title>
+            <para>This version of the Introduction replaces and
+            obsoletes all previous versions.  The most recent changes
+            are described in the table below:</para>
+            <informaltable rules='all'>
+                <thead>
+                        <tr>
+                            <td align="center" colspan="1">Revision Date</td>
+                            <td align="center" colspan="4">Summary of Changes</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1" align="center">May 6, 2011</td>
+                            <td colspan="4">
+                                <itemizedlist spacing="compact">
+                                    <listitem>
+                                        <para> Initial draft. </para>
+                                    </listitem>
+                                </itemizedlist>
+                            </td>
+                        </tr>
+                    </tbody>
+            </informaltable>
+        </section>
+        <section>
+            <title>Additional Resources</title>
+            <para>You can read the most current versions of other API-related
+                documents at <link
+                    xlink:href="http://docs.rackspacecloud.com/api/">
+                    http://docs.rackspacecloud.com/api/</link>.
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>What Problems Can API Extensions Solve?</title>
+        <section>
+            <title>Standardization vs Innovation and Differentiation</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Pluggability</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Open Source</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>What Are API Extensions?</title>
+        <section>
+            <title>Case Study: Open GL</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Extensions</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Extensions vs Versions</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Extensions and Pluggability</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>How Do API Extensions Work with ReST?</title>
+        <section>
+            <title>What can be extended?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>How are available extensions identified?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>How is an extension's vendor identified?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Can data be extended?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Can actions be extended?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Can headers and states be extended?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Which resources can use which extensions?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>How Can an API Extension Become an API Feature?</title>
+        <section>
+            <title>Specification governance</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>ARB-Approved Extensions</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>Promotion Path</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>What Challenges Must Be Met?</title>
+        <section>
+            <title>Language Bindings</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>JSON and Collections</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+    </chapter>
+    <chapter>
+        <title>When is an API Extension the Best Approach?</title>
+        <section>
+            <title>Why use extensions?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+        <section>
+            <title>How to use extensions?</title>
+            <para>
+                placeholder for content
+            </para>
+        </section>
+    </chapter>
+</book>
