@@ -5,7 +5,7 @@
 
     <groupId>com.rackspace.cloud.docs.apix.docbook</groupId>
     <artifactId>docbook-conversions</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>API Extensions Intro</name>
     <packaging>jar</packaging>
