@@ -178,9 +178,65 @@
         </section>
         <section>
             <title>Extensions vs Versions</title>
-            <para>
-                placeholder for content
-            </para>
+            <table frame="all">
+                <title>Versions and Extensions Differ in Specific Ways</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                    <thead>
+                        <row>
+                            <entry>Versions</entry>
+                            <entry>Extensions</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>
+                                <para>Centralized: Versions are maintained by the entity that
+                                    controls the API Spec: The OpenStack Architecture Board. Only
+                                    the ARB can create a new version, only the ARB defines what
+                                    OpenStack Compute 1.1 means.</para>
+                            </entry>
+                            <entry>
+                                <para>Decentralized: Extensions are maintained by third parties:
+                                    Rackspace, OpenStack developers, etc. Anyone can create an
+                                    Extension.</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para>Deal with Core Functionality</para>
+                            </entry>
+                            <entry>
+                                <para>Deal with Specialized/Niche Functionality</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para>Appear infrequently:Versions provide a stable platform on
+                                    which to develop.</para>
+                            </entry>
+                            <entry>
+                                <para>Appear frequently: Extensions bring new features to the market
+                                    quickly, and in a compatible manner.</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para>Are Queryable: You can programmatically tell what versions are
+                                    available by doing a GET on the base URL (/) of the API
+                                    endpoint.</para>
+                            </entry>
+                            <entry>
+                                <para>Are Queryable: You can programmatically tell what extensions
+                                    are available by doing a GET on the extensions resource
+                                    (/v1.1/extensions).</para>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+
         </section>
         <section>
             <title>Extensions and Pluggability</title>
@@ -213,9 +269,113 @@
         </section>
         <section>
             <title>How is an extension's vendor identified?</title>
-            <para>
-                placeholder for content
-                </para>
+                <table frame="all">
+                    <title>Extension Alias Identifies Vendor</title>
+                    <tgroup cols="2">
+                        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                        <colspec colname="c2" colnum="2" colwidth="2.39*"/>
+                        <thead>
+                            <row>
+                                <entry>Prefix</entry>
+                                <entry>Vendor</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>OS</entry>
+                                <entry>OpenStack</entry>
+                            </row>
+                            <row>
+                                <entry>MLTI</entry>
+                                <entry>Multi-Vendor</entry>
+                            </row>
+                            <row>
+                                <entry>ARB</entry>
+                                <entry>ARB Approved</entry>
+                            </row>
+                            <row>
+                                <entry>RAX</entry>
+                                <entry>Rackspace</entry>
+                            </row>
+                            <row>
+                                <entry>NASA</entry>
+                                <entry>NASA</entry>
+                            </row>
+                            <row>
+                                <entry>CTX</entry>
+                                <entry>Citrix</entry>
+                            </row>
+                            <row>
+                                <entry>...</entry>
+                                <entry>...</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            <table frame="all">
+                <title>Namespace Identifies Vendor</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="c2" colnum="2" colwidth="2.33*"/>
+                    <thead>
+                        <row>
+                            <entry>Prefix</entry>
+                            <entry>Vendor</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>
+                                <para><emphasis role="underline"><link
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="http://docs.openstack.com"
+                                            >http://docs.openstack.com</link></emphasis>/ext/OS/...</para>
+                            </entry>
+                            <entry>OpenStack</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="underline"><link
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="http://docs.openstack.com"
+                                            >http://docs.openstack.com</link></emphasis>/ext/ARB/...</para>
+                            </entry>
+                            <entry>ARB Approved</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="underline"><link
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="http://docs.rackspacecloud.com"
+                                            >http://docs.rackspacecloud.com</link></emphasis>/...</para>
+                            </entry>
+                            <entry>Rackspace</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="underline"><link
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="http://docs.nasa.org"
+                                            >http://docs.nasa.org</link></emphasis>/...</para>
+                            </entry>
+                            <entry>NASA</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="underline"><link
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="http://docs.citrix.com"
+                                            >http://docs.citrix.com</link></emphasis>/....</para>
+                            </entry>
+                            <entry>Citrix</entry>
+                        </row>
+                        <row>
+                            <entry>...</entry>
+                            <entry>...</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>            
             <figure xml:id="shared">
                 <title>Two extensions add a "shared" attribute; one overrides the other.</title>
                 <mediaobject>
