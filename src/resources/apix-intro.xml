@@ -33,7 +33,7 @@
       xmlns:html="http://www.w3.org/1999/xhtml"
       xmlns:db="http://docbook.org/ns/docbook"
       version="5.0" status="draft">
-    <title>Cloud API Extensions Introduction</title>
+    <title>Cloud API Extensions Overview</title>
     <info>
         <author>
             <personname>
@@ -41,37 +41,34 @@
                 <surname/>
             </personname>
             <affiliation>
-                <orgname>Rackspace Cloud</orgname>
+                <orgname>OpenStack</orgname>
             </affiliation>
         </author>
         <copyright>
             <year>2010</year>
             <year>2011</year>
-            <holder>Rackspace US, Inc.</holder>
+            <holder>OpenStack</holder>
         </copyright>
-        <releaseinfo>API v1.0 BETA</releaseinfo>
+        <releaseinfo>PROPOSAL</releaseinfo>
         <productname>Cloud API Extensions</productname>
-        <pubdate>2011-05-06</pubdate>
-        <legalnotice role="rs-api">
+        <pubdate>2011-05-13</pubdate>
+        <legalnotice role="cc-by-nc-sa">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
             </annotation>
         </legalnotice>
         <abstract>
             <para>This document is intended for software developers interested in developing
-                applications using OpenStack API Extensions
+                applications using OpenStack API extensions.
              </para>
         </abstract>
     </info>
     <chapter>
         <title>Overview</title>
-        <para> Rackspace Cloud API Extensions make it possible to add functionality to Cloud APIs
+        <para> Cloud API Extensions make it possible to add functionality to Cloud APIs
             without modifying the core of the API itself. </para>
         <section>
             <title>Document Change History</title>
-            <para>This version of the Introduction replaces and
-            obsoletes all previous versions. The most recent changes
-            are described in the table below:</para>
             <informaltable rules='all'>
                 <thead>
                         <tr>
@@ -81,7 +78,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="1" align="center">May 6, 2011</td>
+                            <td colspan="1" align="center">May 13, 2011</td>
                             <td colspan="4">
                                 <itemizedlist spacing="compact">
                                     <listitem>
@@ -98,7 +95,7 @@
         <title>What Problems Can API Extensions Solve?</title>
         <section>
             <title>Standardization versus Innovation and Differentiation</title>
-            <para>API Extensions can create compatibility between two seemingly-conflicting
+            <para>API extensions can create compatibility between two seemingly-conflicting
                 OpenStack goals, making it possible to support stable and generalizable open
                 standards while also supporting innovation and experimentation.</para>
             <para>
@@ -153,7 +150,7 @@
     <chapter>
         <title>What Are API Extensions?</title>
         <para>
-            The nature and value of API Extensions can best be introduced with a case study.
+            The nature and value of API extensions can best be introduced with a case study.
         </para>
         <section>
             <title>Case Study: OpenGL</title>
@@ -209,7 +206,7 @@
         </section>
         <section>
             <title>Extensions versus Versions</title>
-            <para> With API Extensions in place, API implementations can differ from each other in
+            <para> With API extensions in place, API implementations can differ from each other in
                 terms of both their versions and their extensions. Extensions can apply to a variety
                 of backends, such as many hypervisors and many load balancers. Accurately describing
                 an API implementation requires awareness of its versions and extensions as sources
@@ -340,38 +337,6 @@
             <para>
                 Query <code>/extensions</code> to obtain basic information about an API's extensions, including their human-readable names and descriptions, links to documentation, and identification of each extension's alias, namespace, and vendor.
             </para>
-            <calloutlist>
-                <callout arearefs="query.human-readable.name">
-                    <para>
-                        The query returns the extension's human-readable name.
-                    </para>
-                </callout>
-                <callout arearefs="query.human-readable.description">
-                    <para>
-                        The query returns the extension's human-readable description.
-                    </para>
-                </callout>
-                <callout arearefs="query.docs">
-                    <para>
-                        The query returns links to documentation in multiple formats.
-                    </para>
-                </callout>
-                <callout arearefs="query.identifiers">
-                    <para>
-                        The query uniquely identifies the extension as an alias within a namespace.
-                    </para>
-                </callout>
-                <callout arearefs="query.vendor.namespace">
-                    <para>
-                        The query identifies the extension's vendor in the extension's namespace.
-                    </para>
-                </callout>
-                <callout arearefs="query.vendor.alias">
-                    <para>
-                        The query identifies the extension's vendor in the extension's alias.
-                    </para>
-                </callout>
-            </calloutlist>
             <example>
                 <title>Extension Query: XML</title>
                 <programlistingco>
@@ -388,6 +353,38 @@
                     </programlisting>
                 </programlistingco>
             </example>
+                <calloutlist>
+                    <callout arearefs="query.human-readable.name">
+                        <para>
+                            The query returns the extension's human-readable name.
+                        </para>
+                    </callout>
+                    <callout arearefs="query.human-readable.description">
+                        <para>
+                            The query returns the extension's human-readable description.
+                        </para>
+                    </callout>
+                    <callout arearefs="query.docs">
+                        <para>
+                            The query returns links to documentation in multiple formats.
+                        </para>
+                    </callout>
+                    <callout arearefs="query.identifiers">
+                        <para>
+                            The query uniquely identifies the extension as an alias within a namespace.
+                        </para>
+                    </callout>
+                    <callout arearefs="query.vendor.namespace">
+                        <para>
+                            The query identifies the extension's vendor in the extension's namespace.
+                        </para>
+                    </callout>
+                    <callout arearefs="query.vendor.alias">
+                        <para>
+                            The query identifies the extension's vendor in the extension's alias.
+                        </para>
+                    </callout>
+                </calloutlist>
         </section>
         <section>
             <title>For each extension, how is the vendor identified?</title>
@@ -413,10 +410,6 @@
                             <row>
                                 <entry><code>MLTI</code></entry>
                                 <entry>Multi-Vendor</entry>
-                            </row>
-                            <row>
-                                <entry><code>ARB</code></entry>
-                                <entry>ARB Approved</entry>
                             </row>
                             <row>
                                 <entry><code>RAX</code></entry>
@@ -468,14 +461,6 @@
                                 </para>
                             </entry>
                             <entry>OpenStack</entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para>
-                                    <code>http://docs.openstack.com</code>...
-                                </para>
-                            </entry>
-                            <entry>ARB Approved</entry>
                         </row>
                         <row>
                             <entry>
@@ -624,29 +609,48 @@
         <title>How Does an API Extension Become an API Feature?</title>
         <section>
             <title>Specification governance</title>
-            <para>
-                placeholder for content
-            </para>
-        </section>
-        <section>
-            <title>ARB-Approved Extensions</title>
-            <para>
-                placeholder for content
-            </para>
+            <para> OpenStack functions as the Architecture Review Board for OpenStack API
+                extensions.  </para>
         </section>
         <section>
             <title>Promotion Path</title>
+            <para> 
+                The simplest promotion path for an extension is from a single vendor to OpenStack
+                approval to implementation as a core API feature. 
+            </para>
             <para>
-                placeholder for content
+                Some extensions may be developed cooperatively by more than one vendor; 
+                these are known as Multi-Vendor extensions and are identified by the <code>MLTI</code> prefix.
+                Alternatively, an extension may begin with a single vendor but become a Mult-Vendor extension at some point in its life. 
+                In either of these cases, the extension follows same promotion path from Multi-Vendor status to OpenStack approval to implementation as a core API feature.
+            </para>
+            <para>
+                This multi-step promotion path allows competing extensions to coexist and makes it possible to experiment with new features before deciding whether to incorporate them into the API standard.
+                It also means that API specifications are written bottom-up rather than top-down, so that implementations determine new features and the API is not designed in a vacuum. 
+            </para>
+            <para>
+                Some extensions should never be promoted to core features.
+                This can be because the extension implements niche functionality that doesn't make sense in the core API,
+                or because it implements functionality that can't be used within the core API because it would prevent a particular backend from implementing the full set of core features.
+            </para>
+            <para>
+                For example, the ability to dynamically change the port number for a load balancer might be useful as an extension but problematic in the core API.
+                If most but not all load balancers could support this feature, the extension must not be promoted into the core API.
+                Instead, providing the feature via an API extension makes it available to customers who would like to use it but prevents it from creating problems for those who cannot use it.
             </para>
         </section>
     </chapter>
     <chapter>
         <title>What Challenges Must Be Met?</title>
+        <para>
+            While API extensions can solve some problems relating to the need for simultaneous standardization and flexibility, they can create a new set of challenges. 
+            Two problematic areas are language bindings and JSON collections. 
+        </para>
         <section>
             <title>Language Bindings</title>
             <para>
-                placeholder for content
+                API extensions should be supported at the language binding layer. 
+                A simple approach may be to allow the language bindings themselves to be extensible, so that extensions may be simply added to an existing binding.
             </para>
         </section>
         <section>
@@ -722,15 +726,47 @@
     <chapter>
         <title>When is an API Extension the Best Approach?</title>
         <section>
-            <title>Why use extensions?</title>
+            <title>Why should we use extensions?</title>
             <para>
-                placeholder for content
+                API extensions provide several key benefits:
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>a stable core API with support for innovation</para>
+                    </listitem>
+                    <listitem>
+                        <para>a method of adding new features quickly and in a backward-compatible manner</para>
+                    </listitem>
+                    <listitem>
+                        <para>a method of supporting the capabilities of different backends</para>
+                    </listitem>
+                    <listitem>
+                        <para>a method of ensuring compatibility between different kinds of OpenStack deployments</para>
+                    </listitem>
+                    <listitem>
+                        <para>a method of allowing vendors to differentiate their products with niche features</para>
+                    </listitem>
+                    <listitem>
+                        <para>a method of testing new features before they become part of the core API</para>
+                    </listitem>
+                </itemizedlist>
             </para>
         </section>
         <section>
-            <title>How to use extensions?</title>
+            <title>How can we use extensions?</title>
             <para>
-                placeholder for content
+                API extensions are queryable. 
+            </para>  
+            <para>
+                To discover which extensions are available, issue a GET to <code>/extensions</code>.
+            </para>
+            <para>
+                To use a specific extension, issue a GET to <code>/extensions/</code><parameter>{EXT-ALIAS}</parameter>.
+            </para>
+            <para>
+                To prevent conflicts between extensions, use aliases and namespaces to identify each extension's vendor.
+            </para>
+            <para>
+                To move an extension into the core API, work to have it promoted.
             </para>
         </section>
     </chapter>
