@@ -62,46 +62,15 @@
                 applications using OpenStack API Extensions
              </para>
         </abstract>
-    <cover>
-        <para>this is a placeholder for the front cover</para>
-    </cover>
-    <cover>
-        <para>this is a placeholder for the back cover</para>
-    </cover>
     </info>
     <chapter>
         <title>Overview</title>
         <para> Rackspace Cloud API Extensions make it possible to add functionality to Cloud APIs
             without modifying the core of the API itself. </para>
-        <para>
-            We welcome feedback, comments, and bug reports at <link
-            xlink:href="mailto:support@rackspacecloud.com">support@rackspacecloud.com</link>.
-        </para>
-        <section>
-            <title>Intended Audience</title>
-            <para> This Guide is intended to assist software developers who want to develop
-                applications using the Cloud API Extension. To use the information provided here, you
-                should first have a general understanding of Rackspace Cloud APIs. You should also be
-                familiar with: </para>
-            <itemizedlist spacing="compact">
-                <listitem>
-                    <para>ReSTful web services</para>
-                </listitem>
-                <listitem>
-                    <para>HTTP/1.1 conventions</para>
-                </listitem>
-                <listitem>
-                    <para>JSON and/or XML data serialization formats</para>
-                </listitem>
-                <listitem>
-                    <para>Atom syndication format</para>
-                </listitem>
-            </itemizedlist>
-        </section>
         <section>
             <title>Document Change History</title>
             <para>This version of the Introduction replaces and
-            obsoletes all previous versions.  The most recent changes
+            obsoletes all previous versions. The most recent changes
             are described in the table below:</para>
             <informaltable rules='all'>
                 <thead>
@@ -116,7 +85,7 @@
                             <td colspan="4">
                                 <itemizedlist spacing="compact">
                                     <listitem>
-                                        <para> Initial draft. </para>
+                                        <para> Initial draft, adapted from April 26, 2011 OpenStack presentation. </para>
                                     </listitem>
                                 </itemizedlist>
                             </td>
@@ -124,27 +93,40 @@
                     </tbody>
             </informaltable>
         </section>
-        <section>
-            <title>Additional Resources</title>
-            <para>You can read the most current versions of other API-related
-                documents at <link
-                    xlink:href="http://docs.rackspacecloud.com/api/">
-                    http://docs.rackspacecloud.com/api/</link>.
-            </para>
-        </section>
     </chapter>
     <chapter>
         <title>What Problems Can API Extensions Solve?</title>
         <section>
-            <title>Standardization vs Innovation and Differentiation</title>
+            <title>Standardization versus Innovation and Differentiation</title>
+            <para>API Extensions can create compatibility between two seemingly-conflicting
+                OpenStack goals, making it possible to support stable and generalizable open
+                standards while also supporting innovation and experimentation.</para>
             <para>
-                placeholder for content
+                Defining standard APIs is good for OpenStack and good for OpenStack customers. 
+                Standardization encourages others to implement OpenStack APIs. 
+                Stability is a prerequisite for standardization and widespread adoption, since code that is in constant flux is difficult to implement and difficult to develop against.
+                At the same time, standards must be general, since niche functionality may make it impossible for some customers to adopt some standards.
+                The more general and stable the API, the more likely it will be widely adopted.
+            </para>
+            <para>
+                While standardization is essential, it must coexist with innovation.
+                We must be able to add features that differentiate one implementation from other implementations, and we must be able to do that without breaking our clients and without going through an approval process.
+                Everyone must be able to make changes to the API.
+                The possibility of modification and customization encourages customers with a variety of needs to adopt OpenStack APIs; changes made to support one customer's needs can be beneficial to all. 
+                Developers should feel free to experiment and develop new features without worrying about the implications to the API as a standard.
+            </para>
+            <para>
+                This combination of stability and flexibility will allow OpenStack to create a ubiquitous cloud technology.
             </para>
         </section>
         <section>
             <title>Pluggability</title>
             <para>
-                placeholder for content
+                OpenStack services should be pluggable, so that one OpenStack service can support many backends. 
+                For a compute service, backends can be hypervisors; for a network service, backends can be network switches. 
+                A backend can be implemented as a driver, containing a set of shared capabilities widely applicable to all deployments.
+                Each backend may also contain special features and niche functionality. 
+                The goal is to provide access to special features while abstracting away the details of the backend.
             </para>
             <figure xml:id="manyBackends">
                 <title>One service can reach many backends.</title>
@@ -158,26 +140,80 @@
         <section>
             <title>Open Source</title>
             <para>
-                placeholder for content
+                OpenStack services are open source, so all developers can make changes to the code. 
+                For APIs provided by OpenStack as well as by multiple vendors, a customer can face great difficulty in choosing among and managing versions of the API. 
+                For example, a compute service may be reachable via an OpenStack stock API, a Rackspace-supported API, and modifications by other vendors and individuals; 
+                all these implementations of the "same" API may also exist in multiple versions.
+                However complex the environment becomes, it must be possible for everyone to mean the same thing by the same label  
+                so that "OpenStack Compute API 1.1" can be identified and discussed among people with different implementations and different capabilities.
+                We must also be able to ensure compatibiity among different versions; this also works best if we have consistent ways of identirying and describing versions.
             </para>
         </section>
     </chapter>
     <chapter>
         <title>What Are API Extensions?</title>
+        <para>
+            The nature and value of API Extensions can best be introduced with a case study.
+        </para>
         <section>
-            <title>Case Study: Open GL</title>
+            <title>Case Study: OpenGL</title>
             <para>
-                placeholder for content
+                In the 1990s, OpenGL faced the challenge of defining an open graphics library that would be considered a standard specification, 
+                would allow vendors to differentiate their products by adding special features, 
+                and would be governed by an Architecture Review Board (ARB). The ARB would propose and approve specification changes, make new releases, and ensure conformance testing.
+            </para>
+            <para>
+                OpenGL's solution was to allow extensions in the specification. 
+                Vendors could define special features as extensions, but the core of the specification remained under the control of the ARB.
+            </para>
+            <para>
+                This was a very successful strategy, allowing the core OpenGL API to become a general, uncluttered, and accepted standard.
+                More than 500 extensions have been defined in OpenGL's lifetime. 
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>The best extensions become standard features.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Unsuccessful extensions are abandoned prior to any attempt to incorporate them into the API.</para>
+                    </listitem>
+                    <listitem>
+                        <para>When multiple extensions are developed to support the same feature, all the variations are offered, allowing the best one to win.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Key innovations developed via the extension process include vertex and fragment shaders.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Major vendors participating in the extension process include NVidia, ATI, Apple, IBM, and Intel.</para>
+                    </listitem>
+                </itemizedlist>
             </para>
         </section>
         <section>
-            <title>Extensions</title>
+            <title>Defining Extensions</title>
             <para>
-                placeholder for content
+                Extensions add capability to an API beyond those defined in the API's specification.
+            </para>
+            <para>
+                An API specification must be written to allow for extensibility.
+                Flexibility in the specification contract allows for new data elements, actions, states, headers, parameters, and resource types.
+                The core API specification defines the extension mechanism; extensions themselves are not part of the core.
+            </para>
+            <para>
+                Implementors are only required to implement the core API.
+                They must implement the core API completely, so clients can rely upon a minimal level of functionality.
+            </para>
+            <para>
+                Extensions can follow a promotion path, at the end of which an extension may become part of a future version of the core API.
+                While promotion is possible, it is not inevitable: niche extensions are unlikely to be promoted to the core.
             </para>
         </section>
         <section>
-            <title>Extensions vs Versions</title>
+            <title>Extensions versus Versions</title>
+            <para> With API Extensions in place, API implementations can differ from each other in
+                terms of both their versions and their extensions. Extensions can apply to a variety
+                of backends, such as many hypervisors and many load balancers. Accurately describing
+                an API implementation requires awareness of its versions and extensions as sources
+                of variation. </para>
             <table frame="all">
                 <title>Versions and Extensions Differ in Specific Ways</title>
                 <tgroup cols="2">
@@ -192,45 +228,50 @@
                     <tbody>
                         <row>
                             <entry>
-                                <para>Centralized: Versions are maintained by the entity that
-                                    controls the API Spec: The OpenStack Architecture Board. Only
-                                    the ARB can create a new version, only the ARB defines what
-                                    OpenStack Compute 1.1 means.</para>
+                                <para><emphasis role="bold">Centralized:</emphasis> Versions are
+                                    maintained by the entity that controls the API Spec: The
+                                    OpenStack Architecture Board. Only the ARB can create a new
+                                    version, only the ARB defines what OpenStack Compute 1.1
+                                    means.</para>
                             </entry>
                             <entry>
-                                <para>Decentralized: Extensions are maintained by third parties:
-                                    Rackspace, OpenStack developers, etc. Anyone can create an
-                                    Extension.</para>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para>Deal with Core Functionality</para>
-                            </entry>
-                            <entry>
-                                <para>Deal with Specialized/Niche Functionality</para>
+                                <para><emphasis role="bold">Decentralized:</emphasis> Extensions are
+                                    maintained by third parties: Rackspace, OpenStack developers,
+                                    etc. Anyone can create an Extension.</para>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para>Appear infrequently:Versions provide a stable platform on
-                                    which to develop.</para>
+                                <para><emphasis role="bold">Core:</emphasis> Versions support core
+                                    functionality.</para>
                             </entry>
                             <entry>
-                                <para>Appear frequently: Extensions bring new features to the market
-                                    quickly, and in a compatible manner.</para>
+                                <para><emphasis role="bold">Niche:</emphasis> Extensions provide
+                                    specialized functionality.</para>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para>Are Queryable: You can programmatically tell what versions are
-                                    available by doing a GET on the base URL (/) of the API
-                                    endpoint.</para>
+                                <para><emphasis role="bold">Rare:</emphasis> Versions provide a
+                                    stable platform on which to develop.</para>
                             </entry>
                             <entry>
-                                <para>Are Queryable: You can programmatically tell what extensions
-                                    are available by doing a GET on the extensions resource
-                                    (/v1.1/extensions).</para>
+                                <para><emphasis role="bold">Frequent:</emphasis> Extensions bring
+                                    new features to the market quickly and in a compatible
+                                    manner.</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">Queryable: </emphasis>You can
+                                    programmatically tell what versions are available by doing a GET
+                                    on the base URL (<code>/</code>) of the API endpoint.</para>
+                            </entry>
+                            <entry>
+                                <para><emphasis role="bold">Queryable:</emphasis> You can
+                                    programmatically tell what extensions are available by doing a
+                                    GET on the API's extensions resource
+                                        (<code>/v1.1/extensions</code>).</para>
                             </entry>
                         </row>
                     </tbody>
@@ -240,9 +281,8 @@
         </section>
         <section>
             <title>Extensions and Pluggability</title>
-            <para>
-                placeholder for content
-            </para>
+            <para> Each driver may expose functionality that a client may access via an
+                extension.</para>
             <figure xml:id="core-extensions">
                 <title>One backend can be reached by both the Core API and Extensions.</title>
                 <mediaobject>
@@ -256,7 +296,50 @@
     <chapter>
         <title>How Do API Extensions Work with ReST?</title>
         <section>
-            <title>What can be extended?</title>
+            <title>What can extensions do?</title>
+            <para>
+                Extensions can define:
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>new elements</para>
+                    </listitem>
+                    <listitem>
+                        <para>new attributes of existing elements</para>
+                    </listitem>
+                    <listitem>
+                        <para>new headers</para>
+                    </listitem>
+                    <listitem>
+                        <para>new states</para>
+                    </listitem>
+                    <listitem>
+                        <para>new resources</para>
+                    </listitem>
+                    <listitem>
+                        <para>new MIME types</para>
+                    </listitem>
+                    <listitem>
+                        <para>new capabilities</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                New MIME types can provide support for Atom or plist representation.
+            </para>
+            <para>
+                New capabilities can include the ability to edit an otherwise-uneditable attribute.
+            </para>
+            </section>
+            <section>
+                <title>For each API, what extensions are available?</title>
+            <para>
+                Extensions are queryable. 
+                By making a single call, you should be able to tell what extensions are available. 
+                If you use extensions as a client, this is the first call you'll probably make. 
+            </para>
+            <para>
+                Query <code>/extensions</code> to obtain basic information about an API's extensions, including their human-readable names and descriptions, links to documentation, and identification of each extension's alias, namespace, and vendor.
+            </para>
             <calloutlist>
                 <callout arearefs="query.human-readable.name">
                     <para>
@@ -307,13 +390,10 @@
             </example>
         </section>
         <section>
-            <title>How are available extensions identified?</title>
+            <title>For each extension, how is the vendor identified?</title>
             <para>
-                placeholder for content
+                An extension alias always contains a prefix that identifies the vendor. 
             </para>
-        </section>
-        <section>
-            <title>How is an extension's vendor identified?</title>
                 <table frame="all">
                     <title>Extension Alias Identifies Vendor</title>
                     <tgroup cols="2">
@@ -327,27 +407,27 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry>OS</entry>
+                                <entry><code>OS</code></entry>
                                 <entry>OpenStack</entry>
                             </row>
                             <row>
-                                <entry>MLTI</entry>
+                                <entry><code>MLTI</code></entry>
                                 <entry>Multi-Vendor</entry>
                             </row>
                             <row>
-                                <entry>ARB</entry>
+                                <entry><code>ARB</code></entry>
                                 <entry>ARB Approved</entry>
                             </row>
                             <row>
-                                <entry>RAX</entry>
+                                <entry><code>RAX</code></entry>
                                 <entry>Rackspace</entry>
                             </row>
                             <row>
-                                <entry>NASA</entry>
+                                <entry><code>NASA</code></entry>
                                 <entry>NASA</entry>
                             </row>
                             <row>
-                                <entry>CTX</entry>
+                                <entry><code>CTX</code></entry>
                                 <entry>Citrix</entry>
                             </row>
                             <row>
@@ -357,6 +437,18 @@
                         </tbody>
                     </tgroup>
                 </table>
+            <para>
+                In this example, the <code>RAX</code> prefix in the extension's alias identifies the extension's vendor as Rackspace:
+            </para>
+            <example>
+                <title>Vendor ID in Alias Extension: XML</title>
+                <programlisting language="xml">
+<xi:include href="samples/apix-vendor.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <para>
+                Each extension is associated with a namespace; because the namespace is named to identify a vendor, the extension's association with a namespace also identifies the extensions's vendor.
+            </para>
             <table frame="all">
                 <title>Namespace Identifies Vendor</title>
                 <tgroup cols="2">
@@ -371,46 +463,41 @@
                     <tbody>
                         <row>
                             <entry>
-                                <para><emphasis role="underline"><link
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            xlink:href="http://docs.openstack.com"
-                                            >http://docs.openstack.com</link></emphasis>/ext/OS/...</para>
+                                <para>
+                                    <code>http://docs.openstack.com/ext/OS/</code>...
+                                </para>
                             </entry>
                             <entry>OpenStack</entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="underline"><link
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            xlink:href="http://docs.openstack.com"
-                                            >http://docs.openstack.com</link></emphasis>/ext/ARB/...</para>
+                                <para>
+                                    <code>http://docs.openstack.com</code>...
+                                </para>
                             </entry>
                             <entry>ARB Approved</entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="underline"><link
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            xlink:href="http://docs.rackspacecloud.com"
-                                            >http://docs.rackspacecloud.com</link></emphasis>/...</para>
+                                <para>
+                                    <code>docs.rackspacecloud.com</code>...
+                                </para>
                             </entry>
                             <entry>Rackspace</entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="underline"><link
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            xlink:href="http://docs.nasa.org"
-                                            >http://docs.nasa.org</link></emphasis>/...</para>
+                                <para>
+                                    <code>http://docs.nasa.org</code>...
+                                </para>
                             </entry>
                             <entry>NASA</entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="underline"><link
-                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            xlink:href="http://docs.citrix.com"
-                                            >http://docs.citrix.com</link></emphasis>/....</para>
+                                <para>
+                                    <code>http://docs.citrix.com</code>...
+                                </para>
                             </entry>
                             <entry>Citrix</entry>
                         </row>
@@ -420,7 +507,13 @@
                         </row>
                     </tbody>
                 </tgroup>
-            </table>            
+            </table>
+            <para>
+                Providing two ways of identifying each extension's vendor improves the likelihood that multiple extensions can coexist without creating conflicts.
+                For this purpose, a namespace such as <code>http://docs.rackspacecloud.com/servers/api/ext/pie/v1.0</code> is most useful to XML media types; 
+                an alias such as <code>RAX-PIE</code> is most useful to non-XML media types such as JSON, as well as in headers and parameters.
+                Because extensions are likely to be implemented by middleware, conflicts are possible without a standardized approach to identifying each extension and its vendor.
+            </para>
             <figure xml:id="shared">
                 <title>Two extensions add a "shared" attribute; one overrides the other.</title>
                 <mediaobject>
@@ -437,6 +530,11 @@
                     </imageobject>
                 </mediaobject>
             </figure>
+            <para>
+                OpenStack should maintain a registry associating extension vendors with prefixes and namespaces. 
+                Anyone should be able to register this identifying information for a vendor.
+                The registration process should not require approval or coordination.
+            </para>
         </section>
         <section>
             <title>Can data be extended?</title>
@@ -514,14 +612,16 @@
             </example>
         </section>
         <section>
-            <title>Which resources can use which extensions?</title>
+            <title>Can resources be extended?</title>
             <para>
-                placeholder for content
+               All major resources can reference an extension via <code>/ext</code>. 
             </para>
+            <para> Extensions are always defined at
+                    <parameter>/path/to/resource</parameter><code>/ext/</code><parameter>ext-alias/newResource</parameter>. </para>
         </section>
     </chapter>
     <chapter>
-        <title>How Can an API Extension Become an API Feature?</title>
+        <title>How Does an API Extension Become an API Feature?</title>
         <section>
             <title>Specification governance</title>
             <para>
