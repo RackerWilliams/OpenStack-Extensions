@@ -1,0 +1,28 @@
+<extensions xmlns="http://docs.openstack.org/api-specs/v1.0"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    >
+    <extension name="Public Image Extension"
+        namespace="http://docs.rackspacecloud.com/servers/api/ext/pie/v1.0"
+        alias="RS-PIE"
+        >
+        <atom:link rel="describedby" type="application/pdf"
+            href="http://docs.rackspacecloud.com/servers/api/ext/cs-pie-20111111.pdf"/>
+        <atom:link rel="describedby" type="application/vnd.sun.wadl+xml"
+            href="http://docs.rackspacecloud.com/servers/api/ext/cs-pie.wadl"/>
+        <description>
+            Adds the capability to share an image with other users.
+        </description>
+    </extension>
+    <extension name="Cloud Block Storage"
+        namespace="http://docs.rackspacecloud.com/servers/api/ext/cbs/v1.0"
+        alias="RS-CBS"
+        >
+        <atom:link rel="describedby" type="application/pdf"
+            href="http://docs.rackspacecloud.com/servers/api/ext/cs-cbs-20111201.pdf"/>
+        <atom:link rel="describedby" type="application/vnd.sun.wadl+xml"
+            href="http://docs.rackspacecloud.com/servers/api/ext/cs-cbs.wadl"/>
+        <description>
+            Allows mounting cloud block storage volumes.
+        </description>
+    </extension>
+</extensions>

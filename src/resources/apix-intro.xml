@@ -257,9 +257,54 @@
         <title>How Do API Extensions Work with ReST?</title>
         <section>
             <title>What can be extended?</title>
-            <para>
-                placeholder for content
-            </para>
+            <calloutlist>
+                <callout arearefs="query.human-readable.name">
+                    <para>
+                        The query returns the extension's human-readable name.
+                    </para>
+                </callout>
+                <callout arearefs="query.human-readable.description">
+                    <para>
+                        The query returns the extension's human-readable description.
+                    </para>
+                </callout>
+                <callout arearefs="query.docs">
+                    <para>
+                        The query returns links to documentation in multiple formats.
+                    </para>
+                </callout>
+                <callout arearefs="query.identifiers">
+                    <para>
+                        The query uniquely identifies the extension as an alias within a namespace.
+                    </para>
+                </callout>
+                <callout arearefs="query.vendor.namespace">
+                    <para>
+                        The query identifies the extension's vendor in the extension's namespace.
+                    </para>
+                </callout>
+                <callout arearefs="query.vendor.alias">
+                    <para>
+                        The query identifies the extension's vendor in the extension's alias.
+                    </para>
+                </callout>
+            </calloutlist>
+            <example>
+                <title>Sample Extension Query: XML</title>
+                <programlistingco>
+                    <areaspec>
+                        <area xml:id="query.human-readable.name" units="linecolumn" coords="4 45"/>
+                        <area xml:id="query.human-readable.description" units="linecolumn" coords="14 9"/>
+                        <area xml:id="query.docs" units="linecolumn" coords="11 80"/>
+                        <area xml:id="query.identifiers" units="linecolumn" coords="7 9"/>
+                        <area xml:id="query.vendor.namespace" units="linecolumn" coords="17 46"/>
+                        <area xml:id="query.vendor.alias" units="linecolumn" coords="19 24"/>
+                    </areaspec>
+                    <programlisting language="xml">
+<xi:include href="samples/apix-query.xml" parse="text"/>
+                    </programlisting>
+                </programlistingco>
+            </example>
         </section>
         <section>
             <title>How are available extensions identified?</title>
