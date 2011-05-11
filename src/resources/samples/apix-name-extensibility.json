@@ -1,0 +1,22 @@
+{
+    "alice" : {
+        "bob" : {
+        "$" : "david" ,
+        "@xmlns" : {
+        "charlie" : "http:\/\/some-other-namespace" ,
+        "$" : "http:\/\/some-namespace"
+        }
+    } ,
+    "charlie:edgar" : {
+        "$" : "frank" ,
+        "@xmlns" : {
+            "charlie": "http:\/\/some-other-namespace",
+            "$" : "http:\/\/some-namespace"
+        }
+    },
+    "@xmlns" : {
+        "charlie" : "http:\/\/some-other-namespace",
+        "$" : "http:\/\/some-namespace"
+    }
+  }
+}

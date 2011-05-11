@@ -290,7 +290,7 @@
                 </callout>
             </calloutlist>
             <example>
-                <title>Sample Extension Query: XML</title>
+                <title>Extension Query: XML</title>
                 <programlistingco>
                     <areaspec>
                         <area xml:id="query.human-readable.name" units="linecolumn" coords="4 45"/>
@@ -441,20 +441,77 @@
         <section>
             <title>Can data be extended?</title>
             <para>
-                placeholder for content
+                Extensions can be used to add data.
             </para>
+            <para>
+                In XML, attributes may be added to elements if they are in the extension namespace. 
+                After the final element, elements can be added if "Unique Particle Attribution" is not violated.
+            </para>
+            <example>
+                <title>Extending Data: XML</title>
+                <programlisting language="xml">
+<xi:include href="samples/apix-data.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <para>
+                In JSON, the action name is the alias followed by a colon ":".
+            </para>
+            <example>
+                <title>Extending Data: JSON</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-data.json" parse="text"/>
+                </programlisting>
+            </example>
         </section>
         <section>
             <title>Can actions be extended?</title>
             <para>
-                placeholder for content
+                In XML, actions are defined by the extension namespace.
             </para>
+            <example>
+                <title>Extending Actions: XML</title>
+                <programlisting language="xml">
+<xi:include href="samples/apix-action.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <para>
+                In JSON, the action name is the extension alias followed by a colon ":" followed by a unique identification of the action.
+            </para>
+            <example>
+                <title>Extending Actions: JSON</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-action.json" parse="text"/>
+                </programlisting>
+            </example>
         </section>
         <section>
             <title>Can headers and states be extended?</title>
             <para>
-                placeholder for content
+                To extend a header, name it <code>X-</code> followed by the extension alias followed by a unique identification of the header:
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para><code>X-RAX-CBS-Header1</code>: Value</para>
+                    </listitem>
+                    <listitem>
+                        <para><code>X-RAX-CBS-Header2</code>: Value</para>
+                    </listitem>
+                </itemizedlist>
             </para>
+            <para>
+                To extend a state, name it with the extension alias followed by a colon ":" followed by a unique identification of the state:
+            </para>
+            <example>
+                <title>Extending Headers and States: XML</title>
+                <programlisting language="xml">
+<xi:include href="samples/apix-header.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <example>
+                <title>Extending Headers and States: JSON</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-header.json" parse="text"/>
+                </programlisting>
+            </example>
         </section>
         <section>
             <title>Which resources can use which extensions?</title>
@@ -495,8 +552,71 @@
         <section>
             <title>JSON and Collections</title>
             <para>
-                placeholder for content
+                How can attributes be added to extend a collection of public addresses?
             </para>
+            <example>
+                <title>Question: Extending a Collection</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-address-q.json" parse="text"/>
+                </programlisting>
+            </example>
+            <para>
+                Wrap the array into an object.
+            </para>
+            <example>
+                <title>Answer: Array as Object</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-address-a.json" parse="text"/>
+                </programlisting>
+            </example>
+            <para>
+                How can a collection be identified?
+            </para>
+        <example>
+            <title>Question: Naming a Collection</title>
+            <programlisting language="javascript">
+<xi:include href="samples/apix-collection-q.json" parse="text"/>
+                </programlisting>
+        </example>
+        <para>
+            Name the collection as the plural form of the items it contains. If the collection contains servers, name it <code>servers</code>.
+        </para>
+        <example>
+            <title>Answer: Pluralize</title>
+            <programlisting language="javascript">
+<xi:include href="samples/apix-collection-a.json" parse="text"/>
+                </programlisting>
+        </example>
+        <para>
+            A better approach is to have a single name for the array:
+            <itemizedlist spacing="compact">
+                <listitem>
+                    <para>This is more generalizable; it always works.</para>
+                </listitem>
+                <listitem>
+                    <para>This limits the introduction of entities not found in other representations.</para>
+                </listitem>
+                <listitem>
+                    <para>This creates a common pattern for collections.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+            <example>
+                <title>Array with Single Name</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-name-array.json" parse="text"/>
+                </programlisting>
+            </example>
+            <para>Other approaches range from using generalizable values to ad hoc. Each approach
+                has its advantages and disadvantages. It may be that there is no approach that is
+                truly JSONic when dealing with collections. The goal is to provide extensibility in
+                JSON but avoid BadgerFish. Using alias prefixes moves toward this goal. </para>
+            <example>
+                <title>Extensibility within a Collection</title>
+                <programlisting language="javascript">
+<xi:include href="samples/apix-name-extensibility.json" parse="text"/>
+                </programlisting>
+            </example>   
         </section>
     </chapter>
     <chapter>
