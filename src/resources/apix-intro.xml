@@ -37,8 +37,8 @@
     <info>
         <author>
             <personname>
-                <firstname/>
-                <surname/>
+                <firstname>Jorge L.</firstname>
+                <surname>Williams</surname>
             </personname>
             <affiliation>
                 <orgname>OpenStack</orgname>
@@ -52,7 +52,7 @@
         <releaseinfo>PROPOSAL</releaseinfo>
         <productname>Cloud API Extensions</productname>
         <pubdate>2011-05-13</pubdate>
-        <legalnotice role="cc-by-nc-sa">
+        <legalnotice role="apache2">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
             </annotation>
@@ -118,18 +118,19 @@
         </section>
         <section>
             <title>Pluggability</title>
-            <para>
-                OpenStack services should be pluggable, so that one OpenStack service can support many backends. 
-                For a compute service, backends can be hypervisors; for a network service, backends can be network switches. 
-                A backend can be implemented as a driver, containing a set of shared capabilities widely applicable to all deployments.
-                Each backend may also contain special features and niche functionality. 
-                The goal is to provide access to special features while abstracting away the details of the backend.
-            </para>
+            <para> OpenStack services should be pluggable, so that one OpenStack service can support
+                many backends. For a compute service, backends can be hypervisors; for a network
+                service, backends can be network switches. A backend can be implemented as a driver,
+                containing a set of shared capabilities widely applicable to all deployments. Each
+                backend may also contain special features and niche functionality. The goal is to
+                provide access to special features while abstracting away the details of the
+                backend. In the example illustrated below, one load balancing service connects to
+                backends for Zeus, Pound, and HAProxy, each providing unique functionality.</para>
             <figure xml:id="manyBackends">
                 <title>One service can reach many backends.</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata scale="60" fileref="figures/1service-manyBackends.png"/>
+                        <imagedata scale="100" fileref="figures/apix-1service-manyBackends.svg" format="SVG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -278,13 +279,15 @@
         </section>
         <section>
             <title>Extensions and Pluggability</title>
-            <para> Each driver may expose functionality that a client may access via an
-                extension.</para>
+            <para> Each driver may expose functionality that a client may access via an extension.
+                In the example illustrated below, the load balancing service API's core and
+                extensions both provide functionality enabling the service to interact with its Zeus
+                backend. </para>
             <figure xml:id="core-extensions">
-                <title>One backend can be reached by both the Core API and Extensions.</title>
+                <title>One backend can be reached by both the core API and API extensions.</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata scale="60" fileref="figures/1service-core-extensions-manyBackends.png"/>
+                        <imagedata scale="100" fileref="figures/apix-1service-core-extensions-manybackends.svg" format="SVG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -503,7 +506,7 @@
                 <title>Two extensions add a "shared" attribute; one overrides the other.</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata scale="60" fileref="figures/2extensions-shared.png"/>
+                        <imagedata scale="100" fileref="figures/apix-2extensions-shared.svg" format="SVG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -511,7 +514,7 @@
                 <title>Two extensions read a "filter" parameter; both are activated.</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata scale="60" fileref="figures/2extensions-filter.png"/>
+                        <imagedata scale="100" fileref="figures/apix-2extensions-filter.svg" format="SVG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -628,10 +631,18 @@
                 This multi-step promotion path allows competing extensions to coexist and makes it possible to experiment with new features before deciding whether to incorporate them into the API standard.
                 It also means that API specifications are written bottom-up rather than top-down, so that implementations determine new features and the API is not designed in a vacuum. 
             </para>
+            <figure xml:id="promotion">
+                <title>An API extension can become a core feature of the API if approved by OpenStack.</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata scale="100" fileref="figures/apix-promotion.svg" format="SVG" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
             <para>
                 Some extensions should never be promoted to core features.
                 This can be because the extension implements niche functionality that doesn't make sense in the core API,
-                or because it implements functionality that can't be used within the core API because it would prevent a particular backend from implementing the full set of core features.
+                or because it implements functionality that can't be used within the core API since it would prevent a particular backend from implementing the full set of core features.
             </para>
             <para>
                 For example, the ability to dynamically change the port number for a load balancer might be useful as an extension but problematic in the core API.
