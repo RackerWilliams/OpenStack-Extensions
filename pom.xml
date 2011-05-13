@@ -37,7 +37,8 @@
                             <!-- set branding to OPENSTACK or RACKSPACE -->
                             <branding>openstack</branding>
                             <sourceDirectory>src/resources</sourceDirectory>
-                            <highlightSource>false</highlightSource>
+                            <!-- highlightSource bolds some elements of sample code but disables linewrapping -->
+                            <highlightSource>true</highlightSource>
                             <!-- use this .XML as the source for the book to be generated as .PDF -->
                             <includes>apix-intro.xml</includes>
                         </configuration>
