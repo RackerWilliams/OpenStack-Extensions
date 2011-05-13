@@ -110,13 +110,14 @@
                 At the same time, standards must be general, since niche functionality may make it impossible for some customers to adopt some standards.
                 The more general and stable the API, the more likely it will be widely adopted.
             </para>
-            <para>
-                While standardization is essential, it must coexist with innovation.
-                We must be able to add features that differentiate one implementation from other implementations, and we must be able to do that without breaking our clients and without going through an approval process.
-                Everyone must be able to make changes to the API.
-                The possibility of modification and customization encourages customers with a variety of needs to adopt OpenStack APIs; changes made to support one customer's needs can be beneficial to all. 
-                Developers should feel free to experiment and develop new features without worrying about the implications to the API as a standard.
-            </para>
+            <para> While standardization is essential, it must coexist with innovation. It must be
+                possible to add features that differentiate one implementation from other
+                implementations, and to do that without breaking our clients and without going
+                through an approval process. Everyone must be able to make changes to the API. The
+                possibility of modification and customization encourages customers with a variety of
+                needs to adopt OpenStack APIs; changes made to support one customer's needs can be
+                beneficial to all. Developers should feel free to experiment and develop new
+                features without worrying about the implications to the API as a standard. </para>
             <para>
                 This combination of stability and flexibility will allow OpenStack to create a ubiquitous cloud technology.
             </para>
@@ -149,11 +150,11 @@
                 For example, a compute service may be reachable via an OpenStack stock API, a Rackspace-supported API, and modifications by other vendors and individuals; 
                 all these implementations of the "same" API may also exist in multiple versions.
             </para>
-            <para>
-                Customers must be able to rely on a core set of API functionality.
-                Different customers may implement different options, but it must be possible for everyone to mean the same thing by the same label.
-                We must also be able to ensure compatibiity among different versions; this works best if we have consistent ways of identifying and describing versions.
-            </para>
+            <para> Customers must be able to rely on a core set of API functionality. Different
+                customers may implement different options, but it must be possible for everyone to
+                mean the same thing by the same label. Compatibility among different versions must
+                also be ensured; consistent ways of identifying and describing versions help to make
+                this possible. </para>
         </section>
     </chapter>
     <chapter>
@@ -232,15 +233,16 @@
                         <row>
                             <entry>
                                 <para><emphasis role="bold">Centralized:</emphasis> Versions are
-                                    maintained by the entity that controls the API Spec: The
-                                    OpenStack Architecture Board. Only the ARB can create a new
-                                    version, only the ARB defines what OpenStack Compute 1.1
+                                    maintained by the entity that controls the API Spec: the
+                                    OpenStack Architecture Review Board. Only the ARB can create a
+                                    new version; only the ARB defines what "OpenStack Compute 1.1"
                                     means.</para>
                             </entry>
                             <entry>
                                 <para><emphasis role="bold">Decentralized:</emphasis> Extensions are
-                                    maintained by third parties: Rackspace, OpenStack developers,
-                                    etc. Anyone can create an Extension.</para>
+                                    maintained by third parties, including  individual OpenStack
+                                    developers and corporate software vendors. Anyone can create an
+                                    extension.</para>
                             </entry>
                         </row>
                         <row>
@@ -266,15 +268,14 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">Queryable: </emphasis>You can
-                                    programmatically tell what versions are available by doing a &GET;
-                                    on the base URL (<code>/</code>) of the API endpoint.</para>
+                                <para><emphasis role="bold">Queryable: </emphasis> Issuing a &GET;
+                                    on the base URL (<code>/</code>) of the API endpoint returns
+                                    information about what versions are available.</para>
                             </entry>
                             <entry>
-                                <para><emphasis role="bold">Queryable:</emphasis> You can
-                                    programmatically tell what extensions are available by doing a
-                                    &GET; on the API's extensions resource
-                                        (<code>/v1.1/extensions</code>).</para>
+                                <para><emphasis role="bold">Queryable:</emphasis> Issuing a &GET; on
+                                    the API's extensions resource (<code>/v1.1/extensions</code>)
+                                    returns information about what extensions are available.</para>
                             </entry>
                         </row>
                     </tbody>
@@ -546,9 +547,7 @@
 <xi:include href="samples/apix-data.xml" parse="text"/>
                 </programlisting>
             </example>
-            <para>
-                In JSON, the action name is the alias followed by a colon ":".
-            </para>
+            <para> In JSON, the action name is the alias followed by a colon. </para>
             <example>
                 <title>Extending Data: JSON</title>
                 <programlisting language="javascript">
@@ -567,9 +566,8 @@
 <xi:include href="samples/apix-action.xml" parse="text"/>
                 </programlisting>
             </example>
-            <para>
-                In JSON, the action name is the extension alias followed by a colon ":" followed by a unique identification of the action.
-            </para>
+            <para> In JSON, the action name is the extension alias followed by a colon followed by a
+                unique identification of the action. </para>
             <example>
                 <title>Extending Actions: JSON</title>
                 <programlisting language="javascript">
@@ -580,19 +578,23 @@
         <section>
             <title>Extending Headers and States</title>
             <para>
-                To extend a header, name it <code>X-</code> followed by the extension alias followed by a unique identification of the header:
-                <itemizedlist spacing="compact">
-                    <listitem>
-                        <para><code>X-RAX-CBS-Header1</code>: Value</para>
-                    </listitem>
-                    <listitem>
-                        <para><code>X-RAX-CBS-Header2</code>: Value</para>
-                    </listitem>
-                </itemizedlist>
+                To extend a header, name it <code>X-</code> followed by the extension alias followed by a unique identification of the header.
+                In the example below, <code>X-Auth-User</code> and <code>X-Auth-Key</code> relate to the core API; 
+                <code>X-RAX-CBS-Header1</code> and <code>X-RAX-CBS-Header2</code> relate to the API's RAX-CBS extension.
             </para>
-            <para>
-                To extend a state, name it with the extension alias followed by a colon ":" followed by a unique identification of the state:
-            </para>
+            <example>
+                <title>Authentication Request with Extended X-Headers</title>
+                <literallayout class="monospaced">
+GET /v1.0 HTTP/1.1
+Host: auth.api.openstack.com
+X-Auth-User: jdoe
+X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89
+X-RAX-CBS-Header1: value1
+X-RAX-CBS-Header2: value2
+                </literallayout>
+            </example>
+            <para> To extend a state, name it with the extension alias followed by a colon followed
+                by a unique identification of the state. </para>
             <example>
                 <title>Extending Headers and States: XML</title>
                 <programlisting language="xml">
@@ -616,12 +618,11 @@
         </section>
         <section>
             <title>Extending Parameters</title>
-            <para>
-                To extend a parameter, append the name of the relevant extension and the name of that extension's parameter.
-                For example, a &GET; against
-                https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:test=1244
-                sets the <code>RAX-PIE</code> extension's <code>test</code> parameter to the value of 1244.
-            </para>
+            <para> To extend a parameter, append the alias of the relevant extension followed by a
+                colon followed by the name of that extension's parameter. For example, a &GET;
+                against https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:test=1244
+                sets the <code>RAX-PIE</code> extension's <code>test</code> parameter to the value
+                of 1244. </para>
         </section>
     </chapter>
     <chapter>
@@ -752,7 +753,7 @@
             <para>Other approaches range from using generalizable values to ad hoc. Each approach
                 has its advantages and disadvantages. It may be that there is no approach that is
                 truly JSONic when dealing with collections. The goal is to provide extensibility in
-                JSON but avoid BadgerFish. Using alias prefixes moves toward this goal. </para>
+                JSON without requiring a tool such as BadgerFish, generating JSON from XML. Using alias prefixes moves toward this goal. </para>
             <example>
                 <title>Extensibility within a Collection</title>
                 <programlisting language="javascript">
