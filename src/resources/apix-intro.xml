@@ -82,7 +82,7 @@
                             <td colspan="4">
                                 <itemizedlist spacing="compact">
                                     <listitem>
-                                        <para> Initial draft, adapted from April 26, 2011 OpenStack presentation. </para>
+                                        <para> Initial draft. </para>
                                     </listitem>
                                 </itemizedlist>
                             </td>
@@ -92,7 +92,7 @@
         </section>
     </chapter>
     <chapter>
-        <title>What Problems Can API Extensions Solve?</title>
+        <title>Problems with Developing OpenStack Services</title>
         <section>
             <title>Standardization versus Innovation and Differentiation</title>
             <para>API extensions can create compatibility between two seemingly-conflicting
@@ -118,14 +118,15 @@
         </section>
         <section>
             <title>Pluggability</title>
-            <para> OpenStack services should be pluggable, so that one OpenStack service can support
-                many backends. For a compute service, backends can be hypervisors; for a network
-                service, backends can be network switches. A backend can be implemented as a driver,
+            <para> OpenStack services are pluggable, so that one OpenStack service can support many
+                backends. For a compute service, backends can be hypervisors; for a network service,
+                backends can be network switches. A backend can be implemented as a driver,
                 containing a set of shared capabilities widely applicable to all deployments. Each
                 backend may also contain special features and niche functionality. The goal is to
                 provide access to special features while abstracting away the details of the
                 backend. In the example illustrated below, one load balancing service connects to
-                backends for Zeus, Pound, and HAProxy, each providing unique functionality.</para>
+                backends for Zeus, Pound, and HAProxy, with each backend providing unique
+                functionality.</para>
             <figure xml:id="manyBackends">
                 <title>One service can reach many backends.</title>
                 <mediaobject>
@@ -149,16 +150,14 @@
         </section>
     </chapter>
     <chapter>
-        <title>What Are API Extensions?</title>
-        <para>
-            The nature and value of API extensions can best be introduced with a case study.
+        <title>A Solution: API Extensions</title>
+        <para> 
+            The problems faced by OpenStack are not new. 
         </para>
-        <section>
-            <title>Case Study: OpenGL</title>
             <para>
                 In the 1990s, OpenGL faced the challenge of defining an open graphics library that would be considered a standard specification, 
-                would allow vendors to differentiate their products by adding special features, 
-                and would be governed by an Architecture Review Board (ARB). The ARB would propose and approve specification changes, make new releases, and ensure conformance testing.
+                would allow vendors to differentiate their products by adding special features.
+                An Architecture Review Board (ARB) would propose and approve specification changes, make new releases, and ensure conformance testing.
             </para>
             <para>
                 OpenGL's solution was to allow extensions in the specification. 
@@ -185,7 +184,6 @@
                     </listitem>
                 </itemizedlist>
             </para>
-        </section>
         <section>
             <title>Defining Extensions</title>
             <para>
@@ -294,10 +292,8 @@
         </section>
     </chapter>
     <chapter>
-        <title>How Do API Extensions Work with ReST?</title>
-        <section>
-            <title>What can extensions do?</title>
-            <para>
+        <title>API Extensions and ReST</title>
+              <para>
                 Extensions can define:
                 <itemizedlist spacing="compact">
                     <listitem>
@@ -316,6 +312,9 @@
                         <para>new resources</para>
                     </listitem>
                     <listitem>
+                        <para>new parameters</para>
+                    </listitem>
+                    <listitem>
                         <para>new MIME types</para>
                     </listitem>
                     <listitem>
@@ -328,10 +327,9 @@
             </para>
             <para>
                 New capabilities can include the ability to edit an otherwise-uneditable attribute.
-            </para>
-            </section>
+            </para>       
             <section>
-                <title>For each API, what extensions are available?</title>
+                <title>Identifying Available Extensions</title>
             <para>
                 Extensions are queryable. 
                 By making a single call, you should be able to tell what extensions are available. 
@@ -390,7 +388,7 @@
                 </calloutlist>
         </section>
         <section>
-            <title>For each extension, how is the vendor identified?</title>
+            <title>Identifying an Extension's Vendor</title>
             <para>
                 An extension alias always contains a prefix that identifies the vendor. 
             </para>
@@ -525,7 +523,7 @@
             </para>
         </section>
         <section>
-            <title>Can data be extended?</title>
+            <title>Extending Data</title>
             <para>
                 Extensions can be used to add data.
             </para>
@@ -550,7 +548,7 @@
             </example>
         </section>
         <section>
-            <title>Can actions be extended?</title>
+            <title>Extending Actions</title>
             <para>
                 In XML, actions are defined by the extension namespace.
             </para>
@@ -571,7 +569,7 @@
             </example>
         </section>
         <section>
-            <title>Can headers and states be extended?</title>
+            <title>Extending Headers and States</title>
             <para>
                 To extend a header, name it <code>X-</code> followed by the extension alias followed by a unique identification of the header:
                 <itemizedlist spacing="compact">
@@ -600,18 +598,22 @@
             </example>
         </section>
         <section>
-            <title>Can resources be extended?</title>
+            <title>Extending Resources</title>
             <para>
                All major resources can reference an extension via <code>/ext</code>. 
             </para>
             <para> Extensions are always defined at
                     <parameter>/path/to/resource</parameter><code>/ext/</code><parameter>ext-alias/newResource</parameter>. </para>
         </section>
+        <section>
+            <title>Extending Parameters</title>
+            <para>placeholder for content</para>
+        </section>
     </chapter>
     <chapter>
-        <title>How Does an API Extension Become an API Feature?</title>
+        <title>API Extensions and API Features</title>
         <section>
-            <title>Specification governance</title>
+            <title>Specification Governance</title>
             <para> OpenStack functions as the Architecture Review Board for OpenStack API
                 extensions.  </para>
         </section>
@@ -635,7 +637,7 @@
                 <title>An API extension can become a core feature of the API if approved by OpenStack.</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata scale="100" fileref="figures/apix-promotion.svg" format="SVG" align="center"/>
+                        <imagedata scale="90" fileref="figures/apix-promotion.svg" format="SVG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -652,7 +654,7 @@
         </section>
     </chapter>
     <chapter>
-        <title>What Challenges Must Be Met?</title>
+        <title>Challenges</title>
         <para>
             While API extensions can solve some problems relating to the need for simultaneous standardization and flexibility, they can create a new set of challenges. 
             Two problematic areas are language bindings and JSON collections. 
@@ -735,9 +737,9 @@
         </section>
     </chapter>
     <chapter>
-        <title>When is an API Extension the Best Approach?</title>
+        <title>Summary</title>
         <section>
-            <title>Why should we use extensions?</title>
+            <title>Benefits of Extensions</title>
             <para>
                 API extensions provide several key benefits:
                 <itemizedlist spacing="compact">
@@ -763,7 +765,7 @@
             </para>
         </section>
         <section>
-            <title>How can we use extensions?</title>
+            <title>Ways to Use Extensions</title>
             <para>
                 API extensions are queryable. 
             </para>  
