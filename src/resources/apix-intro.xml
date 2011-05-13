@@ -58,15 +58,14 @@
             </annotation>
         </legalnotice>
         <abstract>
-            <para>This document is intended for software developers interested in developing
-                applications using OpenStack API extensions.
-             </para>
+            <para>This document provides an overview of the OpenStack cloud API extensions
+                mechanism. </para>
         </abstract>
     </info>
     <chapter>
         <title>Overview</title>
-        <para> Cloud API Extensions make it possible to add functionality to Cloud APIs
-            without modifying the core of the API itself. </para>
+        <para> Cloud API extensions make it possible to add functionality to Cloud APIs without
+            modifying the core of the API itself. </para>
         <section>
             <title>Document Change History</title>
             <informaltable rules='all'>
@@ -93,6 +92,12 @@
     </chapter>
     <chapter>
         <title>Problems with Developing OpenStack Services</title>
+        <para>
+            Efforts to develop OpenStack cloud services face some of the same challenges as other open source software projects.
+            The need for innovation can compete with the need for stability. 
+            The goal of supporting a wide variety of configurations can compete with the reality that some features are incompatible with others.
+            Ongoing decentralized development of services by independent software developers can mean that administration of services is complex and confusing to customers.
+        </para>
         <section>
             <title>Standardization versus Innovation and Differentiation</title>
             <para>API extensions can create compatibility between two seemingly-conflicting
@@ -139,13 +144,15 @@
         <section>
             <title>Open Source</title>
             <para>
-                OpenStack services are open source, so all developers can make changes to the code. 
+                On of the challenges for OpenStack customers is that OpenStack services are open source, so all developers can make changes to the code. 
                 For APIs provided by OpenStack as well as by multiple vendors, a customer can face great difficulty in choosing among and managing versions of the API. 
                 For example, a compute service may be reachable via an OpenStack stock API, a Rackspace-supported API, and modifications by other vendors and individuals; 
                 all these implementations of the "same" API may also exist in multiple versions.
-                However complex the environment becomes, it must be possible for everyone to mean the same thing by the same label  
-                so that "OpenStack Compute API 1.1" can be identified and discussed among people with different implementations and different capabilities.
-                We must also be able to ensure compatibiity among different versions; this also works best if we have consistent ways of identirying and describing versions.
+            </para>
+            <para>
+                Customers must be able to rely on a core set of API functionality.
+                Different customers may implement different options, but it must be possible for everyone to mean the same thing by the same label.
+                We must also be able to ensure compatibiity among different versions; this works best if we have consistent ways of identifying and describing versions.
             </para>
         </section>
     </chapter>
@@ -260,13 +267,13 @@
                         <row>
                             <entry>
                                 <para><emphasis role="bold">Queryable: </emphasis>You can
-                                    programmatically tell what versions are available by doing a GET
+                                    programmatically tell what versions are available by doing a &GET;
                                     on the base URL (<code>/</code>) of the API endpoint.</para>
                             </entry>
                             <entry>
                                 <para><emphasis role="bold">Queryable:</emphasis> You can
                                     programmatically tell what extensions are available by doing a
-                                    GET on the API's extensions resource
+                                    &GET; on the API's extensions resource
                                         (<code>/v1.1/extensions</code>).</para>
                             </entry>
                         </row>
@@ -303,6 +310,9 @@
                         <para>new attributes of existing elements</para>
                     </listitem>
                     <listitem>
+                        <para>new data</para>
+                    </listitem>
+                    <listitem>
                         <para>new headers</para>
                     </listitem>
                     <listitem>
@@ -332,8 +342,7 @@
                 <title>Identifying Available Extensions</title>
             <para>
                 Extensions are queryable. 
-                By making a single call, you should be able to tell what extensions are available. 
-                If you use extensions as a client, this is the first call you'll probably make. 
+                For any service API, making a single call to <code>/extensions</code> returns information about what extensions are available and how to learn more about them. 
             </para>
             <para>
                 Query <code>/extensions</code> to obtain basic information about an API's extensions, including their human-readable names and descriptions, links to documentation, and identification of each extension's alias, namespace, and vendor.
@@ -607,15 +616,21 @@
         </section>
         <section>
             <title>Extending Parameters</title>
-            <para>placeholder for content</para>
+            <para>
+                To extend a parameter, append the name of the relevant extension and the name of that extension's parameter.
+                For example, a &GET; against
+                https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:test=1244
+                sets the <code>RAX-PIE</code> extension's <code>test</code> parameter to the value of 1244.
+            </para>
         </section>
     </chapter>
     <chapter>
         <title>API Extensions and API Features</title>
         <section>
             <title>Specification Governance</title>
-            <para> OpenStack functions as the Architecture Review Board for OpenStack API
-                extensions.  </para>
+            <para> OpenStack's existing structure adequately addresses governance of API extensions
+                and features. For each service, the service's he Architecture Review Board for
+                OpenStack API extensions. </para>
         </section>
         <section>
             <title>Promotion Path</title>
@@ -770,16 +785,16 @@
                 API extensions are queryable. 
             </para>  
             <para>
-                To discover which extensions are available, issue a GET to <code>/extensions</code>.
+                To discover which extensions are available, issue a &GET; to <code>/extensions</code>.
             </para>
             <para>
-                To use a specific extension, issue a GET to <code>/extensions/</code><parameter>{EXT-ALIAS}</parameter>.
+                To use a specific extension, issue a &GET; to <code>/extensions/</code><parameter>{EXT-ALIAS}</parameter>.
             </para>
             <para>
                 To prevent conflicts between extensions, use aliases and namespaces to identify each extension's vendor.
             </para>
             <para>
-                To move an extension into the core API, work to have it promoted.
+                To move an extension into the core API, work within OpenStack to have it promoted.
             </para>
         </section>
     </chapter>
