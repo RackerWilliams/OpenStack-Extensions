@@ -3,7 +3,7 @@
     >
     <extension name="Public Image Extension"
         namespace="http://docs.rackspacecloud.com/servers/api/ext/pie/v1.0"
-        alias="RS-PIE"
+        alias="RAX-PIE"
         >
         <atom:link rel="describedby" type="application/pdf"
             href="http://docs.rackspacecloud.com/servers/api/ext/cs-pie-20111111.pdf"/>
@@ -15,7 +15,7 @@
     </extension>
     <extension name="Cloud Block Storage"
         namespace="http://docs.rackspacecloud.com/servers/api/ext/cbs/v1.0"
-        alias="RS-CBS"
+        alias="RAX-CBS"
         >
         <atom:link rel="describedby" type="application/pdf"
             href="http://docs.rackspacecloud.com/servers/api/ext/cs-cbs-20111201.pdf"/>
