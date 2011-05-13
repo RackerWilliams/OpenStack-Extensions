@@ -352,14 +352,15 @@
                 to the API: <code>RAX-PIE</code> and <code>RAX-CBS</code>.</para>
             <example>
                 <title>Extension Query: XML</title>
+                <?dbfo keep-together="auto"?>
                 <programlistingco>
                     <areaspec>
-                        <area xml:id="query.human-readable.name" units="linecolumn" coords="4 45"/>
-                        <area xml:id="query.human-readable.description" units="linecolumn" coords="14 9"/>
-                        <area xml:id="query.docs" units="linecolumn" coords="11 80"/>
-                        <area xml:id="query.identifiers" units="linecolumn" coords="7 9"/>
-                        <area xml:id="query.vendor.namespace" units="linecolumn" coords="17 46"/>
-                        <area xml:id="query.vendor.alias" units="linecolumn" coords="19 24"/>
+                        <area xml:id="query.human-readable.name" units="linecolumn" coords="5 1"/>
+                        <area xml:id="query.human-readable.description" units="linecolumn" coords="14 1"/>
+                        <area xml:id="query.docs" units="linecolumn" coords="11 1"/>
+                        <area xml:id="query.identifiers" units="linecolumn" coords="7 1"/>
+                        <area xml:id="query.vendor.namespace" units="linecolumn" coords="18 1"/>
+                        <area xml:id="query.vendor.alias" units="linecolumn" coords="19 1"/>
                     </areaspec>
                     <programlisting language="xml">
 <xi:include href="samples/apix-query.xml" parse="text"/>
@@ -460,6 +461,7 @@
             <example>
                 <title>Vendor ID in Alias Extension: XML</title>
                 <programlisting language="xml">
+                <?dbfo keep-together="always"?>
 <xi:include href="samples/apix-vendor.xml" parse="text"/>
                 </programlisting>
             </example>
@@ -548,6 +550,7 @@
             </para>
             <example>
                 <title>Extending Data: XML</title>
+                <?dbfo keep-together="always"?>
                 <programlisting language="xml">
 <xi:include href="samples/apix-data.xml" parse="text"/>
                 </programlisting>
@@ -555,7 +558,8 @@
             <para> In JSON, the action name is the alias followed by a colon. </para>
             <example>
                 <title>Extending Data: JSON</title>
-                <programlisting language="javascript">
+                <?dbfo keep-together="always"?>
+                <programlisting language="javascript">    
 <xi:include href="samples/apix-data.json" parse="text"/>
                 </programlisting>
             </example>
@@ -568,6 +572,7 @@
             <example>
                 <title>Extending Actions: XML</title>
                 <programlisting language="xml">
+                <?dbfo keep-together="always"?>    
 <xi:include href="samples/apix-action.xml" parse="text"/>
                 </programlisting>
             </example>
@@ -575,6 +580,7 @@
                 unique identification of the action. </para>
             <example>
                 <title>Extending Actions: JSON</title>
+                <?dbfo keep-together="always"?>
                 <programlisting language="javascript">
 <xi:include href="samples/apix-action.json" parse="text"/>
                 </programlisting>
@@ -589,6 +595,7 @@
             </para>
             <example>
                 <title>Authentication Request with Extended X-Headers</title>
+                <?dbfo keep-together="always"?>
                 <literallayout class="monospaced">
 GET /v1.0 HTTP/1.1
 Host: auth.api.openstack.com
@@ -603,12 +610,14 @@ X-RAX-CBS-Header2: value2
             <example>
                 <title>Extending Headers and States: XML</title>
                 <programlisting language="xml">
+                <?dbfo keep-together="always"?>    
 <xi:include href="samples/apix-header.xml" parse="text"/>
                 </programlisting>
             </example>
             <example>
                 <title>Extending Headers and States: JSON</title>
                 <programlisting language="javascript">
+                <?dbfo keep-together="always"?>
 <xi:include href="samples/apix-header.json" parse="text"/>
                 </programlisting>
             </example>
@@ -704,6 +713,7 @@ X-RAX-CBS-Header2: value2
             </para>
             <example>
                 <title>Question: Extending a Collection</title>
+                <?dbfo keep-together="always"?>
                 <programlisting language="javascript">
 <xi:include href="samples/apix-address-q.json" parse="text"/>
                 </programlisting>
@@ -713,6 +723,7 @@ X-RAX-CBS-Header2: value2
             </para>
             <example>
                 <title>Answer: Array as Object</title>
+                <?dbfo keep-together="always"?>
                 <programlisting language="javascript">
 <xi:include href="samples/apix-address-a.json" parse="text"/>
                 </programlisting>
@@ -722,6 +733,7 @@ X-RAX-CBS-Header2: value2
             </para>
         <example>
             <title>Question: Naming a Collection</title>
+            <?dbfo keep-together="always"?>
             <programlisting language="javascript">
 <xi:include href="samples/apix-collection-q.json" parse="text"/>
                 </programlisting>
@@ -731,6 +743,7 @@ X-RAX-CBS-Header2: value2
         </para>
         <example>
             <title>Answer: Pluralize</title>
+            <?dbfo keep-together="always"?>
             <programlisting language="javascript">
 <xi:include href="samples/apix-collection-a.json" parse="text"/>
                 </programlisting>
@@ -751,6 +764,7 @@ X-RAX-CBS-Header2: value2
         </para>
             <example>
                 <title>Array with Single Name</title>
+                <?dbfo keep-together="always"?>
                 <programlisting language="javascript">
 <xi:include href="samples/apix-name-array.json" parse="text"/>
                 </programlisting>
@@ -761,6 +775,7 @@ X-RAX-CBS-Header2: value2
                 JSON without requiring a tool such as BadgerFish, generating JSON from XML. Using alias prefixes moves toward this goal. </para>
             <example>
                 <title>Extensibility within a Collection</title>
+                <?dbfo keep-together="always"?>
                 <programlisting language="javascript">
 <xi:include href="samples/apix-name-extensibility.json" parse="text"/>
                 </programlisting>
