@@ -345,9 +345,11 @@
                 Extensions are queryable. 
                 For any service API, making a single call to <code>/extensions</code> returns information about what extensions are available and how to learn more about them. 
             </para>
-            <para>
-                Query <code>/extensions</code> to obtain basic information about an API's extensions, including their human-readable names and descriptions, links to documentation, and identification of each extension's alias, namespace, and vendor.
-            </para>
+            <para> Query <code>/extensions</code> to obtain basic information about an API's
+                extensions, including their human-readable names and descriptions, links to
+                documentation, and identification of each extension's alias, namespace, and vendor.
+                In the example below, the query returns information about two available extensions
+                to the API: <code>RAX-PIE</code> and <code>RAX-CBS</code>.</para>
             <example>
                 <title>Extension Query: XML</title>
                 <programlistingco>
@@ -402,45 +404,56 @@
             <para>
                 An extension alias always contains a prefix that identifies the vendor. 
             </para>
-                <table frame="all">
-                    <title>Extension Alias Identifies Vendor</title>
-                    <tgroup cols="2">
-                        <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-                        <colspec colname="c2" colnum="2" colwidth="2.39*"/>
-                        <thead>
-                            <row>
-                                <entry>Prefix</entry>
-                                <entry>Vendor</entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry><code>OS</code></entry>
-                                <entry>OpenStack</entry>
-                            </row>
-                            <row>
-                                <entry><code>MLTI</code></entry>
-                                <entry>Multi-Vendor</entry>
-                            </row>
-                            <row>
-                                <entry><code>RAX</code></entry>
-                                <entry>Rackspace</entry>
-                            </row>
-                            <row>
-                                <entry><code>NASA</code></entry>
-                                <entry>NASA</entry>
-                            </row>
-                            <row>
-                                <entry><code>CTX</code></entry>
-                                <entry>Citrix</entry>
-                            </row>
-                            <row>
-                                <entry>...</entry>
-                                <entry>...</entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </table>
+            <table frame="all">
+                <title>Extension Alias Identifies Vendor</title>
+                <tgroup cols="2">
+                    <colspec colname="c2" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="newCol3" colnum="2" colwidth="8.66*"/>
+                    <thead>
+                        <row>
+                            <entry>Vendor</entry>
+                            <entry>Prefix</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Citrix</entry>
+                            <entry>
+                                <para>
+                                    <code>CTX</code>
+                                </para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Multi-Vendor</entry>
+                            <entry>
+                                <code>MLTI</code>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>NASA</entry>
+                            <entry>
+                                <code>NASA</code></entry>
+                        </row>
+                        <row>
+                            <entry>OpenStack</entry>
+                            <entry>
+                                <para>
+                                    <code>OS</code>... </para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Rackspace</entry>
+                            <entry>
+                                <code>RAX</code>... </entry>
+                        </row>
+                        <row>
+                            <entry>...</entry>
+                            <entry> ...</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
             <para>
                 In this example, the <code>RAX</code> prefix in the extension's alias identifies the extension's vendor as Rackspace:
             </para>
@@ -456,46 +469,38 @@
             <table frame="all">
                 <title>Namespace Identifies Vendor</title>
                 <tgroup cols="2">
-                    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-                    <colspec colname="c2" colnum="2" colwidth="2.33*"/>
+                    <colspec colname="c2" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="newCol3" colnum="2" colwidth="8.69*"/>
                     <thead>
                         <row>
-                            <entry>Prefix</entry>
                             <entry>Vendor</entry>
+                            <entry>Namespace</entry>
                         </row>
                     </thead>
                     <tbody>
                         <row>
-                            <entry>
-                                <para>
-                                    <code>http://docs.openstack.com/ext/OS/</code>...
-                                </para>
-                            </entry>
-                            <entry>OpenStack</entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para>
-                                    <code>docs.rackspacecloud.com</code>...
-                                </para>
-                            </entry>
-                            <entry>Rackspace</entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para>
-                                    <code>http://docs.nasa.org</code>...
-                                </para>
-                            </entry>
-                            <entry>NASA</entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para>
-                                    <code>http://docs.citrix.com</code>...
-                                </para>
-                            </entry>
                             <entry>Citrix</entry>
+                            <entry>
+                                <para>
+                                    <code>http://docs.citrix.com</code>... </para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>NASA</entry>
+                            <entry>
+                                <code>http://docs.nasa.org</code>... </entry>
+                        </row>
+                        <row>
+                            <entry>OpenStack</entry>
+                            <entry>
+                                <para>
+                                    <code>http://docs.openstack.com/ext/OS/</code>... </para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Rackspace</entry>
+                            <entry>
+                                <code>docs.rackspacecloud.com</code>... </entry>
                         </row>
                         <row>
                             <entry>...</entry>
