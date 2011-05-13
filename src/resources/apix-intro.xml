@@ -162,50 +162,49 @@
         <para> 
             The problems faced by OpenStack are not new. 
         </para>
-            <para>
-                In the 1990s, OpenGL faced the challenge of defining an open graphics library that would be considered a standard specification, 
-                would allow vendors to differentiate their products by adding special features.
-                An Architecture Review Board (ARB) would propose and approve specification changes, make new releases, and ensure conformance testing.
-            </para>
+            <para> In the 1990s, OpenGL faced the challenge of defining an open graphics library
+            that would be considered a standard specification and allow vendors to differentiate
+            their products by adding special features. An Architecture Review Board (ARB) would
+            propose and approve specification changes, make new releases, and ensure conformance
+            testing. </para>
             <para>
                 OpenGL's solution was to allow extensions in the specification. 
                 Vendors could define special features as extensions, but the core of the specification remained under the control of the ARB.
             </para>
-            <para>
-                This was a very successful strategy, allowing the core OpenGL API to become a general, uncluttered, and accepted standard.
-                More than 500 extensions have been defined in OpenGL's lifetime. 
+            <para> This was a very successful strategy, allowing the core OpenGL API to become a
+            general, uncluttered, and accepted standard. More than 500 extensions have been defined
+            in OpenGL's lifetime. The benefits of OpenGL's extension strategy include the following:
                 <itemizedlist spacing="compact">
-                    <listitem>
-                        <para>The best extensions become standard features.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Unsuccessful extensions are abandoned prior to any attempt to incorporate them into the API.</para>
-                    </listitem>
-                    <listitem>
-                        <para>When multiple extensions are developed to support the same feature, all the variations are offered, allowing the best one to win.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Key innovations developed via the extension process include vertex and fragment shaders.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Major vendors participating in the extension process include NVidia, ATI, Apple, IBM, and Intel.</para>
-                    </listitem>
-                </itemizedlist>
+                <listitem>
+                    <para>The best extensions become standard features.</para>
+                </listitem>
+                <listitem>
+                    <para>Unsuccessful extensions are abandoned prior to any attempt to incorporate
+                        them into the API.</para>
+                </listitem>
+                <listitem>
+                    <para>When multiple extensions are developed to support the same feature, all
+                        the variations are offered, allowing the best one to win.</para>
+                </listitem>
+                <listitem>
+                    <para>Key innovations developed via the extension process include vertex and
+                        fragment shaders.</para>
+                </listitem>
+                </itemizedlist>      
             </para>
+        <para>Major vendors participating in the extension process include NVidia, ATI,
+            Apple, IBM, and Intel.</para>   
         <section>
             <title>Defining Extensions</title>
             <para>
                 Extensions add capability to an API beyond those defined in the API's specification.
             </para>
-            <para>
-                An API specification must be written to allow for extensibility.
-                Flexibility in the specification contract allows for new data elements, actions, states, headers, parameters, and resource types.
-                The core API specification defines the extension mechanism; extensions themselves are not part of the core.
-            </para>
-            <para>
-                Implementors are only required to implement the core API.
-                They must implement the core API completely, so clients can rely upon a minimal level of functionality.
-            </para>
+            <para> An API specification must be written to allow for extensibility. Flexibility in
+                the specification contract allows for new data elements, actions, states, headers,
+                parameters, and resource types. The core API specification defines the extension
+                mechanism; however, extensions themselves are not part of the core. </para>
+            <para> Implementors are only required to implement the core API. They must implement the
+                core API completely so clients can rely upon a minimal level of functionality. </para>
             <para>
                 Extensions can follow a promotion path, at the end of which an extension may become part of a future version of the core API.
                 While promotion is possible, it is not inevitable: niche extensions are unlikely to be promoted to the core.
