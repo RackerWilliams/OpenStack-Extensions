@@ -56,8 +56,24 @@
     </info>
     <chapter>
         <title>Overview</title>
-        <para> Cloud API extensions make it possible to add functionality to Cloud APIs without
-            modifying the core of the API itself. </para>
+        <para>
+            The OpenStack extension mechanism makes it possible to add
+            functionality to OpenStack APIs in a manner that ensures
+            compatibility with existing clients. This capability
+            allows OpenStack operators and vendors to distinguish
+            themselves by providing niche functionality to their
+            clients. It also provides a means by which new features
+            may be proposed for consideration in upcoming versions of
+            core APIs.
+        </para>
+        <para>
+            This document describes the extension mechanism in detail.
+            It provides guidance to API implementors and clients on
+            developing and consuming API extensions and it describes
+            the rules by which extensions are governed. Finally, it
+            describes the process used to promote API extensions to
+            new features in core OpenStack APIs.
+        </para>
         <section>
             <title>Document Change History</title>
             <informaltable rules='all'>
