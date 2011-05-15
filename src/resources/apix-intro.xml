@@ -33,24 +33,14 @@
       xmlns:html="http://www.w3.org/1999/xhtml"
       xmlns:db="http://docbook.org/ns/docbook"
       version="5.0" status="draft">
-    <title>Cloud API Extensions Overview</title>
+    <title>OpenStack API Extensions</title>
+    <subtitle>An Overveiw</subtitle>
     <info>
-        <author>
-            <personname>
-                <firstname>Jorge L.</firstname>
-                <surname>Williams</surname>
-            </personname>
-            <affiliation>
-                <orgname>OpenStack</orgname>
-            </affiliation>
-        </author>
         <copyright>
             <year>2010</year>
             <year>2011</year>
-            <holder>OpenStack</holder>
+            <holder>Rackspace US, Inc.</holder>
         </copyright>
-        <releaseinfo>PROPOSAL</releaseinfo>
-        <productname>Cloud API Extensions</productname>
         <pubdate>2011-05-13</pubdate>
         <legalnotice role="apache2">
             <annotation>
@@ -58,8 +48,10 @@
             </annotation>
         </legalnotice>
         <abstract>
-            <para>This document provides an overview of the OpenStack cloud API extensions
-                mechanism. </para>
+            <para>
+                This document provides an overview of the OpenStack API extension
+                mechanism.
+            </para>
         </abstract>
     </info>
     <chapter>
