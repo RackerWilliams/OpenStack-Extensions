@@ -158,7 +158,33 @@
                 part of the core OpenGL API.
             </para>
             <para>
-                
+                OpenStack, while very different than OpenGL, shares
+                many similar goals and faces many of the same
+                challenges.  OpenStack APIs are designed to be open
+                API standards.  An important goal is to provide
+                developers with a ubiquitous, stable, any-scale cloud
+                development platform that abstracts away many of the
+                differences between hosting providers and their
+                underlying infrastructure (hypervisors, load
+                balancers, etc.).  A Policy Review Board, similar to
+                OpenGL's Architecture Review Board, is responsible to
+                direct development of these APIs in a manner that
+                ensures these goals are met. As with OpenGL, OpenStack
+                requires support from vendors (and cloud providers) in
+                order to be successful. As a result, OpenStack APIs
+                also aim to provide vendors with a platform which
+                allows them to differentiate themselves by providing
+                innovating new features and niche functionality to
+                their users.  Because of these similarities, the
+                OpenStack extension mechanism described in this
+                document is modeled after the OpenGL extension
+                mechanism.  The methods by which extensions are
+                defined vary drastically of course since the nature of
+                the APIs is very different (C vs REST), however, the
+                manner in which extensions are documented, the way in
+                which vendors are attributed, and the promotion path
+                that an extension follows, all borrow heavily from
+                OpenGL.
             </para>
             <section>
             <title>Defining Extensions</title>
