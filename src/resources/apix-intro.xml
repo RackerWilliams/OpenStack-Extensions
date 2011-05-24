@@ -118,6 +118,52 @@
             </itemizedlist>
         </section>
         <section>
+            <title>Organization of this Document</title>
+            <variablelist spacing="normal">
+                <?dbfo list-presentation="blocks"?>
+                <varlistentry>
+                    <term><xref linkend="Background" /></term>
+                    <listitem>
+                        <para>
+                            This chapter provides background
+                            information on OpenStack extensions and
+                            the OpenStack extension mechanism.  It
+                            describes what extensions are, how the
+                            extension mechanism in OpenStack is
+                            related to the OpenGL extension mechanism,
+                            the differences between extensions and
+                            versions, and why extensions are vital
+                            when defining a pluggable architecture.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><xref linkend="REST" /></term>
+                    <listitem>
+                        <para>
+                            ...
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><xref linkend="Promotion" /></term>
+                    <listitem>
+                        <para>
+                            ...
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><xref linkend="Summary" /></term>
+                    <listitem>
+                        <para>
+                            ...
+                        </para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </section>
+        <section>
             <title>Document Change History</title>
             <informaltable rules='all'>
                 <thead>
@@ -141,7 +187,7 @@
             </informaltable>
         </section>
     </chapter>
-    <chapter>
+    <chapter xml:id="Background">
         <title>Background</title>
             <para>
                 In the 1990s, OpenGL was developed as a portable open
@@ -333,7 +379,7 @@
             </figure>
         </section>
     </chapter>
-    <chapter>
+    <chapter xml:id="REST">
         <title>API Extensions and ReST</title>
               <para>
                 Extensions can define:
@@ -673,7 +719,7 @@ X-RAX-CBS-Header2: value2
                 of 1244. </para>
         </section>
     </chapter>
-    <chapter>
+    <chapter xml:id="Promotion">
         <title>API Extensions and API Features</title>
         <section>
             <title>Specification Governance</title>
@@ -816,7 +862,7 @@ X-RAX-CBS-Header2: value2
             </example>   
         </section>
     </chapter>
-    <chapter>
+    <chapter xml:id="Summary">
         <title>Summary</title>
         <section>
             <title>Benefits of Extensions</title>
