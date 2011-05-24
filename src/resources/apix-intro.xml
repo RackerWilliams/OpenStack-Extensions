@@ -99,110 +99,68 @@
         </section>
     </chapter>
     <chapter>
-        <title>Problems with Developing OpenStack Services</title>
-        <para>
-            Efforts to develop OpenStack cloud services face some of the same challenges as other open source software projects.
-            The need for innovation can compete with the need for stability. 
-            The goal of supporting a wide variety of configurations can compete with the reality that some features are incompatible with others.
-            Ongoing decentralized development of services by independent software developers can mean that administration of services is complex and confusing to customers.
-        </para>
-        <section>
-            <title>Standardization versus Innovation and Differentiation</title>
-            <para>API extensions can create compatibility between two seemingly-conflicting
-                OpenStack goals, making it possible to support stable and generalizable open
-                standards while also supporting innovation and experimentation.</para>
+        <title>Background</title>
             <para>
-                Defining standard APIs is good for OpenStack and good for OpenStack customers. 
-                Standardization encourages others to implement OpenStack APIs. 
-                Stability is a prerequisite for standardization and widespread adoption, since code that is in constant flux is difficult to implement and difficult to develop against.
-                At the same time, standards must be general, since niche functionality may make it impossible for some customers to adopt some standards.
-                The more general and stable the API, the more likely it will be widely adopted.
+                In the 1990s, OpenGL was developed as a portable open
+                graphics library standard.  The goal was to provide a
+                cross-platform library that could enable developers to
+                produce 3D graphics in real time (30-120 frames per
+                second).  There were several major challenges in
+                meeting this goal: In order to be considered an open
+                standard, control needed to shift from Silicon
+                Graphics (SGI), who originally developed OpenGL, to an
+                independent Architecture Review Board (ARB) who would
+                be responsible for approving specification changes,
+                marking new releases, and ensuring conformance
+                testing.  Additionally, the graphics library itself
+                would need to be designed in a manner that would allow
+                the establishment of a stable and portable platform
+                for developers.  Finally, the library would need to
+                garner the support of graphics hardware vendors as
+                they would be providing the hardware acceleration
+                needed to meet the goal of performing at real-time
+                speeds.
             </para>
-            <para> While standardization is essential, it must coexist with innovation. It must be
-                possible to add features that differentiate one implementation from other
-                implementations, and to do that without breaking our clients and without going
-                through an approval process. Everyone must be able to make changes to the API. The
-                possibility of modification and customization encourages customers with a variety of
-                needs to adopt OpenStack APIs; changes made to support one customer's needs can be
-                beneficial to all. Developers should feel free to experiment and develop new
-                features without worrying about the implications to the API as a standard. </para>
             <para>
-                This combination of stability and flexibility will allow OpenStack to create a ubiquitous cloud technology.
+                Gaining vendor support is challenging because vendors
+                are often in direct competition with one another.
+                They differentiate themselves by creating innovative
+                new features and by providing niche functionality to
+                their users.  Thus, OpenGL was faced with two
+                competing requirements: On the one hand, it needed to
+                abstract away vendor differences in order to provide a
+                stable cross platform environment to developers. On
+                the other hand, in order to garner vendor support, it
+                needed a method by which vendors could differentiate
+                themselves and provide innovative new features and
+                niche functionality to their users.
             </para>
-        </section>
-        <section>
-            <title>Pluggability</title>
-            <para> OpenStack services are pluggable, so that one OpenStack service can support many
-                backends. For a compute service, backends can be hypervisors; for a network service,
-                backends can be network switches. A backend can be implemented as a driver,
-                containing a set of shared capabilities widely applicable to all deployments. Each
-                backend may also contain special features and niche functionality. The goal is to
-                provide access to special features while abstracting away the details of the
-                backend. In the example illustrated below, one load balancing service connects to
-                backends for Zeus, Pound, and HAProxy, with each backend providing unique
-                functionality.</para>
-            <figure xml:id="manyBackends">
-                <title>One service can reach many backends.</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata scale="100" fileref="figures/apix-1service-manyBackends.svg" format="SVG" align="center"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            </section>
-        <section>
-            <title>Open Source</title>
             <para>
-                On of the challenges for OpenStack customers is that OpenStack services are open source, so all developers can make changes to the code. 
-                For APIs provided by OpenStack as well as by multiple vendors, a customer can face great difficulty in choosing among and managing versions of the API. 
-                For example, a compute service may be reachable via an OpenStack stock API, a Rackspace-supported API, and modifications by other vendors and individuals; 
-                all these implementations of the "same" API may also exist in multiple versions.
+                The solution was the OpenGL extension mechanism. The
+                extension mechanism achieved balance between the two
+                requirements by allowing vendors to define extensions
+                to the core OpenGL specification while maintaining the
+                core specification under the direction of the
+                Architecture Review Board. The core specification
+                remained uncluttered and presented a unified view of
+                common functionality between vendors. Because
+                extensions were detectable at run time, developers
+                could write portable applications that could adapt to
+                the hardware in which they were running. This method
+                of allowing for an extensible API has proven to be a
+                very successful strategy.  More than 500 extensions
+                have been defined in OpenGL's lifetime and many
+                vendors including NVidia, ATI, Apple, IBM, and Intel
+                have participated in the process by developing their
+                own custom extensions. Additionally, many key
+                innovations (such as vertex and fragment shaders) have
+                been developed via the extension process and are now
+                part of the core OpenGL API.
             </para>
-            <para> Customers must be able to rely on a core set of API functionality. Different
-                customers may implement different options, but it must be possible for everyone to
-                mean the same thing by the same label. Compatibility among different versions must
-                also be ensured; consistent ways of identifying and describing versions help to make
-                this possible. </para>
-        </section>
-    </chapter>
-    <chapter>
-        <title>A Solution: API Extensions</title>
-        <para> 
-            The problems faced by OpenStack are not new. 
-        </para>
-            <para> In the 1990s, OpenGL faced the challenge of defining an open graphics library
-            that would be considered a standard specification and allow vendors to differentiate
-            their products by adding special features. An Architecture Review Board (ARB) would
-            propose and approve specification changes, make new releases, and ensure conformance
-            testing. </para>
             <para>
-                OpenGL's solution was to allow extensions in the specification. 
-                Vendors could define special features as extensions, but the core of the specification remained under the control of the ARB.
+                
             </para>
-            <para> This was a very successful strategy, allowing the core OpenGL API to become a
-            general, uncluttered, and accepted standard. More than 500 extensions have been defined
-            in OpenGL's lifetime. The benefits of OpenGL's extension strategy include the following:
-                <itemizedlist spacing="compact">
-                <listitem>
-                    <para>The best extensions become standard features.</para>
-                </listitem>
-                <listitem>
-                    <para>Unsuccessful extensions are abandoned prior to any attempt to incorporate
-                        them into the API.</para>
-                </listitem>
-                <listitem>
-                    <para>When multiple extensions are developed to support the same feature, all
-                        the variations are offered, allowing the best one to win.</para>
-                </listitem>
-                <listitem>
-                    <para>Key innovations developed via the extension process include vertex and
-                        fragment shaders.</para>
-                </listitem>
-                </itemizedlist>      
-            </para>
-        <para>Major vendors participating in the extension process include NVidia, ATI,
-            Apple, IBM, and Intel.</para>   
-        <section>
+            <section>
             <title>Defining Extensions</title>
             <para>
                 Extensions add capability to an API beyond those defined in the API's specification.
