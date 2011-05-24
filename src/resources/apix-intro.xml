@@ -74,6 +74,27 @@
             describes the process used to promote API extensions to
             new features in core OpenStack APIs.
         </para>
+        <!--
+            David,
+
+            Is there a way of getting the warning below to go away
+            when the book status moves out of draft?
+
+            -jw
+        -->
+        <warning>
+            <para>
+                Please note that this document is a <emphasis
+                role="strong">draft</emphasis>.  It is intended to
+                give users an opportunity to provide feedback.  If you
+                begin implementing against this early access
+                specification, please recognize that it is still
+                subject to change. Comments, feedback, and bug reprots
+                are always welcomed please submit these in the webhelp
+                discussion forum at: <link
+                xlink:href="http://docs.openstack.org/">http://docs.openstack.org/</link>.
+            </para>
+        </warning>
         <section>
             <title>Document Change History</title>
             <informaltable rules='all'>
