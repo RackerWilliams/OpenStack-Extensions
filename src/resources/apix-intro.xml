@@ -60,19 +60,17 @@
             The OpenStack extension mechanism makes it possible to add
             functionality to OpenStack APIs in a manner that ensures
             compatibility with existing clients. This capability
-            allows OpenStack operators and vendors to distinguish
-            themselves by providing niche functionality to their
-            clients. It also provides a means by which new features
-            may be proposed for consideration in upcoming versions of
-            core APIs.
+            allows OpenStack operators and vendors to provide
+            innovative functionality to their clients and provides a
+            means by which new features may be considered in upcoming
+            versions of OpenStack APIs.
         </para>
         <para>
             This document describes the extension mechanism in detail.
             It provides guidance to API implementors and clients on
-            developing and consuming API extensions and it describes
-            the rules by which extensions are governed. Finally, it
-            describes the process used to promote API extensions to
-            new features in core OpenStack APIs.
+            developing and consuming API extensions, it describes the
+            rules by which extensions are governed, and it describes
+            the process used to promote API extensions to new features.
         </para>
         <!--
             David,
@@ -86,8 +84,8 @@
             <para>
                 Please note that this document is a <emphasis
                 role="strong">draft</emphasis>.  It is intended to
-                give users an opportunity to provide feedback.  If you
-                begin implementing against this early access
+                give developers an opportunity to provide feedback.
+                If you begin implementing against this early access
                 specification, please recognize that it is still
                 subject to change. Comments, feedback, and bug reports
                 are always welcomed please submit these in the webhelp
