@@ -30,6 +30,7 @@
                         <id>g1</id>
                         <goals>
                             <goal>generate-pdf</goal>
+                            <goal>generate-webhelp</goal>
                         </goals>
                         <phase>generate-sources</phase>
                         <configuration>
