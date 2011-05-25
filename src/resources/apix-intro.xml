@@ -200,8 +200,41 @@
         <section>
             <title>What are Extensions?</title>
             <para>
-                Extensions add capability to an API beyond those
-                defined in the API's specification.
+                OpenStack APIs are defined strictly in two forms: a
+                human readable specification (usually in the form of a
+                developer's guide) and a machine processable WADL.
+                These specifications define the core actions,
+                capabilities, and media-types of the API.  A client
+                can always depend on the availability of this
+                <firstterm>core API</firstterm> and implementers are
+                always required to support it in its
+                entirety. Implementations that do not do so are not
+                considerd to be OpenStack compatible and may not use
+                the OpenStack trademark when refering to their API.
+                Requireing strict adherence to the core API allows
+                clients to rely upon a minimal level of functionality
+                when interacting with multiple implementations of the
+                same API.
+            </para>
+            <para>
+                Note that it is quite possible that distinct
+                implementations of an OpenStack API exist for a couple
+                of reasons. First, API specifications are released
+                under a free license so anyone may use the
+                specification to implement a core API. Additonally,
+                the OpenStack implementations themselves are also
+                released under a free license so that it's possible to
+                alter the code to create a specialized version. Such
+                an implementation will remain OpenStack compatible
+                even if it were to implement new features or add new
+                capabilities. But in order for it do so, it must
+                add those changes in a manner that ensures that a
+                client expecting a core API will continue to function
+                normally &mdash; this is where extensions come in.
+            </para>
+            <para>
+                An <firstterm>extension</firstterm> adds capabilities
+                to an API beyond those defined in the core API.
             </para>
             <para>
                 An API specification must be written to allow for
@@ -211,12 +244,6 @@
                 core API specification defines the extension
                 mechanism; however, extensions themselves are not part
                 of the core.
-            </para>
-            <para>
-                Implementors are only required to implement the core
-                API. They must implement the core API completely so
-                clients can rely upon a minimal level of
-                functionality.
             </para>
             <para>
                 Extensions can follow a promotion path, at the end of
