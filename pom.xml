@@ -20,6 +20,22 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>batik-maven-plugin</artifactId>
+                <version>1.0-beta-1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>rasterize</goal>
+                        </goals>
+                        <configuration>
+                            <srcDir>${basedir}/src/resources/figures</srcDir>
+                            <destDir>${basedir}/target/docbkx/webhelp/apix-intro/content/figures</destDir>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>com.rackspace.cloud.api</groupId>
                 <artifactId>clouddocs-maven-plugin</artifactId>
                 <!-- this <version> relates only to the *plugin* used for document formatting -->

@@ -485,8 +485,11 @@
             <figure xml:id="core-extensions">
                 <title>One backend can be reached by both the core API and API extensions.</title>
                 <mediaobject>
-                    <imageobject>
+                    <imageobject role="fo">
                         <imagedata scale="100" fileref="figures/apix-1service-core-extensions-manybackends.svg" format="SVG" align="center"/>
+                    </imageobject>
+                    <imageobject role="html">
+                        <imagedata fileref="figures/apix-1service-core-extensions-manybackends.png" format="PNG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -713,16 +716,22 @@
             <figure xml:id="shared">
                 <title>Two extensions add a "shared" attribute; one overrides the other.</title>
                 <mediaobject>
-                    <imageobject>
+                    <imageobject role="fo">
                         <imagedata scale="100" fileref="figures/apix-2extensions-shared.svg" format="SVG" align="center"/>
+                    </imageobject>
+                    <imageobject role="html">
+                        <imagedata fileref="figures/apix-2extensions-shared.png" format="PNG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
             <figure xml:id="filter">
                 <title>Two extensions read a "filter" parameter; both are activated.</title>
                 <mediaobject>
-                    <imageobject>
+                    <imageobject role="fo">
                         <imagedata scale="100" fileref="figures/apix-2extensions-filter.svg" format="SVG" align="center"/>
+                    </imageobject>
+                    <imageobject role="html">
+                        <imagedata fileref="figures/apix-2extensions-filter.png" format="PNG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -869,8 +878,11 @@ X-RAX-CBS-Header2: value2
             <figure xml:id="promotion">
                 <title>An API extension can become a core feature of the API if approved by OpenStack.</title>
                 <mediaobject>
-                    <imageobject>
+                    <imageobject role="fo">
                         <imagedata scale="80" fileref="figures/apix-promotion.svg" format="SVG" align="center"/>
+                    </imageobject>
+                    <imageobject role="html">
+                        <imagedata fileref="figures/apix-promotion.png" format="PNG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
