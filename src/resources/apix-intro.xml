@@ -188,6 +188,46 @@
     </chapter>
     <chapter xml:id="Background">
         <title>Background</title>
+        <para>
+            This chapter provides background information on OpenStack
+            extensions and the OpenStack extension mechanism.  It
+            describes what extensions are, how the extension mechanism
+            in OpenStack is related to the OpenGL extension mechanism,
+            the differences between extensions and versions, the
+            concept of versioning extensions, and why extensions are
+            vital when defining a pluggable architecture.
+        </para>
+        <section>
+            <title>What are Extensions?</title>
+            <para>
+                Extensions add capability to an API beyond those
+                defined in the API's specification.
+            </para>
+            <para>
+                An API specification must be written to allow for
+                extensibility. Flexibility in the specification
+                contract allows for new data elements, actions,
+                states, headers, parameters, and resource types. The
+                core API specification defines the extension
+                mechanism; however, extensions themselves are not part
+                of the core.
+            </para>
+            <para>
+                Implementors are only required to implement the core
+                API. They must implement the core API completely so
+                clients can rely upon a minimal level of
+                functionality.
+            </para>
+            <para>
+                Extensions can follow a promotion path, at the end of
+                which an extension may become part of a future version
+                of the core API.  While promotion is possible, it is
+                not inevitable: niche extensions are unlikely to be
+                promoted to the core.
+            </para>
+        </section>
+        <section>
+            <title>Relationship to OpenGL</title>
             <para>
                 In the 1990s, OpenGL was developed as a portable open
                 graphics library standard.  The goal was to provide a
@@ -274,29 +314,18 @@
                 that an extension follows, all borrow heavily from
                 OpenGL.
             </para>
-            <section>
-            <title>Defining Extensions</title>
-            <para>
-                Extensions add capability to an API beyond those defined in the API's specification.
-            </para>
-            <para> An API specification must be written to allow for extensibility. Flexibility in
-                the specification contract allows for new data elements, actions, states, headers,
-                parameters, and resource types. The core API specification defines the extension
-                mechanism; however, extensions themselves are not part of the core. </para>
-            <para> Implementors are only required to implement the core API. They must implement the
-                core API completely so clients can rely upon a minimal level of functionality. </para>
-            <para>
-                Extensions can follow a promotion path, at the end of which an extension may become part of a future version of the core API.
-                While promotion is possible, it is not inevitable: niche extensions are unlikely to be promoted to the core.
-            </para>
         </section>
         <section>
-            <title>Extensions versus Versions</title>
-            <para> With API extensions in place, API implementations can differ from each other in
-                terms of both their versions and their extensions. Extensions can apply to a variety
-                of backends, such as many hypervisors and many load balancers. Accurately describing
-                an API implementation requires awareness of its versions and extensions as sources
-                of variation. </para>
+            <title>Extensions and Versions</title>
+            <para>
+                With API extensions in place, API implementations can
+                differ from each other in terms of both their versions
+                and their extensions. Extensions can apply to a
+                variety of backends, such as many hypervisors and many
+                load balancers. Accurately describing an API
+                implementation requires awareness of its versions and
+                extensions as sources of variation.
+            </para>
             <table frame="all">
                 <title>Versions and Extensions Differ in Specific Ways</title>
                 <tgroup cols="2">
@@ -360,14 +389,21 @@
                     </tbody>
                 </tgroup>
             </table>
-
+        </section>
+        <section>
+            <title>Versioning Extensions</title>
+            <para>
+            </para>
         </section>
         <section>
             <title>Extensions and Pluggability</title>
-            <para> Each driver may expose functionality that a client may access via an extension.
-                In the example illustrated below, the load balancing service API's core and
-                extensions both provide functionality enabling the service to interact with its Zeus
-                backend. </para>
+            <para>
+                Each driver may expose functionality that a client may
+                access via an extension.  In the example illustrated
+                below, the load balancing service API's core and
+                extensions both provide functionality enabling the
+                service to interact with its Zeus backend.
+            </para>
             <figure xml:id="core-extensions">
                 <title>One backend can be reached by both the core API and API extensions.</title>
                 <mediaobject>
