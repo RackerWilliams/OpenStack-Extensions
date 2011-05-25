@@ -209,48 +209,51 @@
                 <firstterm>core API</firstterm> and implementers are
                 always required to support it in its
                 entirety. Implementations that do not do so are not
-                considerd to be OpenStack compatible and may not use
-                the OpenStack trademark when refering to their API.
-                Requireing strict adherence to the core API allows
+                considered to be OpenStack compatible and may not use
+                the OpenStack trademark when referring to their API.
+                Requiring strict adherence to the core API allows
                 clients to rely upon a minimal level of functionality
                 when interacting with multiple implementations of the
                 same API.
             </para>
             <para>
                 Note that it is quite possible that distinct
-                implementations of an OpenStack API exist for a couple
-                of reasons. First, API specifications are released
-                under a free license so anyone may use the
-                specification to implement a core API. Additonally,
-                the OpenStack implementations themselves are also
-                released under a free license so that it's possible to
-                alter the code to create a specialized version. Such
-                an implementation will remain OpenStack compatible
-                even if it were to implement new features or add new
-                capabilities. But in order for it do so, it must
-                add those changes in a manner that ensures that a
-                client expecting a core API will continue to function
-                normally &mdash; this is where extensions come in.
+                implementations of an OpenStack API exist. First
+                because API specifications are released under a free
+                license so anyone may use them to implement a core
+                API. And also because the OpenStack implementations
+                themselves are released under a free license so that
+                it's possible to alter the code to create a
+                specialized version. Such an implementation will
+                remain OpenStack compatible even if it were to
+                implement new features or add new capabilities. But in
+                order for it do so, it must add these changes in a
+                manner that ensures that a client expecting a core API
+                will continue to function normally &mdash; this is
+                where extensions come in.
             </para>
             <para>
                 An <firstterm>extension</firstterm> adds capabilities
-                to an API beyond those defined in the core API.
-            </para>
-            <para>
-                An API specification must be written to allow for
-                extensibility. Flexibility in the specification
-                contract allows for new data elements, actions,
-                states, headers, parameters, and resource types. The
-                core API specification defines the extension
-                mechanism; however, extensions themselves are not part
-                of the core.
-            </para>
-            <para>
-                Extensions can follow a promotion path, at the end of
-                which an extension may become part of a future version
-                of the core API.  While promotion is possible, it is
-                not inevitable: niche extensions are unlikely to be
-                promoted to the core.
+                to an API beyond those defined in the core. A new
+                feature, the introduction of a new mime-type, new
+                actions, states, headers, parameters, and resources
+                can all be defined in terms of extensions to the core
+                API. In order for extensions to work, the core API
+                must be written in such a manner that it allows for
+                extensability.  Additionally, care should be taken to
+                ensure that extensions defined by different
+                implementers don't clash with one another, that
+                clients can detect the presence of extensions via a
+                standard method, and that there is a clear promotion
+                path at the end of which an extension may become part
+                of a future version of the core API. These actions,
+                rules, and processes together form the
+                <firstterm>extension mechanism</firstterm>. It is
+                important that core APIs adhere to this mechanism in
+                order to ensure compatibility in a consistent manner
+                as new extensions are defined.  Note also that while a
+                core API may be written to allow for extensability,
+                the extensions themselves are never part of the core.
             </para>
         </section>
         <section>
