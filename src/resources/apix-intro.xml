@@ -370,50 +370,98 @@
                     <tbody>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">Centralized:</emphasis> Versions are
-                                    maintained by the entity that controls the API Spec: the
-                                    OpenStack Architecture Review Board. Only the ARB can create a
-                                    new version; only the ARB defines what "OpenStack Compute 1.1"
-                                    means.</para>
+                                <formalpara>
+                                    <title>Centralized</title>
+                                    <para>
+                                        Versions are maintained by the
+                                        entity that controls the API
+                                        Spec: the OpenStack
+                                        Architecture Review
+                                        Board. Only the ARB can create
+                                        a new version; only the ARB
+                                        defines what "OpenStack
+                                        Compute 1.1" means.
+                                    </para>
+                                </formalpara>
                             </entry>
                             <entry>
-                                <para><emphasis role="bold">Decentralized:</emphasis> Extensions are
-                                    maintained by third parties, including  individual OpenStack
-                                    developers and corporate software vendors. Anyone can create an
-                                    extension.</para>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">Core:</emphasis> Versions support core
-                                    functionality.</para>
-                            </entry>
-                            <entry>
-                                <para><emphasis role="bold">Niche:</emphasis> Extensions provide
-                                    specialized functionality.</para>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">Rare:</emphasis> Versions provide a
-                                    stable platform on which to develop.</para>
-                            </entry>
-                            <entry>
-                                <para><emphasis role="bold">Frequent:</emphasis> Extensions bring
-                                    new features to the market quickly and in a compatible
-                                    manner.</para>
+                                <formalpara>
+                                    <title>Decentralized</title>
+                                    <para>
+                                        Extensions are maintained by third
+                                        parties, including individual
+                                        OpenStack developers and corporate
+                                        software vendors. Anyone can
+                                        create an extension.
+                                    </para>
+                                </formalpara>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">Queryable: </emphasis> Issuing a &GET;
-                                    on the base URL (<code>/</code>) of the API endpoint returns
-                                    information about what versions are available.</para>
+                                <formalpara>
+                                    <title>Core</title>
+                                    <para>
+                                        Versions support core
+                                        functionality.
+                                    </para>
+                                </formalpara>
                             </entry>
                             <entry>
-                                <para><emphasis role="bold">Queryable:</emphasis> Issuing a &GET; on
-                                    the API's extensions resource (<code>/v1.1/extensions</code>)
-                                    returns information about what extensions are available.</para>
+                                <formalpara>
+                                    <title>Niche</title>
+                                    <para>
+                                        Extensions provide specialized
+                                        functionality.
+                                    </para>
+                                </formalpara>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <formalpara>
+                                    <title>Rare</title>
+                                    <para>
+                                        Versions provide a stable
+                                        platform on which to develop.
+                                    </para>
+                                </formalpara>
+                            </entry>
+                            <entry>
+                                <formalpara>
+                                    <title>Frequent</title>
+                                    <para>
+                                        Extensions bring new features
+                                        to the market quickly and in a
+                                        compatible manner.
+                                    </para>
+                                </formalpara>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <formalpara>
+                                    <title>Queryable</title>
+                                    <para>
+                                        Issuing a &GET; on the base
+                                        URL (<code>/</code>) of the
+                                        API endpoint returns
+                                        information about what
+                                        versions are available.
+                                    </para>
+                                </formalpara>
+                            </entry>
+                            <entry>
+                                <formalpara>
+                                    <title>Queryable</title>
+                                    <para>
+                                        Issuing a &GET; on the API's
+                                        extensions resource
+                                        (<code>/v1.1/extensions</code>)
+                                        returns information about what
+                                        extensions are available.
+                                    </para>
+                                </formalpara>
                             </entry>
                         </row>
                     </tbody>
