@@ -117,7 +117,6 @@
                 </listitem>
             </itemizedlist>
         </section>
-        <?hard-pagebreak?>
         <section>
             <title>Organization of this Document</title>
             <variablelist spacing="normal">
@@ -126,15 +125,9 @@
                     <term><xref linkend="Background" /></term>
                     <listitem>
                         <para>
-                            This chapter provides background
-                            information on OpenStack extensions and
-                            the OpenStack extension mechanism.  It
-                            describes what extensions are, how the
-                            extension mechanism in OpenStack is
-                            related to the OpenGL extension mechanism,
-                            the differences between extensions and
-                            versions, and why extensions are vital
-                            when defining a pluggable architecture.
+                            Provides background information on
+                            OpenStack extensions and the OpenStack
+                            extension mechanism
                         </para>
                     </listitem>
                 </varlistentry>
@@ -142,9 +135,8 @@
                     <term><xref linkend="REST" /></term>
                     <listitem>
                         <para>
-                            This chapter provides the specifics of
-                            implementing and consuming extensions in
-                            REST APIs.
+                            Describes the specifics of implementing
+                            and consuming extensions in REST APIs
                         </para>
                     </listitem>
                 </varlistentry>
@@ -152,10 +144,9 @@
                     <term><xref linkend="Promotion" /></term>
                     <listitem>
                         <para>
-                            This chapter describes API governance and
-                            the process by which extensions can be
-                            promoted to new features in future
-                            revisions of an API.
+                            Describes API governance and the process
+                            by which extensions can be promoted to new
+                            features in future revisions of an API
                         </para>
                     </listitem>
                 </varlistentry>
@@ -163,10 +154,9 @@
                     <term><xref linkend="Summary" /></term>
                     <listitem>
                         <para>
-                            This chapter brifly summarizes the
-                            benifits of the extension mechanism and
-                            provides a breif overview on how
-                            extensions are used.
+                            Briefly summarizes the benifits of the
+                            extension mechanism and provides a breif
+                            overview on how extensions are used
                         </para>
                     </listitem>
                 </varlistentry>
