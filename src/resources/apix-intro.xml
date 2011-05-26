@@ -390,8 +390,12 @@
                 applicable in common cases.  Extensions that deal with
                 niche functionality should always remain extensions.
             </para>
+            <para>
+                The table below summarizes the differences between
+                versions and extensions.
+            </para>
             <table frame="all">
-                <title>Versions and Extensions Differ in Specific Ways</title>
+                <title>Versions vs. Extensions</title>
                 <tgroup cols="2">
                     <colspec colname="c1" colnum="1" colwidth="1.0*"/>
                     <colspec colname="c2" colnum="2" colwidth="1.0*"/>
@@ -430,11 +434,10 @@
                                     <para>
                                         Versions are maintained by the
                                         entity that controls the API
-                                        Spec: the OpenStack
-                                        Architecture Review
-                                        Board. Only the ARB can create
-                                        a new version; only the ARB
-                                        defines what "OpenStack
+                                        Spec: the OpenStack Policy
+                                        Review Board. Only the PRB can
+                                        create a new version; only the
+                                        PRB defines what "OpenStack
                                         Compute 1.1" means.
                                     </para>
                                 </formalpara>
@@ -443,11 +446,12 @@
                                 <formalpara>
                                     <title>Decentralized</title>
                                     <para>
-                                        Extensions are maintained by third
-                                        parties, including individual
-                                        OpenStack developers and corporate
-                                        software vendors. Anyone can
-                                        create an extension.
+                                        Extensions are maintained by
+                                        third parties, including
+                                        individual OpenStack
+                                        developers and software
+                                        vendors. Anyone can create an
+                                        extension.
                                     </para>
                                 </formalpara>
                             </entry>
