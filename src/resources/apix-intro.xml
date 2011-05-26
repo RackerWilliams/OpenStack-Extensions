@@ -595,7 +595,7 @@
         </section>
     </chapter>
     <chapter xml:id="REST">
-        <title>API Extensions and ReST</title>
+        <title>Extensions and ReST</title>
               <para>
                 Extensions can define:
                 <itemizedlist spacing="compact">
@@ -941,7 +941,7 @@ X-RAX-CBS-Header2: value2
         </section>
     </chapter>
     <chapter xml:id="Promotion">
-        <title>API Extensions and API Features</title>
+        <title>Extension Governance and Promotion</title>
         <section>
             <title>Specification Governance</title>
             <para> OpenStack's existing structure adequately addresses governance of API extensions
