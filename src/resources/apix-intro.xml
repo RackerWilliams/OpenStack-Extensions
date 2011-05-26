@@ -343,22 +343,52 @@
                 example, a particular extension may continue to be
                 available as a core API moves from one version to
                 another. In fact, different implementations may decide
-                to include supprot for an extension at different
+                to include support for an extension at different
                 versions. As explained in <xref linkend="Promotion"/>,
                 when an extension is defined, the minimum version of
                 the core API that is required to run the extension is
-                specified &mdash; implementors are free to support the
+                specified &mdash; implementers are free to support the
                 extension in that version or in a later version of the
                 core. Note, however, that because the extension
                 mechanism allows for promotion, an extension in one
                 version of a core API may become a standard feature in
-                a later version.  As always, implementors are not
-                required to support an extension unless it is promoted
-                to the core.
+                a later version.
+            </para>
+            <note>
+                <para>
+                    As always, implementers are not required to
+                    support an extension unless it is promoted to the
+                    core.
+                </para>
+            </note>
+            <para>
+                Backward compatible changes in an API usually require
+                a minor version bump. In an extensible API, however,
+                these changes can be brought in as extensions. The net
+                effect is that versions change infrequently and thus
+                provide a stable platform on which to develop.  The
+                Policy Review Board (PRB), with the help of project
+                team leaders, is responsible for ensuring that this
+                stability is maintained by closely guarding core API
+                versions. Extensions, however, can be developed
+                without the consent or approval of the PRB. They can
+                be developed in a completely decentralized manner by
+                both individual OpenStack developers and third party
+                vendors.  Because extensions can be promoted to
+                standard features, the development of new versions can
+                be influenced significantly by individual developers
+                and the OpenStack client community and is therefore
+                not strictly defined by the PRB. In other words, new
+                features to a core API may be developed in a bottom-up
+                fashion.
             </para>
             <para>
-                Adding extensability to an API reduces the need to
-                constantly modify an APIs version. 
+                That said, not all extensions are destined to be
+                promoted to the next API version. Core APIs always
+                deals with core functionality &mdash; functionalty
+                that is supproted by all implenentations and is
+                applicable in common cases.  Extensions that deal with
+                niche functionality should always remain extensions.
             </para>
             <table frame="all">
                 <title>Versions and Extensions Differ in Specific Ways</title>
@@ -372,6 +402,27 @@
                         </row>
                     </thead>
                     <tbody>
+                        <row>
+                            <entry>
+                                <formalpara>
+                                    <title>Rare</title>
+                                    <para>
+                                        Versions provide a stable
+                                        platform on which to develop.
+                                    </para>
+                                </formalpara>
+                            </entry>
+                            <entry>
+                                <formalpara>
+                                    <title>Frequent</title>
+                                    <para>
+                                        Extensions bring new features
+                                        to the market quickly and in a
+                                        compatible manner.
+                                    </para>
+                                </formalpara>
+                            </entry>
+                        </row>
                         <row>
                             <entry>
                                 <formalpara>
@@ -417,27 +468,6 @@
                                     <para>
                                         Extensions provide specialized
                                         functionality.
-                                    </para>
-                                </formalpara>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <formalpara>
-                                    <title>Rare</title>
-                                    <para>
-                                        Versions provide a stable
-                                        platform on which to develop.
-                                    </para>
-                                </formalpara>
-                            </entry>
-                            <entry>
-                                <formalpara>
-                                    <title>Frequent</title>
-                                    <para>
-                                        Extensions bring new features
-                                        to the market quickly and in a
-                                        compatible manner.
                                     </para>
                                 </formalpara>
                             </entry>
