@@ -534,11 +534,10 @@
                 extension has been established.  In these cases, it is
                 recommended that a new extension be created. The
                 extension may have a name that signifies its
-                relationship to the previous version.  You may append
-                an integer to the extension name, for example, to
-                signify that one extensions updates
-                another: <code>RAX-PIE2</code> updates
-                <code>RAX-PIE</code>.
+                relationship to the previous version.  A developer may
+                append an integer to the extension name, for example,
+                to signify that one extension updates another:
+                <code>RAX-PIE2</code> updates <code>RAX-PIE</code>.
             </para>
             <para>
                 Extensions may have dependencies on other
