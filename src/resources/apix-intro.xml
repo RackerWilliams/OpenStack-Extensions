@@ -385,8 +385,8 @@
             <para>
                 That said, not all extensions are destined to be
                 promoted to the next API version. Core APIs always
-                deals with core functionality &mdash; functionalty
-                that is supproted by all implenentations and is
+                deals with core functionality &mdash; functionality
+                that is supported by all implementations and is
                 applicable in common cases.  Extensions that deal with
                 niche functionality should always remain extensions.
             </para>
