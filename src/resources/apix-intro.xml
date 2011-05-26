@@ -334,13 +334,31 @@
         <section>
             <title>Extensions and Versions</title>
             <para>
-                With API extensions in place, API implementations can
-                differ from each other in terms of both their versions
-                and their extensions. Extensions can apply to a
-                variety of backends, such as many hypervisors and many
-                load balancers. Accurately describing an API
-                implementation requires awareness of its versions and
-                extensions as sources of variation.
+                Extensions are always interpreted in relation to a
+                version of the core API.  In other words, from a
+                client's perspective, an extension modifies
+                <emphasis>a particular version</emphasis> of the core
+                API in some way. In reality, an extension may be
+                applicable to several versions of an API at once. For
+                example, a particular extension may continue to be
+                available as a core API moves from one version to
+                another. In fact, different implementations may decide
+                to include supprot for an extension at different
+                versions. As explained in <xref linkend="Promotion"/>,
+                when an extension is defined, the minimum version of
+                the core API that is required to run the extension is
+                specified &mdash; implementors are free to support the
+                extension in that version or in a later version of the
+                core. Note, however, that because the extension
+                mechanism allows for promotion, an extension in one
+                version of a core API may become a standard feature in
+                a later version.  As always, implementors are not
+                required to support an extension unless it is promoted
+                to the core.
+            </para>
+            <para>
+                Adding extensability to an API reduces the need to
+                constantly modify an APIs version. 
             </para>
             <table frame="all">
                 <title>Versions and Extensions Differ in Specific Ways</title>
