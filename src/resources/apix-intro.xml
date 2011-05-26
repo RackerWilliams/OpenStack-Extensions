@@ -557,14 +557,32 @@
         <section>
             <title>Extensions and Pluggability</title>
             <para>
-                Each driver may expose functionality that a client may
-                access via an extension.  In the example illustrated
-                below, the load balancing service API's core and
-                extensions both provide functionality enabling the
-                service to interact with its Zeus backend.
+                Core APIs abstract away vendor differences in order to
+                provide a cross platform environment to their
+                clients. For example, a client should be able to
+                interact with an OpenStack load balancing service
+                without worrying about whether the deployment utilizes
+                Zeus, Pound, or HAProxy on the backend.  OpenStack
+                implementations strive to support multiple backends
+                out of the box.  They do so by employing software
+                drivers.  Each driver is responsible for communicating
+                to a specific backend and is in charge of traslating
+                core API requests to it.
+            </para>
+            <para>
+                Not all backends are created equal, each backend
+                offers a distinct set of capabilites. The core API
+                contains only those capabilities which are applicable
+                to all backends. Extensions play a critical role in
+                exposing these capabilites to clients.  This is
+                illustrated below. Here exnetsions fill in the gap
+                between the common capabilites that the core API
+                provides and the distinct capabilites of the Zues load
+                balancer.  In a sense, one can think of extensions as
+                prviding a frontends to OpenStack plug-ins.
             </para>
             <figure xml:id="core-extensions">
-                <title>One backend can be reached by both the core API and API extensions.</title>
+                <title>Extensions and Pluggability</title>
                 <mediaobject>
                     <imageobject role="fo">
                         <imagedata scale="100" fileref="figures/apix-1service-core-extensions-manybackends.svg" format="SVG" align="center"/>
