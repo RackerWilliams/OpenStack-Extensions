@@ -362,6 +362,24 @@
                 </para>
             </note>
             <para>
+                Because several versions of the core API may be
+                supported simultaneously, and because each version may
+                offer support for a different set of extensions,
+                clients must be able to detect what versions and
+                extensions are available in a particular deployment.
+                Thus, both extensions and versions are queryable.
+                Issuing a &GET; on the base URL (<code>/</code>) of
+                the API endpoint returns information about what
+                versions are available.  Similarly, issuing a &GET; on
+                the API's extensions resource
+                (<code>/v1.1/extensions</code>) returns information
+                about what extensions are available. (See <xref
+                linkend="REST"/> for details on this request.) Note
+                that, since extensions modify a particular version of
+                the API, the <code>extensions</code> resource itself
+                is always accessed at a particular version.
+            </para>
+            <para>
                 Backward compatible changes in an API usually require
                 a minor version bump. In an extensible API, however,
                 these changes can be brought in as extensions. The net
