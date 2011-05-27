@@ -32,14 +32,6 @@
         rules by which extensions are governed, and it describes
         the process used to promote API extensions to new features.
     </para>
-    <!--
-        David,
-        
-        Is there a way of getting the warning below to go away
-        when the book status moves out of draft?
-        
-        -jw
-    -->
     <warning security="draft">
         <para> Please note that this document is a <emphasis role="strong">draft</emphasis>. It
             is intended to give developers an opportunity to provide feedback. If you begin
