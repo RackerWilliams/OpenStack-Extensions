@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!-- Some useful entities borrowed from HTML -->
+<!ENTITY ndash  "&#x2013;">
+<!ENTITY mdash  "&#x2014;">
+<!ENTITY hellip "&#x2026;">
+
+<!-- Useful for describing APIs -->
+<!ENTITY GET    '<command xmlns="http://docbook.org/ns/docbook">GET</command>'>
+<!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
+<!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
+<!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
+]>
+
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <title>Overview</title>
+    <para>
+        The OpenStack extension mechanism makes it possible to add
+        functionality to OpenStack APIs in a manner that ensures
+        compatibility with existing clients. This capability
+        allows OpenStack operators and vendors to provide
+        innovative functionality to their clients and provides a
+        means by which new features may be considered in upcoming
+        versions of OpenStack APIs.
+    </para>
+    <para>
+        This document describes the extension mechanism in detail.
+        It provides guidance to API implementors and clients on
+        developing and consuming API extensions, it describes the
+        rules by which extensions are governed, and it describes
+        the process used to promote API extensions to new features.
+    </para>
+    <!--
+        David,
+        
+        Is there a way of getting the warning below to go away
+        when the book status moves out of draft?
+        
+        -jw
+    -->
+    <warning security="draft">
+        <para> Please note that this document is a <emphasis role="strong">draft</emphasis>. It
+            is intended to give developers an opportunity to provide feedback. If you begin
+            implementing against this early access specification, please recognize that it is
+            still subject to change. Comments, feedback, and bug reports are always welcomed;
+            please submit these in the webhelp discussion forum at: <link
+                xlink:href="http://docs.openstack.org/">http://docs.openstack.org/</link>. </para>
+    </warning>
+    <section>
+        <title>Intended Audience</title>
+        <para> This document is intended for software developers who wish either to implement or
+            to consume an extendable OpenStack API. It assumes that the reader has a general
+            understanding of: </para>
+        <itemizedlist spacing="compact">
+            <listitem>
+                <para>ReSTful web services</para>
+            </listitem>
+            <listitem>
+                <para>HTTP/1.1</para>
+            </listitem>
+            <listitem>
+                <para>JSON and/or XML data serialization formats</para>
+            </listitem>
+            <listitem>
+                <para>At least one OpenStack API: Compute,
+                    Object Storage, etc.</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>Organization of this Document</title>
+        <variablelist spacing="normal">
+            <?dbfo list-presentation="blocks"?>
+            <varlistentry>
+                <term><xref linkend="Background" /></term>
+                <listitem>
+                    <para>
+                        Provides background information on
+                        OpenStack extensions and the OpenStack
+                        extension mechanism.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><xref security="writer-only" linkend="REST" /><phrase security="draft">Chapter 3, <firstterm>Extensions and ReST</firstterm></phrase></term>
+                <listitem>
+                    <para>
+                        Describes the specifics of implementing
+                        and consuming extensions in ReST APIs.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><xref security="writer-only" linkend="Promotion" /><phrase security="draft">Chapter 4, <firstterm>Extension Governance and Promotion</firstterm></phrase></term>
+                <listitem>
+                    <para>
+                        Describes API governance and the process
+                        by which extensions can be promoted to new
+                        features in future revisions of an API.
+                    </para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><xref security="writer-only" linkend="Summary" /><phrase security="draft">Chapter 5, <firstterm>Summary</firstterm></phrase></term>
+                <listitem>
+                    <para> Briefly summarizes the benefits of the extension mechanism and
+                        provides a brief overview of how extensions are used. </para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </section>
+    <section>
+        <title>Document Change History</title>
+        <informaltable rules='all'>
+            <thead>
+                <tr>
+                    <td align="center" colspan="1">Revision Date</td>
+                    <td align="center" colspan="4">Summary of Changes</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="1" align="center">May 25, 2011</td>
+                    <td colspan="4">
+                        <itemizedlist spacing="compact">
+                            <listitem>
+                                <para> Initial draft. </para>
+                            </listitem>
+                        </itemizedlist>
+                    </td>
+                </tr>
+            </tbody>
+        </informaltable>
+    </section>
+</chapter>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!-- Some useful entities borrowed from HTML -->
+<!ENTITY ndash  "&#x2013;">
+<!ENTITY mdash  "&#x2014;">
+<!ENTITY hellip "&#x2026;">
+
+<!-- Useful for describing APIs -->
+<!ENTITY GET    '<command xmlns="http://docbook.org/ns/docbook">GET</command>'>
+<!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
+<!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
+<!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
+]>        
+
+<chapter security="writer-only"
+    xml:id="Summary"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    
+    <title>Summary</title>
+    <section>
+        <title>Benefits of Extensions</title>
+        <para>
+            API extensions provide several key benefits:
+            <itemizedlist spacing="compact">
+                <listitem>
+                    <para>a stable core API with support for innovation</para>
+                </listitem>
+                <listitem>
+                    <para>a method of adding new features quickly and in a backward-compatible manner</para>
+                </listitem>
+                <listitem>
+                    <para>a method of supporting the capabilities of different backends</para>
+                </listitem>
+                <listitem>
+                    <para>a method of ensuring compatibility between different kinds of OpenStack deployments</para>
+                </listitem>
+                <listitem>
+                    <para>a method of allowing vendors to differentiate their products with niche features</para>
+                </listitem>
+                <listitem>
+                    <para>a method of testing new features before they become part of the core API</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+    <section>
+        <title>Ways to Use Extensions</title>
+        <para>
+            API extensions are queryable. 
+        </para>  
+        <para>
+            To discover which extensions are available, issue a &GET; to <code>/extensions</code>.
+        </para>
+        <para>
+            To use a specific extension, issue a &GET; to <code>/extensions/</code><parameter>{EXT-ALIAS}</parameter>.
+        </para>
+        <para>
+            To prevent conflicts between extensions, use aliases and namespaces to identify each extension's vendor.
+        </para>
+        <para>
+            To move an extension into the core API, work within OpenStack to have it promoted.
+        </para>
+    </section>
+</chapter>
