@@ -55,7 +55,7 @@
             <title>An API extension can become a core feature of the API if approved by OpenStack.</title>
             <mediaobject>
                 <imageobject role="fo">
-                    <imagedata scale="80" fileref="figures/apix-promotion.svg" format="SVG" align="center"/>
+                    <imagedata scale="80" fileref="../figures/apix-promotion.svg" format="SVG" align="center"/>
                 </imageobject>
                 <imageobject role="html">
                     <imagedata fileref="figures/apix-promotion.png" format="PNG" align="center"/>

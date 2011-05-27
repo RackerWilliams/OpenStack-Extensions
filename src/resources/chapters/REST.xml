@@ -12,7 +12,8 @@
 <!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
 ]>        
 
-<chapter xml:id="REST"
+<chapter security="writer-only"
+    xml:id="REST"
     xmlns="http://docbook.org/ns/docbook"
     xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
@@ -79,7 +80,7 @@
                         <area xml:id="query.vendor.alias" units="linecolumn" coords="19 1"/>
                     </areaspec>
                     <programlisting language="xml">
-<xi:include href="samples/apix-query.xml" parse="text"/>
+<xi:include href="../samples/apix-query.xml" parse="text"/>
                     </programlisting>
                 </programlistingco>
             </example>
@@ -178,7 +179,7 @@
                 <title>Vendor ID in Alias Extension: XML</title>
                 <programlisting language="xml">
                 <?dbfo keep-together="always"?>
-<xi:include href="samples/apix-vendor.xml" parse="text"/>
+<xi:include href="../samples/apix-vendor.xml" parse="text"/>
                 </programlisting>
             </example>
             <para>
@@ -237,7 +238,7 @@
                 <title>Two extensions add a "shared" attribute; one overrides the other.</title>
                 <mediaobject>
                     <imageobject role="fo">
-                        <imagedata scale="100" fileref="figures/apix-2extensions-shared.svg" format="SVG" align="center"/>
+                        <imagedata scale="100" fileref="../figures/apix-2extensions-shared.svg" format="SVG" align="center"/>
                     </imageobject>
                     <imageobject role="html">
                         <imagedata fileref="figures/apix-2extensions-shared.png" format="PNG" align="center"/>
@@ -248,7 +249,7 @@
                 <title>Two extensions read a "filter" parameter; both are activated.</title>
                 <mediaobject>
                     <imageobject role="fo">
-                        <imagedata scale="100" fileref="figures/apix-2extensions-filter.svg" format="SVG" align="center"/>
+                        <imagedata scale="100" fileref="../figures/apix-2extensions-filter.svg" format="SVG" align="center"/>
                     </imageobject>
                     <imageobject role="html">
                         <imagedata fileref="figures/apix-2extensions-filter.png" format="PNG" align="center"/>
@@ -274,7 +275,7 @@
                 <title>Extending Data: XML</title>
                 <?dbfo keep-together="always"?>
                 <programlisting language="xml">
-<xi:include href="samples/apix-data.xml" parse="text"/>
+<xi:include href="../samples/apix-data.xml" parse="text"/>
                 </programlisting>
             </example>
             <para> In JSON, the action name is the alias followed by a colon. </para>
@@ -282,7 +283,7 @@
                 <title>Extending Data: JSON</title>
                 <?dbfo keep-together="always"?>
                 <programlisting language="javascript">    
-<xi:include href="samples/apix-data.json" parse="text"/>
+<xi:include href="../samples/apix-data.json" parse="text"/>
                 </programlisting>
             </example>
         </section>
@@ -295,7 +296,7 @@
                 <title>Extending Actions: XML</title>
                 <programlisting language="xml">
                 <?dbfo keep-together="always"?>    
-<xi:include href="samples/apix-action.xml" parse="text"/>
+<xi:include href="../samples/apix-action.xml" parse="text"/>
                 </programlisting>
             </example>
             <para> In JSON, the action name is the extension alias followed by a colon followed by a
@@ -304,7 +305,7 @@
                 <title>Extending Actions: JSON</title>
                 <?dbfo keep-together="always"?>
                 <programlisting language="javascript">
-<xi:include href="samples/apix-action.json" parse="text"/>
+<xi:include href="../samples/apix-action.json" parse="text"/>
                 </programlisting>
             </example>
         </section>
@@ -333,14 +334,14 @@ X-RAX-CBS-Header2: value2
                 <title>Extending Headers and States: XML</title>
                 <programlisting language="xml">
                 <?dbfo keep-together="always"?>    
-<xi:include href="samples/apix-header.xml" parse="text"/>
+<xi:include href="../samples/apix-header.xml" parse="text"/>
                 </programlisting>
             </example>
             <example>
                 <title>Extending Headers and States: JSON</title>
                 <programlisting language="javascript">
                 <?dbfo keep-together="always"?>
-<xi:include href="samples/apix-header.json" parse="text"/>
+<xi:include href="../samples/apix-header.json" parse="text"/>
                 </programlisting>
             </example>
         </section>

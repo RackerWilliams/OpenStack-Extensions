@@ -39,7 +39,7 @@
             <title>Question: Extending a Collection</title>
             <?dbfo keep-together="always"?>
             <programlisting language="javascript">
-<xi:include href="samples/apix-address-q.json" parse="text"/>
+<xi:include href="../samples/apix-address-q.json" parse="text"/>
                 </programlisting>
         </example>
         <para>
@@ -49,7 +49,7 @@
             <title>Answer: Array as Object</title>
             <?dbfo keep-together="always"?>
             <programlisting language="javascript">
-<xi:include href="samples/apix-address-a.json" parse="text"/>
+<xi:include href="../samples/apix-address-a.json" parse="text"/>
                 </programlisting>
         </example>
         <para>
@@ -59,7 +59,7 @@
             <title>Question: Naming a Collection</title>
             <?dbfo keep-together="always"?>
             <programlisting language="javascript">
-<xi:include href="samples/apix-collection-q.json" parse="text"/>
+<xi:include href="../samples/apix-collection-q.json" parse="text"/>
                 </programlisting>
         </example>
         <para>
@@ -69,7 +69,7 @@
             <title>Answer: Pluralize</title>
             <?dbfo keep-together="always"?>
             <programlisting language="javascript">
-<xi:include href="samples/apix-collection-a.json" parse="text"/>
+<xi:include href="../samples/apix-collection-a.json" parse="text"/>
                 </programlisting>
         </example>
         <para>
@@ -90,7 +90,7 @@
             <title>Array with Single Name</title>
             <?dbfo keep-together="always"?>
             <programlisting language="javascript">
-<xi:include href="samples/apix-name-array.json" parse="text"/>
+<xi:include href="../samples/apix-name-array.json" parse="text"/>
                 </programlisting>
         </example>
         <para>Other approaches range from using generalizable values to ad hoc. Each approach
@@ -101,7 +101,7 @@
             <title>Extensibility within a Collection</title>
             <?dbfo keep-together="always"?>
             <programlisting language="javascript">
-<xi:include href="samples/apix-name-extensibility.json" parse="text"/>
+<xi:include href="../samples/apix-name-extensibility.json" parse="text"/>
                 </programlisting>
         </example>   
     </section>

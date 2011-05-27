@@ -321,7 +321,7 @@
                 <title>Extensions and Pluggability</title>
                 <mediaobject>
                     <imageobject role="fo">
-                        <imagedata scale="100" fileref="figures/apix-1service-core-extensions-manybackends.svg" format="SVG" align="center"/>
+                        <imagedata scale="100" fileref="../figures/apix-1service-core-extensions-manybackends.svg" format="SVG" align="center"/>
                     </imageobject>
                     <imageobject role="html">
                         <imagedata fileref="figures/apix-1service-core-extensions-manybackends.png" format="PNG" align="center"/>

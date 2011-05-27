@@ -40,10 +40,10 @@
             </para>
         </abstract>
     </info>
-    <xi:include href="overview.xml"/>
-    <xi:include href="background.xml"/>
-    <xi:include href="REST.xml"/>
-    <xi:include href="promotion.xml"/>
-    <xi:include href="challenges.xml"/>
-    <xi:include href="summary.xml"/>
+    <xi:include href="chapters/overview.xml"/>
+    <xi:include href="chapters/background.xml"/>
+    <xi:include href="chapters/REST.xml"/>
+    <xi:include href="chapters/promotion.xml"/>
+    <xi:include href="chapters/challenges.xml"/>
+    <xi:include href="chapters/summary.xml"/>
 </book>
