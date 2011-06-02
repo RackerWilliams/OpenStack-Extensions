@@ -73,4 +73,70 @@
             Instead, providing the feature via an API extension makes it available to customers who would like to use it but prevents it from creating problems for those who cannot use it.
         </para>
     </section>
+    <section>
+        <title>Creating Extensions Likely to Be Approved by OpenStack</title>
+        <para>
+            Extensions characterized by consensus, stability, and standardization are most likely to be approved and promoted by OpenStack. 
+            As shown in the figure below, multiple decisions and actions between the invention of a new extension and its approval by OpenStack 
+            relate to establishing broad support for the extension and preparing it to work consistently within the larger OpenStack community.
+        </para>
+        <figure xml:id="creation">
+            <title>Consensus, stability, and standardization improve an extension's likelihood of OpenStack approval.</title>
+            <mediaobject>
+                <imageobject role="fo">
+                    <imagedata scale="80" fileref="../figures/apix-creation.svg/creation.svg" format="SVG" align="center"/>
+                </imageobject>
+                <imageobject role="html">
+                    <imagedata fileref="figures/apix-creation.png" format="PNG" align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <section>
+            <title>Building Consensus Around Extensions</title>
+        <para>
+            Extensions created by a single, independent author can be promoted to OpenStack-approved extensions and ultimately into the core API. 
+            However, an extension is most likely to be promoted if consensus has been established around it first. 
+            Multi-Vendor status is a strong indication that an extension is useful beyond a niche application; 
+            extensions identified by the <code>MLTI</code> prefix may have an advantage when OpenStack considers which extensions to promote.
+        </para>
+        <para>
+            Before undertaking to create a new extension, 
+            vendors and individual software developers should compare their emerging ideas to OpenStack's list of existing extensions. 
+            If an extension already provides similar or related functionality, joining an ongoing effort to develop and enhance it may be a more productive approach than initiating a new effort to develop an independent extension.
+            This can accomplish two key goals:
+            individuals and groups with shared interests can pool their efforts to develop an extension that meets all their needs;
+            OpenStack can recognize highly-valued extensions and support their approval and promotion, making those extensions widely available as quickly as possible.   
+        </para>
+        <para>
+            Similarly, even if no existing extension is a good match for a new idea, development, approval, and promotion of a new extension can be facilitated by
+            enlisting multiple vendors in the project. 
+            Just as OpenStack provides methods for software developers to communicate and collaborate on larger projects, it can enable formation of multi-vendor teams to create a new extension.
+        </para>
+        </section>
+        <section>
+            <title>Building Stable Extensions</title>
+        <para>
+            An extension must be stable before it can be approved by OpenStack or promoted into the core API.  
+            Before submitting an extension for approval, its specification must be frozen; this makes it possible to consider a clear and finite definition of the extension.
+            Otherwise, OpenStack approval would amount to a blank check, authorizing future development of the extension in unforeseen directions.
+        </para>
+        <para>
+            OpenStack can provide templates describing required content and format for proposals to approve an extension's stable specification. 
+            The templates will identify what details of the specification must be included in the proposal; one required detail will be the minor version of the core API to which the extension applies.
+            The templates will be available in at least two formats, such as DocBook and ASCII doc. 
+        </para>
+        </section>
+        <section>
+            <title>Building Standardized Exceptions</title>
+        <para>
+            It may also be necessary to standardize the the specification so that it is consistent with broader OpenStack expectations and practices.
+            OpenStack can provide a checklist identifying pre-submission requirements; by using this checklist for guidance early in the process of defining the extension, 
+            developers can minimize the refactoring effort that might otherwise be required immediately prior to submission. 
+        </para>
+        <para>
+            OpenStack's approval process will include the possibility that a proposed extension can be initially rejected on the basis that is inconsistent with OpenStack's standards.
+            In such a case, the extension's vendor can resubmit a proposal after the extension has been standardized, after which the extension can be reconsidered and possibly approved.
+        </para>
+        </section>
+    </section>
 </chapter>
