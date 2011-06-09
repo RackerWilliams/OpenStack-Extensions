@@ -45,16 +45,21 @@
                 of functionality when interacting with multiple
                 implementations of the same API.
             </para>
-            <para> Note that it is quite possible that distinct implementations of an OpenStack API
-                exist. Variations are possible because API specifications are released under a free
-                license, so anyone may use them to implement a core API. Further variations are
-                possible  because the OpenStack implementations themselves are released under a free
-                license, making it possible to alter the code to create a specialized version. Such
-                a specialized implementation could remain OpenStack-compatible even if it were to
-                implement new features or add new capabilities, but only if it made the changes in a
-                manner that ensures that a client expecting a core API would continue to function
-                normally. Making it easy to make changes without disrupting core API functionality
-                is where extensions come in. </para>
+            <para>
+                Note that it is quite possible that distinct
+                implementations of an OpenStack API exist. First
+                because API specifications are released under a free
+                license, so anyone may use them to implement a core
+                API. Furthermore, the OpenStack implementations
+                themselves are released under a free license, making
+                it possible to alter the code to create a specialized
+                version. Such a specialized implementation could
+                remain OpenStack-compatible even if it were to
+                implement new features or add new capabilities, but
+                only if it made the changes in a manner that ensures
+                that a client expecting a core API would continue to
+                function normally &mdash; is where extensions come in.
+            </para>
             <para> An <firstterm>extension</firstterm> adds capabilities to an API beyond those
                 defined in the core. The introduction of new features, MIME types, actions, states,
                 headers, parameters, and resources can all be accomplished by means of extensions to
