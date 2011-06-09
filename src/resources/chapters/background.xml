@@ -58,7 +58,8 @@
                 implement new features or add new capabilities, but
                 only if it made the changes in a manner that ensures
                 that a client expecting a core API would continue to
-                function normally &mdash; is where extensions come in.
+                function normally &mdash; this is where extensions
+                come in.
             </para>
             <para> An <firstterm>extension</firstterm> adds capabilities to an API beyond those
                 defined in the core. The introduction of new features, MIME types, actions, states,
