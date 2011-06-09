@@ -77,18 +77,27 @@
         </section>
         <section>
             <title>Relationship to OpenGL</title>
-            <para> In the 1990s, OpenGL was developed as a portable open graphics library standard.
-                The goal was to provide a cross-platform library that could enable developers to
-                produce 3D graphics in real time, at speeds of 30-120 frames per second. There were
-                several major challenges to meeting this goal. In order to be considered an open
-                standard, control needed to shift from Silicon Graphics (SGI), who originally
-                developed OpenGL, to an independent Architecture Review Board (ARB) who would be
-                responsible for approving specification changes, marking new releases, and ensuring
-                conformance testing. Additionally, the graphics library itself would need to be
-                designed in a manner that would allow the establishment of a stable and portable
-                platform for developers. Finally, the library would need to garner the support of
-                graphics hardware vendors as they would be providing the hardware acceleration
-                needed to meet the goal of performing at real-time speeds. </para>
+            <para>
+                In the 1990s, OpenGL was developed as a portable open
+                graphics library standard.  The goal was to provide a
+                cross-platform library that could enable developers to
+                produce 3D graphics at real time speeds (30-120 frames
+                per second). There were several major challenges to
+                meeting this goal. In order to be considered an open
+                standard, control needed to shift from Silicon
+                Graphics (SGI), who originally developed OpenGL, to an
+                independent Architecture Review Board (ARB) who would
+                be responsible for approving specification changes,
+                marking new releases, and ensuring conformance
+                testing. Additionally, the graphics library itself
+                would need to be designed in a manner that would allow
+                the establishment of a stable and portable platform
+                for developers. Finally, the library would need to
+                garner the support of graphics hardware vendors as
+                they would be providing the hardware acceleration
+                needed to meet the goal of performing at real-time
+                speeds.
+            </para>
             <para> Gaining vendor support is challenging because vendors are often in direct
                 competition with one another. They differentiate themselves by creating innovative
                 new features and by providing niche functionality to their users. Thus, OpenGL was
