@@ -45,15 +45,14 @@
             </listitem>
         </orderedlist>
         <para>
-            Note that this proposal is for a repository of
-            extension specifications and <emphasis
-            role="strong">not</emphasis> a respository of
-            extension software or plugins for a particular
-            implementaton of an OpenStack API.  That is, the
-            repository is implementation augnostic and may
-            describe extensions supported by implementations other
-            than the OpenStack reference implmentation (Nova,
-            Glance, Swift, Keystone).
+            Note that this proposal is for a repository of extension
+            specifications and <emphasis role="strong">not</emphasis>
+            a respository of extension software or plugins for a
+            particular OpenStack implementaton.  That is, the
+            repository is implementation augnostic and may describe
+            extensions supported by implementations other than the
+            OpenStack reference implmentation (Nova, Glance, Swift,
+            Keystone).
         </para>
     </section>
     <section>
@@ -73,16 +72,19 @@
             by vendor
             <inlineequation><mathphrase>Y</mathphrase></inlineequation>.
             It may, therefore, not be clear to users where to go to
-            get information about the extension.
+            get information about an extension.
         </para>
         <para>
             Extension authors also benefit from having a central
-            extension repository. The repository can be used to
-            determine whether an existing extension satisfies an
-            author's requirements. This can help mitigate the problem
-            of extension proliferation and it may provide an
-            opertunity for authors of similar extensions to combine
-            their efforts.
+            repository. The repository can be used to determine
+            whether an existing extension satisfies an author's
+            requirements. This can help mitigate the problem of
+            extension proliferation and it may provide an opertunity
+            for authors of similar extensions to combine their
+            efforts.  Additionally, the repository may provide a means
+            by which users can become aware of extensions not
+            currently supported by their vendors, allowing them to
+            lobby for such support.
         </para>
     </section>
     <section>
