@@ -47,16 +47,16 @@
         <para>
             Note that this proposal is for a repository of extension
             specifications and <emphasis role="strong">not</emphasis>
-            a respository of extension software or plugins for a
-            particular OpenStack implementaton.  That is, the
-            repository is implementation augnostic and may describe
+            a repository of extension software or plugins for a
+            particular OpenStack implementation.  That is, the
+            repository is implementation agnostic and may describe
             extensions supported by implementations other than the
-            OpenStack reference implmentations (Nova, Glance, Swift,
+            OpenStack reference implementations (Nova, Glance, Swift,
             Keystone).
         </para>
     </section>
     <section>
-        <title>Benefites of a centralized repository</title>
+        <title>Benefits of a centralized repository</title>
         <para>
             Users of OpenStack APIs benefit from having a centralized
             extension repository.  While we would like to encourage
@@ -79,12 +79,12 @@
             repository. The repository can be used to determine
             whether an existing extension satisfies an author's
             requirements. This can help mitigate the problem of
-            extension proliferation and it may provide an opertunity
+            extension proliferation and it may provide an opportunity
             for authors of similar extensions to combine their
             efforts.  Additionally, the repository may provide a means
             by which users can become aware of extensions not
-            currently supported by their vendors, allowing them to
-            lobby for such support.
+            currently supported by their vendors, thus allowing them
+            to lobby for such support.
         </para>
     </section>
     <section>
@@ -104,13 +104,33 @@
                 <formalpara>
                     <title>Determine if an existing extension can be used</title>
                     <para>
+                        Reuse of an existing extension is encouraged
+                        as this helps prevent the unnecessary
+                        proliferation of extensions and provides a
+                        means by which popular extension can be
+                        promoted to the core.  Additionally, it's
+                        possible that existing extensions have
+                        established client support.
                     </para>
                 </formalpara>
+                <para>
+                    If an extension with similar functionality exists,
+                    but does not entirely meet the authors needs, then
+                    authors are encouraged to collaborate on promoting
+                    the extension into a multi-vendor extension.
+                </para>
+                <para>
+                    Finally, an extension may be under development but
+                    has not yet been released. Thus, authors are also
+                    encouraged to send an email to the OpenStack
+                    mailing list to see if anyone else is working on
+                    an extension with similar functionality.
+                </para>
             </listitem>
             <listitem>
                 <formalpara>
                     <title>Determine if a multi-vendor extension is
-                    approprate</title>
+                    appropriate</title>
                     <para>
                     </para>
                 </formalpara>
@@ -118,14 +138,14 @@
             <listitem>
                 <formalpara>
                     <title>Register a vendor prefix, if one has not
-                    alerad been assigned</title>
+                    already been assigned</title>
                     <para>
                     </para>
                 </formalpara>
             </listitem>
             <listitem>
                 <formalpara>
-                    <title>Develop and write the extension specificaton</title>
+                    <title>Develop and write the extension specification</title>
                     <para>
                     </para>
                 </formalpara>
