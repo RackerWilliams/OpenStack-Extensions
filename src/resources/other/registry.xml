@@ -45,6 +45,17 @@
                 </para>
             </listitem>
         </orderedlist>
+        <para>
+            Note that this proposal is for a repository of
+            extension specifications and <emphasis
+            role="strong">not</emphasis> a respository of
+            extension software or plugins for a particular
+            implementaton of an OpenStack API.  That is, the
+            repository is implementation augnostic and may
+            describe extensions supported by implementations other
+            than the OpenStack reference implmentation (Nova,
+            Glance, Swift, Keystone).
+        </para>
     </section>
     <section>
         <title>Benefites of a centralized repository</title>
