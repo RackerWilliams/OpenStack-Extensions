@@ -47,7 +47,7 @@
         </orderedlist>
     </section>
     <section>
-        <title>Providing Documentation</title>
+        <title>Benefites of a centralized repository</title>
         <para>
             Users of OpenStack APIs benefit from having a centralized
             extension repository.  While we would like to encourage
@@ -62,11 +62,17 @@
             may choose to provide support for an extension developed
             by vendor
             <inlineequation><mathphrase>Y</mathphrase></inlineequation>.
-            It may not be clear to users where to go to get
-            information about the extension.
+            It may, therefore, not be clear to users where to go to
+            get information about the extension.
         </para>
         <para>
-            Extension authors
+            Extension authors also benefit from having a central
+            extension repository. The repository can be used to
+            determine whether an existing extension satisfies an
+            author's requirements. This can help mitigate the problem
+            of extension proliferation and it may provide an
+            opertunity for authors of similar extensions to combine
+            their efforts.
         </para>
     </section>
     <section>
