@@ -51,7 +51,7 @@
             particular OpenStack implementaton.  That is, the
             repository is implementation augnostic and may describe
             extensions supported by implementations other than the
-            OpenStack reference implmentation (Nova, Glance, Swift,
+            OpenStack reference implmentations (Nova, Glance, Swift,
             Keystone).
         </para>
     </section>
