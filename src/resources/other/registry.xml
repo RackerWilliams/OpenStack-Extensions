@@ -1,0 +1,83 @@
+<article xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      version="5.0">
+    <title>OpenStack Extension Registry Proposal</title>
+    <info>
+        <author>
+            <personname>
+                <firstname>Jorge</firstname>
+                <surname>Williams</surname>
+            </personname>
+            <affiliation>
+                <orgname>Rackspace Cloud</orgname>
+            </affiliation>
+        </author>
+        <copyright>
+            <year>2011</year>
+            <holder>Rackspace US, Inc.</holder>
+        </copyright>
+    </info>
+    <section>
+        <title>Overview</title>
+        <para>
+            The extension registry should be modeled after the OpenGL
+            extensions registry:
+            <link xlink:href="http://www.opengl.org/registry/">
+                http://www.opengl.org/registry/
+            </link>.
+            The registry serves the following purposes:
+        </para>
+        <orderedlist spacing="compact">
+            <listitem>
+                <para>
+                    It provides a central repository for all OpenStack
+                    extensions organized by <abbrev>API</abbrev>.
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    It allows vendors to register vendor prefixes: (RAX,
+                    HP, etc.).
+                </para>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Providing Documentation</title>
+        <para>
+            Users of OpenStack APIs benefit from having a centralized
+            extension repository.  While we would like to encourage
+            vendors to develop extensions in coordination with the
+            OpenStack community, some vendors may opt to develop their
+            extensions independently. Without a centralized extension
+            repository, users would have to gather information from
+            various vendor websites in order to burst from one cloud
+            onto another.  Adding to the confusion is the fact that
+            vendor
+            <inlineequation><mathphrase>X</mathphrase></inlineequation>
+            may choose to provide support for an extension developed
+            by vendor
+            <inlineequation><mathphrase>Y</mathphrase></inlineequation>.
+            It may not be clear to users where to go to get
+            information about the extension.
+        </para>
+        <para>
+            Extension authors
+        </para>
+    </section>
+    <section>
+        <title>Vendor Prefixes</title>
+        <para>
+            
+        </para>
+    </section>
+    <section>
+        <title>Extension Registration</title>
+        <para>
+        </para>
+    </section>
+</article>
