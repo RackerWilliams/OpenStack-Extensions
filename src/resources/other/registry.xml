@@ -88,14 +88,58 @@
         </para>
     </section>
     <section>
-        <title>Vendor Prefixes</title>
-        <para>
-            
-        </para>
-    </section>
-    <section>
         <title>Extension Registration</title>
         <para>
+            When creating an extension the following steps should be
+            followed:
         </para>
+        <orderedlist spacing="compact">
+            <listitem>
+                <formalpara>
+                    <title>Determine if an existing extension can be used</title>
+                    <para>
+                    </para>
+                </formalpara>
+            </listitem>
+            <listitem>
+                <formalpara>
+                    <title>Determine if a multi-vendor extension is
+                    approprate</title>
+                    <para>
+                    </para>
+                </formalpara>
+            </listitem>
+            <listitem>
+                <formalpara>
+                    <title>Register a vendor prefix, if one has not
+                    alerad been assigned</title>
+                    <para>
+                    </para>
+                </formalpara>
+            </listitem>
+            <listitem>
+                <formalpara>
+                    <title>Develop and write the extension specificaton</title>
+                    <para>
+                    </para>
+                </formalpara>
+            </listitem>
+            <listitem>
+                <formalpara>
+                    <title>Freeze the specification and submit it to
+                    the registry</title>
+                    <para>
+                    </para>
+                </formalpara>
+            </listitem>
+            <listitem>
+                <formalpara>
+                    <title>Make the registry the source of truth for
+                    the specification</title>
+                    <para>
+                    </para>
+                </formalpara>
+            </listitem>
+        </orderedlist>
     </section>
 </article>
