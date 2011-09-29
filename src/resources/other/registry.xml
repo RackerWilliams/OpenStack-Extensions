@@ -90,6 +90,12 @@
     <section>
         <title>Extension Registration</title>
         <para>
+            The extension registration process closely follows the
+            registration process developed by the Khronos group for
+            OpenGL:
+            <link
+            xlink:href="http://www.opengl.org/registry/doc/rules.html">
+            http://www.opengl.org/registry/doc/rules.html</link>.
             When creating an extension the following steps should be
             followed:
         </para>
