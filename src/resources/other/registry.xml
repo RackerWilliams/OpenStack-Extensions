@@ -25,11 +25,10 @@
         <title>Overview</title>
         <para>
             The extension registry should be modeled after the OpenGL
-            extensions registry:
-            <link xlink:href="http://www.opengl.org/registry/">
-                http://www.opengl.org/registry/
-            </link>.
-            The registry serves the following purposes:
+            extensions registry:<link
+            xlink:href="http://www.opengl.org/registry/">
+            http://www.opengl.org/registry/ </link>.  The OpenStack
+            extension registry serves the following purposes:
         </para>
         <orderedlist spacing="compact">
             <listitem>
