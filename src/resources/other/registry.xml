@@ -129,11 +129,40 @@
             </listitem>
             <listitem>
                 <formalpara>
-                    <title>Determine if a multi-vendor extension is
-                    appropriate</title>
+                    <title>Determine if a multi-vendor or OpenStack
+                    extension is appropriate</title>
                     <para>
+                        If a suitable extension does not exist, an
+                        author should work with other vendors to
+                        determine if a muliti-vendor extension is
+                        appropriate.  As with single vendor extensions,
+                        multi-vendor extensions may be implemented by
+                        interested parties among themselves without
+                        coordination with the OpenStack community.
+                        That said, Multi-vendor extensions are
+                        preferred over single vendor extension during
+                        the promotion processes.
                     </para>
                 </formalpara>
+                <para>
+                    If the extension provides useful functionality
+                    that is applicable to a wide variety of general
+                    circumstances, the author should consider
+                    developing the extension as an OpenStack
+                    extension. OpenStack extensions are the most
+                    "blessed" category of extensions.  If they are
+                    generally applicable, these extensions are on the
+                    fast track to becoming core API
+                    features. Reference implementations will always
+                    offer support for these extensions and alternate
+                    implementations are also encouraged to support
+                    them.  OpenStack extensions should be implemented
+                    in coordination with the OpenStack community and
+                    by working closely with the PTL of the service
+                    being extended. OpenStack extensions go through a
+                    standardization process to ensure that they
+                    integrate well with the core API.
+                </para>
             </listitem>
             <listitem>
                 <formalpara>
