@@ -228,8 +228,33 @@
                 <formalpara>
                     <title>Develop and write the extension specification</title>
                     <para>
+                        Authors should start with a template for
+                        writing extension specifications. Templates
+                        exist in DocBook and reStructuredText formats.
+                        These templates should be available in the
+                        extension registry.
                     </para>
                 </formalpara>
+                <para>
+                    Extensions must be written against a specific
+                    version of a core OpenStack API.  If possible, it
+                    is highly preferable to write extensions against
+                    the most recent stable version of the
+                    API. "Written against" means that new language
+                    must be written as well-defined modifications to
+                    the core API being referenced. It is important for
+                    authors to document how the core API is affected
+                    by the introduction of the extension. For example:
+                    Will the extension introduce new states in the
+                    compute state machine?  Should a new action be
+                    introduced to bring a server to an
+                    <code>ACTIVE</code> state?  It should be possible
+                    for someone not involved with the development of
+                    an extension to sit down with a copy of the core
+                    API specification and the extension specification
+                    and produce a merged document that clearly
+                    specifies how the extended API should function.
+                </para>
             </listitem>
             <listitem>
                 <formalpara>
