@@ -264,16 +264,17 @@
                         When the extension specification is frozen, it
                         should be submitted via email to <link
                         xlink:href="mailto:extensions@openstack.com">extensions@openstack.com</link>
-                        for inclusion into the extension registry.
+                        for inclusion in the extension registry.
                         Vendor specifications will be published as is,
-                        though they may be edited for style an
-                        formatting. OpenStack extensions must gain the
-                        approval of the project's PTL before
-                        publication and may undergo a standardization
-                        processes.  It is expected that a dialog with
-                        the project's PTL and the OpenStack community
-                        be initiated before an OpenStack extension is
-                        submitted for publication.
+                        though they may be edited to meet style an
+                        formatting guidelines. OpenStack extensions
+                        must gain the approval of the project's PTL
+                        before publication and may undergo a
+                        standardization processes.  It is expected
+                        that a dialog with the project's PTL and the
+                        OpenStack community be initiated before an
+                        OpenStack extension is submitted for
+                        publication.
                     </para>
                 </formalpara>
             </listitem>
