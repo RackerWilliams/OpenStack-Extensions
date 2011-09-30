@@ -169,8 +169,60 @@
                     <title>Register a vendor prefix, if one has not
                     already been assigned</title>
                     <para>
+                        If a single vendor extension is appropriate an
+                        author should register a vendor prefix with
+                        the extension registry. The vendor prefix is a
+                        short string that is used to prevent clashes
+                        between extensions.  The following are
+                        examples of vendor prefixes:
                     </para>
                 </formalpara>
+                <informaltable rules='all'>
+                    <thead>
+                        <tr>
+                            <td align="center" colspan="1">Prefix</td>
+                            <td align="center" colspan="3">Vendor</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1">RAX</td>
+                            <td colspan="3">Rackspace</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">HP</td>
+                            <td colspan="3">Hewlett-Packard</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">CTX</td>
+                            <td colspan="3">Citrix</td>
+                        </tr>
+                    </tbody>
+                </informaltable>
+                <para>
+                    Extension aliases are always prefixed with these
+                    vendor identifiers.  For example,
+                    <code>RAX-BAK</code> is the extension alias for
+                    Rackspace's OpenStack Compute Backup Schedule
+                    Extension. These aliases are used to prevent
+                    clashes in HTTP parameters, headers, and JSON
+                    representations.  An example backup schedule
+                    request is illustrated below.
+                </para>
+                <example>
+                    <title>RAX-BAK JSON Representation</title>
+                    <programlisting language="javascript"><xi:include
+                    href="samples/backup.json"
+                    parse="text"/></programlisting>
+                </example>
+                <para>
+                    Any vendor or individual may register a vendor
+                    prefix by simply sending an email to <link
+                    xlink:href="mailto:extensions@openstack.com">extensions@openstack.com</link>. There
+                    is no formal approval process for prefixes other
+                    that new prefixes are not allowed to clash with
+                    existing ones.
+                </para>
             </listitem>
             <listitem>
                 <formalpara>
