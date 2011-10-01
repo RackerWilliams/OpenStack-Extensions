@@ -283,6 +283,14 @@
                     <title>Make the registry the source of truth for
                     the specification</title>
                     <para>
+                        Once published, vendors are encouraged to link
+                        directly to the extension registry when
+                        referencing the specification and to not have
+                        external copies of the specification that may
+                        fall out of sync with the registry.  The
+                        OpenStack extension registry should be the
+                        source of truth for all frozen OpenStack
+                        extension specifications.
                     </para>
                 </formalpara>
             </listitem>
