@@ -124,7 +124,7 @@
                 An important goal is to provide developers with a ubiquitous, stable, any-scale
                 cloud development platform that abstracts away many of the differences between
                 hosting providers and their underlying infrastructure (hypervisors, load balancers,
-                etc.). A Policy Review Board, similar to OpenGL's Architecture Review Board, is
+                etc.). A Project Policy Board, similar to OpenGL's Architecture Review Board, is
                 responsible for  directing development of these APIs in a manner that ensures these
                 goals are met. As with OpenGL, OpenStack requires support from vendors (and cloud
                 providers) in order to be successful. As a result, OpenStack APIs also aim to
@@ -171,18 +171,24 @@
                 for details of such requests.) Note that,
                 since extensions modify a particular version of the API, the <code>extensions</code>
                 resource itself is always accessed at a particular version. </para>
-            <para> Backward-compatible changes in an API usually require a minor version bump. In an
-                extensible API, however, these changes can be brought in as extensions. The net
-                effect is that versions change infrequently and thus provide a stable platform on
-                which to develop. The Policy Review Board (PRB), with the help of project team
-                leaders, is responsible for ensuring that this stability is maintained by closely
-                guarding core API versions. Extensions, however, can be developed without the
-                consent or approval of the PRB. They can be developed in a completely decentralized
-                manner both by individual OpenStack developers and by commercial vendors. Because
-                extensions can be promoted to standard features, the development of new versions can
-                be influenced significantly by individual developers and the OpenStack client
-                community and is therefore not strictly defined by the PRB. In other words, new
-                features of a core API may be developed in a bottom-up fashion. </para>
+            <para> Backward-compatible changes in an API usually
+            require a minor version bump. In an extensible API,
+            however, these changes can be brought in as
+            extensions. The net effect is that versions change
+            infrequently and thus provide a stable platform on which
+            to develop. The Project Technical Lead (PTL), with the
+            help of the OpenStack community, is responsible for
+            ensuring that this stability is maintained by closely
+            guarding core API versions. Extensions, however, can be
+            developed without the consent or approval of the PRB. They
+            can be developed in a completely decentralized manner both
+            by individual OpenStack developers and by commercial
+            vendors. Because extensions can be promoted to standard
+            features, the development of new versions can be
+            influenced significantly by individual developers and the
+            OpenStack client community and is therefore not strictly
+            defined by the PTL. In other words, new features of a core
+            API may be developed in a bottom-up fashion. </para>
             <para>
                 That said, not all extensions are destined to be
                 promoted to the next API version. Core APIs always
@@ -315,9 +321,9 @@
                 cases, it is recommended that a new extension be created. The extension may have a
                 name that signifies its relationship to the previous version. For example, a
                 developer may append an integer to the extension name to signify that one extension
-                updates another: <code>RAX-PIE2</code> updates <code>RAX-PIE</code>. </para>
+                updates another: <code>RAX-BAK2</code> updates <code>RAX-BAK</code>. </para>
             <para> Extensions may have dependencies on other extensions. For example,
-                    <code>RAX-PIE2</code> may depend on <code>RAX-PIE</code> and may simply add
+                    <code>RAX-BAK2</code> may depend on <code>RAX-BAK</code> and may simply add
                 additional capabilities to it. In general, dependencies of this kind are discouraged
                 and implementers should strive to keep extensions independent. That said, extension
                 dependencies allow for the possibility of providing updates to existing extensions
