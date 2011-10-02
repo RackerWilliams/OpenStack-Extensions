@@ -30,8 +30,8 @@
         <para>
             Extensions are queryable. Clients can detect what
             extensions are available for any specific version of an
-            OpenStack API.  These extension querys return metadata
-            about the extension including detials on who created the
+            OpenStack API.  These extension queries return metadata
+            about the extension including details on who created the
             extension and documentation on how the extension works.
         </para>
         <para>
@@ -43,24 +43,25 @@
                 <wadl:method name="GET" id="listExtensions">
                     <wadl:doc xml:lang="EN" title="List Extensions">
                         <para role="shortdesc">
-                            Returns a list of all avialable extensions.
+                            Returns a list of all available extensions.
                         </para>
                         <para>
                             This operation returns a complete list of
                             all extensions available to an OpenStack
-                            API.  It is improtant to note that
+                            API.  It is important to note that
                             extensions are always accessed at a
                             particular version. In this case, the
                             extensions listed in the response modify
                             version <emphasis
                             role="strong">v1</emphasis> of a specific
-                            OpenStack API.  Extensions that modify <emphasis
-                            role="strong">v2</emphasis> of the API may
-                            be accessed at
+                            OpenStack API.  Extensions that modify
+                            <emphasis role="strong">v2</emphasis> of
+                            the API may be accessed at
                             <code>/v2/extensions</code>.  If the MIME
-                            type versioning scheme is used instead of
-                            the URI scheme, then exetensions will
-                            always be found in <code>/extensions</code>.
+                            type versioning scheme is used, instead of
+                            the URI scheme, then extensions will
+                            always be found in
+                            <code>/extensions</code>.
                         </para>
                         <para>
                             An implementation may support a large
@@ -106,30 +107,29 @@
                             extension if it's available.
                         </para>
                         <para>
-                            This operation returns basic
-                            information about an extensions based
-                            on its <parameter>alias</parameter>.
-                            Agian note that the extension is
-                            accessed at a particular version. In
-                            this case, the extensions is being
-                            checked in version <emphasis
+                            This operation returns basic information
+                            about an extension.  Again, note that the
+                            extension is accessed at a particular
+                            version. In this case, the extension
+                            extends version <emphasis
                             role="strong">v1</emphasis> of an
                             OpenStack API.
                         </para>
                         <para>
                             The alias uniquely identifies an extension
-                            and contains a vendor prefix, in this case
-                            <code>RAX</code>, that prevents clashes
-                            between vendors extension.  See <xref
+                            and contains a vendor prefix, in the
+                            example below <code>RAX</code>, that
+                            prevents clashes between extensions
+                            written by different vendors.  See <xref
                             security="writer-only" linkend="Promotion"
                             /><phrase security="draft">Chapter 4,
                             <firstterm>Extension Governance and
                             Promotion</firstterm></phrase> for a
-                            detial description of vendor prefixes.  A
-                            <errorcode>404</errorcode> is returend if
-                            the extension is not supported, so this
-                            call can be used to quickly check for the
-                            presense of a particular extension.
+                            detailed description of vendor prefixes.
+                            A <errorcode>404</errorcode> is returned
+                            if the extension is not supported, so this
+                            resource can be used to quickly check for
+                            the presence of a particular extension.
                         </para>
                     </wadl:doc>
                     <wadl:response status="200 203">
