@@ -76,11 +76,11 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><xref security="writer-only" linkend="REST" /><phrase security="draft">Chapter 3, <firstterm>Extensions and ReST</firstterm></phrase></term>
+                <term><xref linkend="REST"/></term>
                 <listitem>
                     <para>
                         Describes the specifics of implementing
-                        and consuming extensions in ReST APIs.
+                        and consuming extensions in REST APIs.
                     </para>
                 </listitem>
             </varlistentry>
