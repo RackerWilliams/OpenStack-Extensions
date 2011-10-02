@@ -35,7 +35,7 @@
             extension and documentation on how the extension works.
         </para>
         <para>
-            The following operations should be supported by all
+            The following operations must be supported by all
             OpenStack APIs:
         </para>
         <wadl:resources base="https://api.openstack.com">
@@ -51,15 +51,28 @@
                             API.  It is improtant to note that
                             extensions are always accessed at a
                             particular version. In this case, the
-                            extensions listed in the response are
-                            modify version <emphasis
-                            role="strong">v1</emphasis> of a
-                            specific OpenStack API.
+                            extensions listed in the response modify
+                            version <emphasis
+                            role="strong">v1</emphasis> of a specific
+                            OpenStack API.  Extensions that modify <emphasis
+                            role="strong">v2</emphasis> of the API may
+                            be accessed at
+                            <code>/v2/extensions</code>.  If the MIME
+                            type versioning scheme is used instead of
+                            the URI scheme, then exetensions will
+                            always be found in <code>/extensions</code>.
+                        </para>
+                        <para>
+                            An implementation may support a large
+                            number of extensions.  Because of this,
+                            the extension list may be paginated via a
+                            <code>next</code> link.
                         </para>
                     </wadl:doc>
                     <wadl:response status="200 203">
                         <wadl:representation mediaType="application/xml" element="common:extensions">
                             <wadl:doc xml:lang="EN">
+                                <?hard-pagebreak?>
                                 <example>
                                     <title>List Extensions Request: XML</title>
                                     <programlisting language="xml"><xi:include href="../samples/extensions.xml" parse="text"/></programlisting>
