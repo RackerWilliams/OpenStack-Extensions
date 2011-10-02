@@ -34,13 +34,16 @@
             about the extension including detials on who created the
             extension and documentation on how the extension works.
         </para>
+        <para>
+            The following operations should be supported by all
+            OpenStack APIs:
+        </para>
         <wadl:resources base="https://api.openstack.com">
-            <?rax-wadl skipSummary="true" addMethodPageBreaks="false"?>
             <wadl:resource path="/v1/extensions">
                 <wadl:method name="GET" id="listExtensions">
                     <wadl:doc xml:lang="EN" title="List Extensions">
                         <para role="shortdesc">
-                            Returns a list of extensions.
+                            Returns a list of all avialable extensions.
                         </para>
                         <para>
                             This operation returns a complete list of
@@ -57,7 +60,6 @@
                     <wadl:response status="200 203">
                         <wadl:representation mediaType="application/xml" element="common:extensions">
                             <wadl:doc xml:lang="EN">
-                                <?hard-pagebreak?>
                                 <example>
                                     <title>List Extensions Request: XML</title>
                                     <programlisting language="xml"><xi:include href="../samples/extensions.xml" parse="text"/></programlisting>
@@ -71,7 +73,6 @@
                                     <title>List Extensions Request: JSON</title>
                                     <programlisting language="javascript"><xi:include href="../samples/extensions.json" parse="text"/></programlisting>
                                 </example>
-                                <?hard-pagebreak?>
                             </wadl:doc>
                         </wadl:representation>
                     </wadl:response>
@@ -88,7 +89,8 @@
                 <wadl:method name="GET" id="listExtension">
                     <wadl:doc xml:lang="EN" title="Get Extension">
                         <para role="shortdesc">
-                            Lists information about an extension if it's available.
+                            Lists information about a particular
+                            extension if it's available.
                         </para>
                         <para>
                             This operation returns basic
