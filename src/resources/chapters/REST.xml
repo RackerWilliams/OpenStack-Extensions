@@ -98,8 +98,23 @@
                             accessed at a particular version. In
                             this case, the extensions is being
                             checked in version <emphasis
-                            role="strong">v1</emphasis> of the
+                            role="strong">v1</emphasis> of an
                             OpenStack API.
+                        </para>
+                        <para>
+                            The alias uniquely identifies an extension
+                            and contains a vendor prefix, in this case
+                            <code>RAX</code>, that prevents clashes
+                            between vendors extension.  See <xref
+                            security="writer-only" linkend="Promotion"
+                            /><phrase security="draft">Chapter 4,
+                            <firstterm>Extension Governance and
+                            Promotion</firstterm></phrase> for a
+                            detial description of vendor prefixes.  A
+                            <errorcode>404</errorcode> is returend if
+                            the extension is not supported, so this
+                            call can be used to quickly check for the
+                            presense of a particular extension.
                         </para>
                     </wadl:doc>
                     <wadl:response status="200 203">
