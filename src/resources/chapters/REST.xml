@@ -346,19 +346,25 @@
                 elements.
             </para>
             <example>
-                <title>Extending Data: XML</title>
-                <?dbfo keep-together="always"?>
+                <title>Adding a new attribute: XML</title>
                 <programlisting language="xml"><xi:include href="../samples/apix-data.xml" parse="text"/></programlisting>
             </example>
+            <example>
+                <title>Adding a new element: XML</title>
+                <programlisting language="xml"><xi:include href="../samples/apix-data-elm.xml" parse="text"/></programlisting>
+            </example>
+            <?hard-pagebreak?>
             <para>
-                New attributes may also be added in JSON.  Here the
-                name of the attribute should be followed by the alias
-                and a colon as illustrated below.
+                New attributes and elements may also be added in JSON.
+                Both of these cases equate to adding a new property in
+                JSON. Here, the property name should be prefixed by
+                the alias and a colon as illustrated below.
             </para>
             <example>
-                <title>Extending Data: JSON</title>
+                <title>Adding a new properties in JSON</title>
                 <?dbfo keep-together="always"?>
                 <programlisting language="javascript"><xi:include href="../samples/apix-data.json" parse="text"/></programlisting>
+                <programlisting language="javascript"><xi:include href="../samples/apix-data-elm.json" parse="text"/></programlisting>
             </example>
         </section>
         <?hard-pagebreak?>
