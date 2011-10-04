@@ -369,6 +369,21 @@
         </section>
         <?hard-pagebreak?>
         <section>
+            <title>Adding new resources</title>
+            <para>
+                Extensions may define entirely new API resources.
+                These resources should be offset by the extension
+                alias. For example
+                <code>/RAX-BAK/backup-schedule</code>.  This alias may
+                occur at any part of the path:
+                <code>/v1.1/39923/servers/3345/RAX-BAK/backup-schedule</code>. When
+                an extension is promoted into the core the extension
+                alias, here <code>RAX-BAK</code>, will simply be
+                dropped.  A vendor may define multiple resources
+                within the same alias.
+            </para>
+        </section>
+        <section>
             <title>Extending Actions</title>
             <para>
                 In XML, actions are defined by the extension namespace.
@@ -435,16 +450,6 @@
             </example>
         </section>
         <?hard-pagebreak?>
-        <section>
-            <title>Extending Resources</title>
-            <para>
-                All major resources can reference an extension via
-                <code>/ext</code>.
-            </para>
-            <para> Extensions are always defined at
-            <parameter>/path/to/resource</parameter><code>/ext/</code><parameter>ext-alias/newResource</parameter>.
-            </para>
-        </section>
         <section>
             <title>Extending Parameters</title>
             <para>
