@@ -334,33 +334,34 @@
                 </listitem>
             </itemizedlist>
         </para>
+        <?hard-pagebreak?>
         <section>
-            <title>Extending Data</title>
+            <title>Adding new elements and attributes</title>
             <para>
-                Extensions can be used to add data.
-            </para>
-            <para>
-                In XML, attributes may be added to elements if they are in
-                the extension namespace.  After the final element,
-                elements can be added if "Unique Particle Attribution" is
-                not violated.
+                Extensions may add additional data elements or
+                attributes to existing MIME types.  In XML, attributes
+                may be added to elements so long as they in the
+                extension namespace. New elements must also be in the
+                extension namespace and must be added after the core
+                elements.
             </para>
             <example>
                 <title>Extending Data: XML</title>
                 <?dbfo keep-together="always"?>
-                <programlisting language="xml">
-                    <xi:include href="../samples/apix-data.xml" parse="text"/>
-                </programlisting>
+                <programlisting language="xml"><xi:include href="../samples/apix-data.xml" parse="text"/></programlisting>
             </example>
-            <para> In JSON, the action name is the alias followed by a colon. </para>
+            <para>
+                New attributes may also be added in JSON.  Here the
+                name of the attribute should be followed by the alias
+                and a colon as illustrated below.
+            </para>
             <example>
                 <title>Extending Data: JSON</title>
                 <?dbfo keep-together="always"?>
-                <programlisting language="javascript">    
-                    <xi:include href="../samples/apix-data.json" parse="text"/>
-                </programlisting>
+                <programlisting language="javascript"><xi:include href="../samples/apix-data.json" parse="text"/></programlisting>
             </example>
         </section>
+        <?hard-pagebreak?>
         <section>
             <title>Extending Actions</title>
             <para>
@@ -386,6 +387,7 @@
                 </programlisting>
             </example>
         </section>
+        <?hard-pagebreak?>
         <section>
             <title>Extending Headers and States</title>
             <para>
@@ -426,6 +428,7 @@
                 </programlisting>
             </example>
         </section>
+        <?hard-pagebreak?>
         <section>
             <title>Extending Resources</title>
             <para>
