@@ -164,7 +164,7 @@
             <para>
                 The extension queries described above return basic
                 metadata about an API's extensions. Clients can depend
-                on the metadata desribed in the following examlpe.
+                on the metadata described in the following example.
             </para>
             <example>
                 <title>Extension Metadata: XML</title>
@@ -198,7 +198,7 @@
             <calloutlist>
                 <callout arearefs="query.human-readable.name">
                     <para>
-                        A human readable name assiged to the extension.
+                        A human readable name assigned to the extension.
                     </para>
                 </callout>
                 <callout arearefs="query.vendor.namespace">
@@ -212,16 +212,16 @@
                     <para>
                         A short name that uniquely identifies the
                         extension.  Extension aliases are prefixed
-                        with a verdor identifier, here
+                        with a vendor identifier, here
                         <code>RAX</code>, to prevent clashes between
                         vendors.  Extension aliases are used when
                         extending non-XML media types, headers,
-                        parmeters, resoruces, actions, and states.
+                        parameters, resources, actions, and states.
                     </para>
                 </callout>
                 <callout arearefs="query.updated">
                     <para>
-                        A timestamp indicationg when the extension was
+                        A timestamp indicating when the extension was
                         last updated. The timestamp can be used to
                         monitor changes to an extension while it's in
                         development. 
@@ -236,11 +236,11 @@
                 <callout arearefs="query.docs">
                     <para>
                         A collection of <code>describedby</code> links
-                        that provide further detials on the extension.
+                        that provide further details on the extension.
                         At least on link  with a media type of
                         <code>application/pdf</code> is 
                         required &mdash; these PDF links should point to a
-                        detialed human readable specification of the
+                        detailed human readable specification of the
                         extension. Other  <code>despriedby</code>
                         Links are also allowed,  including links to WADLs and XSD
                         and JSON Schema files.
