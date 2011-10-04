@@ -249,160 +249,203 @@
             </calloutlist>
         </section>
     </section>
+    <?hard-pagebreak?>
     <section>
-        <title>What can be extended</title>
+        <title>What can be extended and how</title>
         <para>
-            Extensions can define:
+            Extensions may define:
             <itemizedlist spacing="compact">
                 <listitem>
-                    <para>new elements</para>
+                    <formalpara>
+                        <title>New elements and attributes</title>
+                        <para>
+                            Extensions may add additional data
+                            elements or attributes to existing MIME
+                            types.
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new attributes of existing elements</para>
+                    <formalpara>
+                        <title>New resources</title>
+                        <para>
+                            Extensions may define entirely new API
+                            resources.
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new data</para>
+                    <formalpara>
+                        <title>New parameters</title>
+                        <para>
+                            Extensions may introduce new query
+                            parameters to existing resources.
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new headers</para>
+                    <formalpara>
+                        <title>New headers</title>
+                        <para>
+                            Extensions may define new HTTP headers.
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new states</para>
+                    <formalpara>
+                        <title>New media types</title>
+                        <para>
+                            Extensions may define entirely new
+                            representation types for existing
+                            resources.
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new resources</para>
+                    <formalpara>
+                        <title>New actions</title>
+                        <para>
+                            Extensions may define new actions on
+                            existing resources. 
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new parameters</para>
+                    <formalpara>
+                        <title>New states</title>
+                        <para>
+                            Extensions may introduce new states in an
+                            API state machine.
+                        </para>
+                    </formalpara>
                 </listitem>
                 <listitem>
-                    <para>new MIME types</para>
-                </listitem>
-                <listitem>
-                    <para>new capabilities</para>
+                    <formalpara>
+                        <title>New capabilities</title>
+                        <para>
+                            Extensions may define other general API
+                            capabilities. For example, the ability to
+                            edit an otherwise uneditable attribute.
+                            Additionally, an extension may introduce
+                            support for an HTTP verb (PUT, POST) to an
+                            existing core resource.
+                        </para>
+                    </formalpara>
                 </listitem>
             </itemizedlist>
         </para>
-        <para>
-            New MIME types can provide support for Atom or plist
-            representation.
-        </para>
-        <para>
-            New capabilities can include the ability to edit an
-            otherwise-uneditable attribute.
-        </para>       
-    </section>
-    <section>
-        <title>Extending Data</title>
-        <para>
-            Extensions can be used to add data.
-        </para>
-        <para>
-            In XML, attributes may be added to elements if they are in
-            the extension namespace.  After the final element,
-            elements can be added if "Unique Particle Attribution" is
-            not violated.
-        </para>
-        <example>
-            <title>Extending Data: XML</title>
-            <?dbfo keep-together="always"?>
-            <programlisting language="xml">
-<xi:include href="../samples/apix-data.xml" parse="text"/>
-            </programlisting>
-        </example>
-        <para> In JSON, the action name is the alias followed by a colon. </para>
-        <example>
-            <title>Extending Data: JSON</title>
-            <?dbfo keep-together="always"?>
-            <programlisting language="javascript">    
-<xi:include href="../samples/apix-data.json" parse="text"/>
-            </programlisting>
-        </example>
-    </section>
-    <section>
-        <title>Extending Actions</title>
-        <para>
-            In XML, actions are defined by the extension namespace.
-        </para>
-        <example>
-            <title>Extending Actions: XML</title>
-            <programlisting language="xml">
-                <?dbfo keep-together="always"?>    
-<xi:include href="../samples/apix-action.xml" parse="text"/>
-            </programlisting>
-        </example>
-        <para>
-            In JSON, the action name is the extension alias followed
-            by a colon followed by a unique identification of the
-            action.
-        </para>
-        <example>
-            <title>Extending Actions: JSON</title>
-            <?dbfo keep-together="always"?>
-            <programlisting language="javascript">
-<xi:include href="../samples/apix-action.json" parse="text"/>
-            </programlisting>
-        </example>
-    </section>
-    <section>
-        <title>Extending Headers and States</title>
-        <para>
-            To extend a header, name it <code>X-</code> followed by
-            the extension alias followed by a unique identification of
-            the header.  In the example below,
-            <code>X-Auth-User</code> and <code>X-Auth-Key</code>
-            relate to the core API; <code>X-RAX-CBS-Header1</code> and
-            <code>X-RAX-CBS-Header2</code> relate to the API's RAX-CBS
-            extension.
-        </para>
-        <example>
-            <title>Authentication Request with Extended X-Headers</title>
-            <?dbfo keep-together="always"?>
-            <literallayout class="monospaced">
-GET /v1.0 HTTP/1.1
-Host: auth.api.openstack.com
-X-Auth-User: jdoe
-X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89
-X-RAX-CBS-Header1: value1
-X-RAX-CBS-Header2: value2
-            </literallayout>
-        </example>
-        <para> To extend a state, name it with the extension alias followed by a colon followed
-        by a unique identification of the state. </para>
-        <example>
-            <title>Extending Headers and States: XML</title>
-            <programlisting language="xml">
-                <?dbfo keep-together="always"?>    
-<xi:include href="../samples/apix-header.xml" parse="text"/>
-            </programlisting>
-        </example>
-        <example>
-            <title>Extending Headers and States: JSON</title>
-            <programlisting language="javascript">
+        <section>
+            <title>Extending Data</title>
+            <para>
+                Extensions can be used to add data.
+            </para>
+            <para>
+                In XML, attributes may be added to elements if they are in
+                the extension namespace.  After the final element,
+                elements can be added if "Unique Particle Attribution" is
+                not violated.
+            </para>
+            <example>
+                <title>Extending Data: XML</title>
                 <?dbfo keep-together="always"?>
-<xi:include href="../samples/apix-header.json" parse="text"/>
-            </programlisting>
-        </example>
-    </section>
-    <section>
-        <title>Extending Resources</title>
-        <para>
-            All major resources can reference an extension via
-            <code>/ext</code>.
-        </para>
-        <para> Extensions are always defined at
-        <parameter>/path/to/resource</parameter><code>/ext/</code><parameter>ext-alias/newResource</parameter>.
-        </para>
-    </section>
-    <section>
-        <title>Extending Parameters</title>
-        <para>
-            To extend a parameter, append the alias of the relevant
-            extension followed by a colon followed by the name of that
-            extension's parameter. For example, a &GET; against
-            https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:test=1244
-            sets the <code>RAX-PIE</code> extension's
-            <code>test</code> parameter to the value of 1244.
-        </para>
+                <programlisting language="xml">
+                    <xi:include href="../samples/apix-data.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <para> In JSON, the action name is the alias followed by a colon. </para>
+            <example>
+                <title>Extending Data: JSON</title>
+                <?dbfo keep-together="always"?>
+                <programlisting language="javascript">    
+                    <xi:include href="../samples/apix-data.json" parse="text"/>
+                </programlisting>
+            </example>
+        </section>
+        <section>
+            <title>Extending Actions</title>
+            <para>
+                In XML, actions are defined by the extension namespace.
+            </para>
+            <example>
+                <title>Extending Actions: XML</title>
+                <programlisting language="xml">
+                    <?dbfo keep-together="always"?>    
+                    <xi:include href="../samples/apix-action.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <para>
+                In JSON, the action name is the extension alias followed
+                by a colon followed by a unique identification of the
+                action.
+            </para>
+            <example>
+                <title>Extending Actions: JSON</title>
+                <?dbfo keep-together="always"?>
+                <programlisting language="javascript">
+                    <xi:include href="../samples/apix-action.json" parse="text"/>
+                </programlisting>
+            </example>
+        </section>
+        <section>
+            <title>Extending Headers and States</title>
+            <para>
+                To extend a header, name it <code>X-</code> followed by
+                the extension alias followed by a unique identification of
+                the header.  In the example below,
+                <code>X-Auth-User</code> and <code>X-Auth-Key</code>
+                relate to the core API; <code>X-RAX-CBS-Header1</code> and
+                <code>X-RAX-CBS-Header2</code> relate to the API's RAX-CBS
+                extension.
+            </para>
+            <example>
+                <title>Authentication Request with Extended X-Headers</title>
+                <?dbfo keep-together="always"?>
+                <literallayout class="monospaced">
+                    GET /v1.0 HTTP/1.1
+                    Host: auth.api.openstack.com
+                    X-Auth-User: jdoe
+                    X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89
+                    X-RAX-CBS-Header1: value1
+                    X-RAX-CBS-Header2: value2
+                </literallayout>
+            </example>
+            <para> To extend a state, name it with the extension alias followed by a colon followed
+            by a unique identification of the state. </para>
+            <example>
+                <title>Extending Headers and States: XML</title>
+                <programlisting language="xml">
+                    <?dbfo keep-together="always"?>    
+                    <xi:include href="../samples/apix-header.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <example>
+                <title>Extending Headers and States: JSON</title>
+                <programlisting language="javascript">
+                    <?dbfo keep-together="always"?>
+                    <xi:include href="../samples/apix-header.json" parse="text"/>
+                </programlisting>
+            </example>
+        </section>
+        <section>
+            <title>Extending Resources</title>
+            <para>
+                All major resources can reference an extension via
+                <code>/ext</code>.
+            </para>
+            <para> Extensions are always defined at
+            <parameter>/path/to/resource</parameter><code>/ext/</code><parameter>ext-alias/newResource</parameter>.
+            </para>
+        </section>
+        <section>
+            <title>Extending Parameters</title>
+            <para>
+                To extend a parameter, append the alias of the relevant
+                extension followed by a colon followed by the name of that
+                extension's parameter. For example, a &GET; against
+                https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:test=1244
+                sets the <code>RAX-PIE</code> extension's
+                <code>test</code> parameter to the value of 1244.
+            </para>
+        </section>       
     </section>
 </chapter>
