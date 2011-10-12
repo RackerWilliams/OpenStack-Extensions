@@ -383,6 +383,21 @@
                 within the same alias.
             </para>
         </section>
+       <section>
+            <title>Adding new parameters</title>
+            <para>
+                Extensions may introduce new query parameters to
+                existing resources.  The parameter name should be
+                prepended by the extension alias followed by a
+                colon. For example, a &GET; against
+                https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:img=1244
+                sets the <code>RAX-PIE</code> extension's
+                <parameter>img</parameter> parameter to the value of
+                1244.  The extension alias and colon is dropped from
+                the parameter when the extension is promoted into the
+                core API.
+            </para>
+        </section>       
         <section>
             <title>Extending Actions</title>
             <para>
@@ -449,17 +464,5 @@
                 </programlisting>
             </example>
         </section>
-        <?hard-pagebreak?>
-        <section>
-            <title>Extending Parameters</title>
-            <para>
-                To extend a parameter, append the alias of the relevant
-                extension followed by a colon followed by the name of that
-                extension's parameter. For example, a &GET; against
-                https://api.servers.rackspacecloud.com/v1.0/224532/servers?RAX-PIE:test=1244
-                sets the <code>RAX-PIE</code> extension's
-                <code>test</code> parameter to the value of 1244.
-            </para>
-        </section>       
     </section>
 </chapter>
