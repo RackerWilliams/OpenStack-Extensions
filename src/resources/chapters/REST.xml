@@ -397,7 +397,51 @@
                 the parameter when the extension is promoted into the
                 core API.
             </para>
-        </section>       
+        </section>
+        <section>
+            <title>Adding new headers</title>
+            <para>
+                Extensions may define new HTTP headers.  The header
+                names should be be prepended by a unique extensions
+                alias followed by a dash. In the example below,
+                <code>X-Auth-User</code> and <code>X-Auth-Key</code>
+                relate to the core API; <code>RAX-CBS-Header1</code>
+                and <code>RAX-CBS-Header2</code> relate to the API's
+                RAX-CBS extension.  Here too, the extension alias and
+                the dash is dropped when an extension is promoted into
+                core.
+            </para>
+            <example>
+                <title>Authentication Request with Extended Headers</title>
+                <literallayout class="monospaced">
+GET /v1.0 HTTP/1.1
+Host: auth.api.openstack.com
+X-Auth-User: jdoe
+X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89
+RAX-CBS-Header1: value1
+RAX-CBS-Header2: value2
+                </literallayout>
+            </example>
+        </section>
+        <section>
+            <title/>
+            <para> To extend a state, name it with the extension alias followed by a colon followed
+            by a unique identification of the state. </para>
+            <example>
+                <title>Extending Headers and States: XML</title>
+                <programlisting language="xml">
+                    <?dbfo keep-together="always"?>    
+                    <xi:include href="../samples/apix-header.xml" parse="text"/>
+                </programlisting>
+            </example>
+            <example>
+                <title>Extending Headers and States: JSON</title>
+                <programlisting language="javascript">
+                    <?dbfo keep-together="always"?>
+                    <xi:include href="../samples/apix-header.json" parse="text"/>
+                </programlisting>
+            </example>
+        </section>
         <section>
             <title>Extending Actions</title>
             <para>
