@@ -448,6 +448,29 @@ RAX-CBS-Header2: value2
             </para>
         </section>
         <section>
+            <title>Adding new actions</title>
+            <para>
+                The OpenStack Compute API defines operations on a
+                server as Server Actions. Extensions may define
+                additional actions.  In XML, actions must be specified
+                in the extension namespace.
+            </para>
+            <example>
+                <title>Extended Action: XML</title>
+                <programlisting language="xml"><xi:include href="../samples/apix-action.xml"
+                parse="text"/></programlisting>
+            </example>
+            <para>
+                Actions should be prefixed in JSON by the extension
+                alias followed by a colon, as illustrated below.
+            </para>
+            <example>
+                <title>Extended Action: JSON</title>
+                <programlisting language="javascript"><xi:include href="../samples/apix-action.json"
+                parse="text"/></programlisting>
+            </example>
+        </section>
+        <section>
             <title></title>
             <para> To extend a state, name it with the extension alias followed by a colon followed
             by a unique identification of the state. </para>
@@ -463,31 +486,6 @@ RAX-CBS-Header2: value2
                 <programlisting language="javascript">
                     <?dbfo keep-together="always"?>
                     <xi:include href="../samples/apix-header.json" parse="text"/>
-                </programlisting>
-            </example>
-        </section>
-        <section>
-            <title>Extending Actions</title>
-            <para>
-                In XML, actions are defined by the extension namespace.
-            </para>
-            <example>
-                <title>Extending Actions: XML</title>
-                <programlisting language="xml">
-                    <?dbfo keep-together="always"?>    
-                    <xi:include href="../samples/apix-action.xml" parse="text"/>
-                </programlisting>
-            </example>
-            <para>
-                In JSON, the action name is the extension alias followed
-                by a colon followed by a unique identification of the
-                action.
-            </para>
-            <example>
-                <title>Extending Actions: JSON</title>
-                <?dbfo keep-together="always"?>
-                <programlisting language="javascript">
-                    <xi:include href="../samples/apix-action.json" parse="text"/>
                 </programlisting>
             </example>
         </section>
