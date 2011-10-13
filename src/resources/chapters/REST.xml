@@ -424,7 +424,31 @@ RAX-CBS-Header2: value2
             </example>
         </section>
         <section>
-            <title/>
+            <title>Adding new media types</title>
+            <para>
+                Extensions may define entirely new media types for
+                existing resources.  For example, an extension may
+                introduce an Atom representation in addition to XML
+                and JSON.  Here the extension should simply utilize
+                HTTP's existing content negotiation mechanism.  For
+                example, an extension that adds support for atom
+                should allow clients to send an <code>ACCEPT</code>
+                header with <code>application/atom+xml</code>.
+            </para>
+            <para>
+                It may be possibible for multiple extensions to add
+                support for the same media type. The situation should
+                generally be avoided. Ideally, both extensions may
+                behave in the exact same way. In cases where a
+                distinction need be made, clients should pass the
+                unique extension prefix via the <code>ext</code> mime
+                type parameter as a hint to an implementaion that a
+                particular extension is requested. For example,
+                <code>application/atom+xml;ext=RAX-ATOM</code>.
+            </para>
+        </section>
+        <section>
+            <title></title>
             <para> To extend a state, name it with the extension alias followed by a colon followed
             by a unique identification of the state. </para>
             <example>
