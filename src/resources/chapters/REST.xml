@@ -10,7 +10,20 @@
 <!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
 <!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
 <!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
+
+<!ENTITY ARROW  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
+                  <imageobject role="fo">
+                  <imagedata fileref="../figures/Arrow_east.svg"
+                             format="SVG" scale="60"/>
+                </imageobject>
+                 <imageobject role="html">
+                  <imagedata fileref="../figures/Arrow_east.png"
+                             format="PNG" />
+                </imageobject>
+              </inlinemediaobject>'>
+
 ]>
+
 <chapter
     xml:id="REST"
     xmlns="http://docbook.org/ns/docbook"
@@ -471,63 +484,30 @@ RAX-CBS-Header2: value2
             </example>
         </section>
         <section>
-            <title></title>
-            <para> To extend a state, name it with the extension alias followed by a colon followed
-            by a unique identification of the state. </para>
-            <example>
-                <title>Extending Headers and States: XML</title>
-                <programlisting language="xml">
-                    <?dbfo keep-together="always"?>    
-                    <xi:include href="../samples/apix-header.xml" parse="text"/>
-                </programlisting>
-            </example>
-            <example>
-                <title>Extending Headers and States: JSON</title>
-                <programlisting language="javascript">
-                    <?dbfo keep-together="always"?>
-                    <xi:include href="../samples/apix-header.json" parse="text"/>
-                </programlisting>
-            </example>
-        </section>
-        <?hard-pagebreak?>
-        <section>
-            <title>Extending Headers and States</title>
+            <title>Adding new states</title>
             <para>
-                To extend a header, name it <code>X-</code> followed by
-                the extension alias followed by a unique identification of
-                the header.  In the example below,
-                <code>X-Auth-User</code> and <code>X-Auth-Key</code>
-                relate to the core API; <code>X-RAX-CBS-Header1</code> and
-                <code>X-RAX-CBS-Header2</code> relate to the API's RAX-CBS
-                extension.
+                The OpenStack Compute API also has the concept of a
+                state machine.  Extensions may introduce new
+                states. These states should be prepended by the unique
+                extension alias followed by a colon. The extened state
+                transitions should be clearly documented by the
+                extension. In the example below, a server may enter a
+                <code>RAX-CBS:ATTACHING</code> state only from an
+                ACTIVE state.
             </para>
             <example>
-                <title>Authentication Request with Extended X-Headers</title>
-                <?dbfo keep-together="always"?>
-                <literallayout class="monospaced">
-                    GET /v1.0 HTTP/1.1
-                    Host: auth.api.openstack.com
-                    X-Auth-User: jdoe
-                    X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89
-                    X-RAX-CBS-Header1: value1
-                    X-RAX-CBS-Header2: value2
-                </literallayout>
-            </example>
-            <para> To extend a state, name it with the extension alias followed by a colon followed
-            by a unique identification of the state. </para>
-            <example>
-                <title>Extending Headers and States: XML</title>
-                <programlisting language="xml">
-                    <?dbfo keep-together="always"?>    
-                    <xi:include href="../samples/apix-header.xml" parse="text"/>
-                </programlisting>
-            </example>
-            <example>
-                <title>Extending Headers and States: JSON</title>
-                <programlisting language="javascript">
-                    <?dbfo keep-together="always"?>
-                    <xi:include href="../samples/apix-header.json" parse="text"/>
-                </programlisting>
+                <title>Introducing a new state</title>
+                <informaltable frame="void">
+                    <tbody>
+                        <tr>
+                            <td colspan="3">
+                                <code>ACTIVE</code> &ARROW;
+                                <code>RAX-CBS:ATTACHING</code> &ARROW;
+                                <code>ACTIVE</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </informaltable>
             </example>
         </section>
     </section>
