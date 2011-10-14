@@ -548,9 +548,19 @@ RAX-CBS-Header2: value2
             </example>
         </section>
         <section>
-            <title>Extending other capabilities</title>
+            <title>Adding other capabilities</title>
             <para>
-                Extension may define other general API capabilites.
+                Extensions may define other general API
+                capabilities. For example, the ability to edit an
+                otherwise uneditable attribute. The following general
+                principles should be applied in these cases.  First,
+                care should be taken to avoid clashing with other
+                extensions, the extension prefix or XML namespace
+                should be used for this purpose. Next, the extension
+                should be modeled such that the promotion path is
+                well understood. And finally, the extensions should be
+                well documented so that changes to the core API are
+                well understood.
             </para>
         </section>
     </section>
