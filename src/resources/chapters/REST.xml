@@ -9,6 +9,7 @@
 <!ENTITY GET    '<command xmlns="http://docbook.org/ns/docbook">GET</command>'>
 <!ENTITY PUT    '<command xmlns="http://docbook.org/ns/docbook">PUT</command>'>
 <!ENTITY POST   '<command xmlns="http://docbook.org/ns/docbook">POST</command>'>
+<!ENTITY PATCH   '<command xmlns="http://docbook.org/ns/docbook">PATCH</command>'>
 <!ENTITY DELETE '<command xmlns="http://docbook.org/ns/docbook">DELETE</command>'>
 
 <!ENTITY ARROW  '<inlinemediaobject xmlns="http://docbook.org/ns/docbook">
@@ -306,6 +307,16 @@
                 </listitem>
                 <listitem>
                     <formalpara>
+                        <title>New verbs</title>
+                        <para>
+                            Extensions may introduce support for an
+                            HTTP verb (&PUT;, &POST;) to an existing
+                            core resource.
+                        </para>
+                    </formalpara>
+                </listitem>
+                <listitem>
+                    <formalpara>
                         <title>New media types</title>
                         <para>
                             Extensions may define entirely new
@@ -334,14 +345,11 @@
                 </listitem>
                 <listitem>
                     <formalpara>
-                        <title>New capabilities</title>
+                        <title>Other capabilities</title>
                         <para>
                             Extensions may define other general API
                             capabilities. For example, the ability to
                             edit an otherwise uneditable attribute.
-                            Additionally, an extension may introduce
-                            support for an HTTP verb (PUT, POST) to an
-                            existing core resource.
                         </para>
                     </formalpara>
                 </listitem>
@@ -381,7 +389,7 @@
             </example>
         </section>
         <?hard-pagebreak?>
-        <section>
+        <section xml:id="NewResources">
             <title>Adding new resources</title>
             <para>
                 Extensions may define entirely new API resources.
@@ -434,6 +442,35 @@ X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89
 RAX-CBS-Header1: value1
 RAX-CBS-Header2: value2
                 </literallayout>
+            </example>
+        </section>
+        <section>
+            <title>Adding support for a new HTTP verb</title>
+            <para>
+                An extension may introduce support for an otherwise
+                unsupported HTTP verb (&PUT;, &POST;) to an existing
+                core resource. To avoid clashes with other extensions,
+                the extension may introduce the additional verb to a
+                URI other than the one being extended.  For example,
+                assume that an extension (<code>RAX-PATCH</code>) adds
+                support for &PATCH; to a URI to an image
+                <code>/v1.1/1234/image/1</code>.  The extension may
+                allow the &PATCH; verb on a separate URI (using the
+                rules in <xref linkend="NewResources" />),
+                <code>/v1.1/1234/image/RAX-PATCH/1</code>.  The
+                extension should add a link to the image
+                representation so that the URI is easily
+                discoverable. Note that the unique extension alias is
+                used as the link relation type in this case.
+            </para>
+            <?hard-pagebreak?>
+            <example>
+                <title>Discoverable &PATCH; URI: XML</title>
+                <programlisting language="xml"><xi:include href="../samples/patch.xml" parse="text"/></programlisting>
+            </example>
+            <example>
+                <title>Discoverable &PATCH; URI: JSON</title>
+                <programlisting language="javascript"><xi:include href="../samples/patch.json" parse="text"/></programlisting>
             </example>
         </section>
         <section>
@@ -509,6 +546,12 @@ RAX-CBS-Header2: value2
                     </tbody>
                 </informaltable>
             </example>
+        </section>
+        <section>
+            <title>Extending other capabilities</title>
+            <para>
+                Extension may define other general API capabilites.
+            </para>
         </section>
     </section>
 </chapter>
