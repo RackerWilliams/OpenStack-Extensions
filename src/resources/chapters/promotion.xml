@@ -19,6 +19,13 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
 
     <title>Extension Governance and Promotion</title>
+    <para>
+        This chapter describes extension governance and the process by
+        which extensions can be promoted to new features in future
+        revisions of an API.  It describes how to build extensions
+        that will be likely promoted and it introduces the extension
+        registry.
+    </para>
     <section>
         <title>Specification Governance</title>
         <para> OpenStack's existing structure adequately addresses governance of API extensions

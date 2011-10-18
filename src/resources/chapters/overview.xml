@@ -88,7 +88,7 @@
                 <term><xref linkend="Promotion" /></term>
                 <listitem>
                     <para>
-                        Describes API governance and the process
+                        Describes extension governance and the process
                         by which extensions can be promoted to new
                         features in future revisions of an API.
                     </para>
