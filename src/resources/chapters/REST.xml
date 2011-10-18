@@ -135,10 +135,7 @@
                             example below <code>RAX</code>, that
                             prevents clashes between extensions
                             written by different vendors.  See <xref
-                            security="writer-only" linkend="Promotion"
-                            /><phrase security="draft">Chapter 4,
-                            <firstterm>Extension Governance and
-                            Promotion</firstterm></phrase> for a
+                            linkend="Promotion"/> for a
                             detailed description of vendor prefixes.
                             A <errorcode>404</errorcode> is returned
                             if the extension is not supported, so this

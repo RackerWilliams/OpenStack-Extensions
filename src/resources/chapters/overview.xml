@@ -85,7 +85,7 @@
                 </listitem>
             </varlistentry>
             <varlistentry>
-                <term><xref security="writer-only" linkend="Promotion" /><phrase security="draft">Chapter 4, <firstterm>Extension Governance and Promotion</firstterm></phrase></term>
+                <term><xref linkend="Promotion" /></term>
                 <listitem>
                     <para>
                         Describes API governance and the process

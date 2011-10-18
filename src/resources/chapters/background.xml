@@ -139,19 +139,27 @@
         </section>
         <section>
             <title>Extensions and Versions</title>
-            <para> Extensions are always interpreted in relation to a version of the core API. In
-                other words, from a client's perspective, an extension modifies <emphasis>a
-                    particular version</emphasis> of the core API in some way. In reality, an
-                extension may be applicable to several versions of an API at once. For example, a
-                particular extension may continue to be available as a core API moves from one
-                version to another. In fact, different implementations may decide to include support
-                for an extension at different versions. As explained in 
-                <xref security="writer-only" linkend="Promotion" /><phrase security="draft">the chapter on "Extension Governance and Promotion"</phrase>, 
-                when an extension is defined, the minimal version of the core API that is required
-                to run the extension is specified; implementers are free to support the extension in
-                that version or in a later version of the core. Note, however, that because the
-                extension mechanism allows for promotion, an extension in one version of a core API
-                may become a standard feature in a later version. </para>
+            <para>
+                Extensions are always interpreted in relation to a
+                version of the core API. In other words, from a
+                client's perspective, an extension modifies
+                <emphasis>a particular version</emphasis> of the core
+                API in some way. In reality, an extension may be
+                applicable to several versions of an API at once. For
+                example, a particular extension may continue to be
+                available as a core API moves from one version to
+                another. In fact, different implementations may decide
+                to include support for an extension at different
+                versions. As explained in <xref linkend="Promotion"
+                />, when an extension is defined, the minimal version
+                of the core API that is required to run the extension
+                is specified; implementers are free to support the
+                extension in that version or in a later version of the
+                core. Note, however, that because the extension
+                mechanism allows for promotion, an extension in one
+                version of a core API may become a standard feature in
+                a later version.
+            </para>
             <note>
                 <para>
                     As always, implementers are not required to
