@@ -28,35 +28,54 @@
     </para>
     <section>
         <title>Specification Governance</title>
-        <para> OpenStack's existing structure adequately addresses governance of API extensions
-            and features. For each service, the project team lead (PTL)  handles concerns about functionality
-            and resolves conflicts;
-            the OpenStack Governance board provides oversight to maintain consistency and
-            prevent conflicts among services.</para>
         <para>
-            When OpenStack approves an extension, the extension's prefix is changed so that rather than identifying a specific vendor it identifies OpenStack as its source.
-            For example, if the <code>RAX-PIE</code> extension were to be approved by OpenStack, the approved version would be known as <code>OS-PIE</code>.
-            While the <code>OS-</code> prefix indicates approval by OpenStack,
-            such approval does not necessarily imply that the extension is being considered for inclusion in a future revision of the API's core specification.
-            A niche extension that offers highly useful functionality can gain OpenStack approval.
-            Such an extension may never become a feature of the core API, but the extension can become one that is so frequently implemented that clients can rely on it in most cases.
+            API governance is shared between the project team lead
+            (PTL) and the project policy board (PPB). The project team
+            lead (PTL) handles concerns about functionality and
+            resolves conflicts; the policy board provides oversight to
+            maintain consistency among teams.
+        </para>
+        <para>
+            A PTL may designate an extension as an OpenStack approved
+            extension.  OpenStack deployments should offer support for
+            OpenStack extensions as some of these exnensions may be on
+            the fast track for inclusion as standard core
+            features. When a PTL approves an extension, the
+            extension's prefix is changed so that rather than
+            identifying a specific vendor it identifies OpenStack as
+            its source.  OpenStack extesions are prefixed with
+            <code>OS</code>. For example, if the <code>RAX-PIE</code>
+            extension were to be promoted to an OpenStack extension,
+            the approved version would be known as
+            <code>OS-PIE</code>.
         </para>
     </section>
     <section>
         <title>Promotion Path</title>
         <para> 
-            The simplest promotion path for an extension is from a single vendor to OpenStack
-            approval to implementation as a core API feature. 
+            The simplest promotion path for an extension is from a
+            single vendor to OpenStack extension to implementation as
+            a core API feature.
         </para>
-        <para> Some extensions may be developed cooperatively by more than one vendor; these are
-            known as Multi-Vendor extensions and are identified by the <code>MLTI</code> prefix.
-            Alternatively, an extension may begin with a single vendor but become a Multi-Vendor
-            extension at some point in its life. In either of these cases, the extension follows
-            same promotion path from Multi-Vendor status to OpenStack approval to implementation
-            as a core API feature. </para>
         <para>
-            This multi-step promotion path allows competing extensions to coexist and makes it possible to experiment with new features before deciding whether to incorporate them into the API standard.
-            It also means that API specifications are written bottom-up rather than top-down, so that implementations determine new features and the API is not designed in a vacuum. 
+            Some extensions may be developed cooperatively by more
+            than one vendor; these are known as Multi-Vendor
+            extensions and are identified by the <code>MLTI</code>
+            prefix.  Alternatively, an extension may begin with a
+            single vendor but become a Multi-Vendor extension at some
+            point in its life. In either of these cases, the extension
+            follows same promotion path from Multi-Vendor status to
+            OpenStack approval to implementation as a core API
+            feature.
+        </para>
+        <para>
+            This multi-step promotion path allows competing extensions
+            to coexist and makes it possible to experiment with new
+            features before deciding whether to incorporate them into
+            the API.  It also means that API specifications are
+            written bottom-up rather than top-down, so that
+            implementations determine new features and the API is not
+            designed in a vacuum.
         </para>
         <figure xml:id="promotion">
             <title>An API extension can become a core feature of the API if approved by OpenStack.</title>
