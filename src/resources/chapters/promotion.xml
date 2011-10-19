@@ -213,16 +213,15 @@
             <title>Extension Registration</title>
             <para>
                 The extension registration process closely follows the
-                registration process developed by the Khronos group for
-                OpenGL:
-                <link
-                    xlink:href="http://www.opengl.org/registry/doc/rules.html">
-                    http://www.opengl.org/registry/doc/rules.html</link>.
-                    When creating an extension the following steps should be
-                    followed:
+                registration process developed by the Khronos group
+                for OpenGL: <link
+                xlink:href="http://www.opengl.org/registry/doc/rules.html">
+                http://www.opengl.org/registry/doc/rules.html</link>.
+                The process is illustrated at a high level in <xref
+                linkend="registration" xrefstyle="select: label"/>.
             </para>
-            <figure xml:id="creation">
-                <title>Consensus, stability, and standardization improve an extension's likelihood of OpenStack approval.</title>
+            <figure xml:id="registration">
+                <title>The Extensions Registration Process</title>
                 <mediaobject>
                     <imageobject role="fo">
                         <imagedata scale="80" fileref="../figures/apix-creation.svg/creation.svg" format="SVG" align="center"/>
@@ -232,6 +231,11 @@
                     </imageobject>
                 </mediaobject>
             </figure>
+            <?hard-pagebreak?>
+            <para>
+                When creating an extension the following steps should
+                be followed:
+            </para>
             <orderedlist spacing="compact">
                 <listitem>
                     <formalpara>
