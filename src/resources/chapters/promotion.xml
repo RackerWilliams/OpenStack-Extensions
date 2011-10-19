@@ -150,21 +150,9 @@
     <section xml:id="Registry">
         <title>The Extension Registry</title>
         <para>
-            OpenStack should create an extension registry. The
-            OpenStack extension registry serves the following
-            purposes:
+            OpenStack maintains an extensions registry. The registry
+            serves the following purposes:
         </para>
-        <figure xml:id="creation">
-            <title>Consensus, stability, and standardization improve an extension's likelihood of OpenStack approval.</title>
-            <mediaobject>
-                <imageobject role="fo">
-                    <imagedata scale="80" fileref="../figures/apix-creation.svg/creation.svg" format="SVG" align="center"/>
-                </imageobject>
-                <imageobject role="html">
-                    <imagedata fileref="figures/apix-creation.png" format="PNG" align="center"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
         <orderedlist spacing="compact">
             <listitem>
                 <para>
@@ -180,17 +168,17 @@
             </listitem>
         </orderedlist>
         <para>
-            Note that this proposal is for a repository of extension
-            specifications and <emphasis role="strong">not</emphasis>
+            Note that the registry is a repository of extension
+            specifications and <emphasis>not</emphasis>
             a repository of extension software or plugins for a
             particular OpenStack implementation.  That is, the
-            repository is implementation agnostic and may describe
+            registry is implementation agnostic and may describe
             extensions supported by implementations other than the
             OpenStack reference implementations (Nova, Glance, Swift,
             Keystone).
         </para>
         <section>
-            <title>Benefits of a centralized repository</title>
+            <title>Benefits of a Centralized Registry</title>
             <para>
                 Users of OpenStack APIs benefit from having a centralized
                 extension repository.  While we would like to encourage
@@ -233,6 +221,17 @@
                     When creating an extension the following steps should be
                     followed:
             </para>
+            <figure xml:id="creation">
+                <title>Consensus, stability, and standardization improve an extension's likelihood of OpenStack approval.</title>
+                <mediaobject>
+                    <imageobject role="fo">
+                        <imagedata scale="80" fileref="../figures/apix-creation.svg/creation.svg" format="SVG" align="center"/>
+                    </imageobject>
+                    <imageobject role="html">
+                        <imagedata fileref="figures/apix-creation.png" format="PNG" align="center"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
             <orderedlist spacing="compact">
                 <listitem>
                     <formalpara>
