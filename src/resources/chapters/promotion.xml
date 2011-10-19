@@ -27,7 +27,7 @@
         registry.
     </para>
     <section>
-        <title>Specification Governance</title>
+        <title>Specification Governance and OpenStack Extensions</title>
         <para>
             API governance is shared between the project team lead
             (PTL) and the project policy board (PPB). The project team
@@ -54,19 +54,19 @@
         <title>Promotion Path</title>
         <para> 
             The simplest promotion path for an extension is from a
-            single vendor to OpenStack extension to implementation as
-            a core API feature.
+            vendor extension to an OpenStack extension to a core API
+            feature.
         </para>
         <para>
             Some extensions may be developed cooperatively by more
             than one vendor; these are known as Multi-Vendor
             extensions and are identified by the <code>MLTI</code>
-            prefix.  Alternatively, an extension may begin with a
-            single vendor but become a Multi-Vendor extension at some
-            point in its life. In either of these cases, the extension
-            follows same promotion path from Multi-Vendor status to
-            OpenStack approval to implementation as a core API
-            feature.
+            vendor prefix.  Alternatively, an extension may begin with
+            a single vendor but become a Multi-Vendor extension at
+            some point in its life. In either of these cases, the
+            extension follows same promotion path from Multi-Vendor
+            status to OpenStack approval to implementation as a core
+            API feature.
         </para>
         <para>
             This multi-step promotion path allows competing extensions
