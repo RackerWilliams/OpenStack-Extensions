@@ -350,8 +350,8 @@
                         and JSON representations.  An example backup
                         schedule request is illustrated below.
                     </para>
-                    <?hard-pagebreak?>
                     <example>
+		      <?dbfo keep-together="always"?>
                         <title>RAX-BAK JSON Representation</title>
                         <programlisting language="javascript"><xi:include
                         href="../samples/backup.json"
