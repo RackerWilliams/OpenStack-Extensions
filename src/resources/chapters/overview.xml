@@ -105,35 +105,10 @@
     </section>
     <section>
         <title>Document Change History</title>
-        <informaltable rules='all'>
-            <thead>
-                <tr>
-                    <td align="center" colspan="1">Revision Date</td>
-                    <td align="center" colspan="4">Summary of Changes</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="1" align="center">Octobel 1, 2011</td>
-                    <td colspan="4">
-                        <itemizedlist spacing="compact">
-                            <listitem>
-                                <para>Updated to reflect latest OpenStack governance model.</para>
-                            </listitem>
-                        </itemizedlist>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="1" align="center">June 10, 2011</td>
-                    <td colspan="4">
-                        <itemizedlist spacing="compact">
-                            <listitem>
-                                <para> Initial draft. </para>
-                            </listitem>
-                        </itemizedlist>
-                    </td>
-                </tr>
-            </tbody>
-        </informaltable>
+        <para>
+            The most recent changes to this document are desrcibed
+            below.
+        </para>
+        <?rax revhistory?>
     </section>
 </chapter>

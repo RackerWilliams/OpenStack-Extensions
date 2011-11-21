@@ -40,7 +40,7 @@
                 <artifactId>clouddocs-maven-plugin</artifactId>
                 <!-- this <version> relates only to the *plugin* used for document formatting -->
                 <!-- the version of the *API* that is the subject of the document is indicated within each document -->
-                <version>1.0.6-SNAPSHOT</version>
+                <version>1.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>g1</id>
@@ -51,13 +51,19 @@
                         <phase>generate-sources</phase>
                         <configuration>
                             <xincludeSupported>true</xincludeSupported>
-                            <!-- set branding to OPENSTACK or RACKSPACE -->
                             <branding>openstack</branding>
                             <sourceDirectory>src/resources</sourceDirectory>
-                            <!-- highlightSource bolds some elements of sample code but disables linewrapping -->
                             <highlightSource>true</highlightSource>
-                            <!-- use this .XML as the source for the book to be generated as .PDF -->
                             <includes>apix-intro.xml</includes>
+                            <pdfUrl>apix-intro.pdf</pdfUrl>
+                            <canonicalUrlBase>http://docs.rackspacecloud.com/openstack-extensions/apix-intro/content</canonicalUrlBase>
+                            <postProcess>
+                                <copy todir="target/docbkx/webhelp/apix-intro/content/">
+                                    <fileset dir="target/docbkx/pdf/">
+                                        <include name="**/*.pdf"/>
+                                    </fileset>
+                                </copy>
+                            </postProcess>
                         </configuration>
                     </execution>
                 </executions>

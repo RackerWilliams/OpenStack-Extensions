@@ -28,7 +28,7 @@
             <year>2011</year>
             <holder>Rackspace US, Inc.</holder>
         </copyright>
-        <pubdate>2011-10-01</pubdate>
+        <pubdate>2011-11-21</pubdate>
         <legalnotice role="apache2">
             <annotation>
                 <remark>Copyright details are filled in by the template.</remark>
@@ -40,6 +40,38 @@
                 mechanism.
             </para>
         </abstract>
+        <revhistory>
+            <revision>
+                <date>2011-11-21</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>Minor updates to prepare for OpenStack extension registry release.</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
+            <revision>
+                <date>2011-10-01</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para>Updated to reflect latest OpenStack governance model.</para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
+            <revision>
+                <date>2011-06-10</date>
+                <revdescription>
+                    <itemizedlist spacing="compact">
+                        <listitem>
+                            <para> Initial draft. </para>
+                        </listitem>
+                    </itemizedlist>
+                </revdescription>
+            </revision>
+        </revhistory>
     </info>
     <xi:include href="chapters/overview.xml"/>
     <xi:include href="chapters/background.xml"/>
