@@ -78,7 +78,7 @@
             designed in a vacuum.
         </para>
         <figure xml:id="promotion">
-            <title>An API extension can become a core feature of the API if approved by OpenStack.</title>
+            <title>The Extension Promotion Path</title>
             <mediaobject>
                 <imageobject role="fo">
                     <imagedata scale="80" fileref="../figures/apix-promotion.svg" format="SVG" align="center"/>
@@ -227,7 +227,7 @@
                         <imagedata scale="80" fileref="../figures/apix-creation.svg/creation.svg" format="SVG" align="center"/>
                     </imageobject>
                     <imageobject role="html">
-                        <imagedata fileref="figures/apix-creation.png" format="PNG" align="center"/>
+                        <imagedata fileref="figures/creation.png" format="PNG" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
